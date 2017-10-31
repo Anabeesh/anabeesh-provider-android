@@ -1,1 +1,1 @@
-# Arab-focused version of Quora with more sophisticated features
+# Arab-focused version of Quora
