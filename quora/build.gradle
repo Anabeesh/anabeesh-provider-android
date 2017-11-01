@@ -2,34 +2,39 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply from: "$project.rootDir/tools/gradle/script/git-version.gradle"
+apply from: "$project.rootDir/tools/gradle/script/findbugs.gradle"
+apply from: "$project.rootDir/tools/gradle/script/lint.gradle"
+apply from: "$project.rootDir/tools/gradle/script/pmd.gradle"
+apply from: "$project.rootDir/tools/gradle/script/java-code-coverage.gradle"
 
 android {
-    compileSdkVersion deps.versions.compileSdkVersion
-    buildToolsVersion deps.versions.buildToolsVersion
+    compileSdkVersion deps.build.compileSdkVersion
+    buildToolsVersion deps.build.buildToolsVersion
 
     defaultConfig {
         applicationId "com.cs18.quora"
-        minSdkVersion deps.versions.minSdkVersion
-        targetSdkVersion deps.versions.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion deps.build.minSdkVersion
+        targetSdkVersion deps.build.targetSdkVersion
+        versionCode deps.build.versionCode
+        versionName deps.build.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
-        debug {
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            testProguardFile('test-proguard-rules.pro')
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), "$project.rootDir/tools/proguard/rules-proguard.pro"
         }
 
-        release {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), "$project.rootDir/tools/proguard/rules-proguard-debug.pro"
         }
     }
 
     lintOptions {
+        abortOnError false
         disable 'TypographyFractions', 'TypographyQuotes'
     }
 }
@@ -54,8 +59,9 @@ dependencies {
     compile deps.butterknife.lib
     kapt deps.butterknife.compiler
 
-    // Picasso
-    compile deps.picasso
+    // Glide
+    compile deps.glide.lib
+    annotationProcessor deps.glide.compiler
 
     // Retrofit
     compile deps.retrofit.okhttp

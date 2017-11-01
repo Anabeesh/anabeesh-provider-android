@@ -1,4 +1,4 @@
-apply from: 'gradleScript/dependencies.gradle'
+apply from: "$project.rootDir/tools/gradle/dependencies.gradle"
 apply plugin: "java"
 
 buildscript {
