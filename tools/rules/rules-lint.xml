@@ -1,4 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lint>
+    <!-- Disable the given check in this project -->
+    <issue id="ClickableViewAccessibility" severity="ignore" />
+    <issue id="IconMissingDensityFolder" severity="ignore" />
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="ButtonCase" severity="ignore" />
+    <issue id="IconLocation" severity="ignore" />
+    <issue id="Overdraw" severity="ignore" />
+    <issue id="MissingVersion" severity="ignore" />
+    <issue id="InnerclassSeparator" severity="ignore" />
+    <issue id="UsesMinSdkAttributes" severity="ignore" />
+    <issue id="CommitPrefEdits" severity="ignore" />
+    <issue id="InvalidPackage" severity="ignore" />
     <issue id="GoogleAppIndexingWarning" severity="ignore" />
+    <issue id="UnsafeProtectedBroadcastReceiver" severity="ignore" />
+    <issue id="GradleDynamicVersion" severity="ignore" />
+    <issue id="IconColors" severity="ignore" />
+    <issue id="ExportedReceiver" severity="ignore" />
+    <issue id="IconDensities" severity="ignore" />
+    <issue id="ProtectedPermissions" severity="warning" />
+    <issue id="RtlSymmetry" severity="ignore" />
+    <issue id="RtlEnabled" severity="ignore" />
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="SmallSp" severity="ignore" />
+    <issue id="InlinedApi" severity="warning" />
+    <issue id="UnusedResources" severity="warning" />
+    <issue id="GradleDependency" severity="ignore" />
+    <issue id="UseCompoundDrawables" severity="ignore" />
+    <issue id="UselessParent" severity="ignore" />
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="LabelFor" severity="ignore" />
+    <issue id="OldTargetApi" severity="ignore" />
+    <issue id="IconLauncherFormat" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="UnusedResources">
+        <ignore regexp="item_launch_app.xml" />
+        <ignore regexp="item_app_launch_padding" />
+        <ignore regexp="elevation" />
+        <ignore regexp="space_small" />
+        <ignore regexp="item_popup_menu.xml" />
+        <ignore regexp="view_popup_menu.xml" />
+        <ignore regexp="popup_content_margin" />
+        <ignore regexp="popup_content_width" />
+        <ignore regexp="item_app_launch_corner_radius" />
+        <ignore regexp="view_simple_launch_app.xml" />
+        <ignore regexp="start_panel_logout_moved" />
+
+        <ignore regexp="dialog_selected_row_item.xml" />
+        <ignore regexp="alpha_accent" />
+
+        <ignore regexp="view_app_launch_chooser.xml" />
+        <ignore regexp="just_once" />
+        <ignore regexp="always" />
+        <ignore regexp="open_as" />
+        <ignore regexp="multiwindow" />
+        <ignore regexp="fullscreen" />
+
+        <ignore regexp="accessibility_body_margin" />
+        <ignore regexp="accessibility_action_padding" />
+        <ignore regexp="accessibility_dialog_body" />
+        <ignore regexp="accessibility_checkbox_size" />
+        <ignore regexp="never_ask_again" />
+        <ignore regexp="dialog_accessibility.xml" />
+
+        <ignore regexp="item_recent_app.xml" />
+        <ignore regexp="recent_apps.xml" />
+        <ignore regexp="recent_*" />
+
+        <ignore regexp="view_bluetooth_settings.xml" />
+        <ignore regexp="item_bluetooth.xml" />
+        <ignore regexp="item_bluetooth_header.xml" />
+        <ignore regexp="bluetooth_*" />
+        <ignore regexp="ic_bluetooth" />
+        <ignore regexp="ic_mouse" />
+        <ignore regexp="ic_phone" />
+        <ignore regexp="ic_display" />
+        <ignore regexp="ic_keyboard" />
+        <ignore regexp="ic_headset" />
+        <ignore regexp="scan_for_devices" />
+        <ignore regexp="paired_devices" />
+        <ignore regexp="nearby_devices" />
+        <ignore regexp="connected" />
+        <ignore regexp="not_connected" />
+        <ignore regexp="connecting" />
+        <ignore regexp="action_text.xml" />
+        <ignore regexp="connect" />
+        <ignore regexp="disconnect" />
+        <ignore regexp="show_advanced_options" />
+        <ignore regexp="font" />
+        <ignore regexp="wifi_*" />
+        <ignore regexp="sentio_launcher_*" />
+        <ignore regexp="DialogPrimaryTextAction" />
+        <ignore regexp="activity_wallpaper.xml" />
+        <ignore regexp="cannot_get_picture" />
+        <ignore regexp="launch_fullscreen" />
+        <ignore regexp="loading" />
+        <ignore regexp="ic_arrow_forward_white" />
+        <ignore regexp="dialog_launch_app.xml" />
+        <ignore regexp="ic_file_general.xml" />
+        <ignore regexp="item_app_drawer.xml" />
+        <ignore regexp="selector_app_row.xml" />
+        <ignore regexp="ic_image_holder" />
+        <ignore regexp="desktopIconColor" />
+        <ignore regexp="tutorial_*" />
+        <ignore regexp="titleTextColor" />
+        <ignore regexp="popup_dialog_back_button_margin" />
+        <ignore regexp="tut_*" />
+        <ignore regexp="highlight_border_color" />
+        <ignore regexp="translucent_black" />
+        <ignore regexp="welcome_to_sentio" />
+        <ignore regexp="left_panel_intro" />
+        <ignore regexp="right_panel_intro" />
+        <ignore regexp="newSecondaryTextColor" />
+        <ignore regexp="dialog_background" />
+        <ignore regexp="menu_*" />
+        <ignore regexp="remove" />
+        <ignore regexp="file_not_exist" />
+        <ignore regexp="open" />
+        <ignore regexp="activity_desktop" />
+        <ignore regexp="desktop_list_margin_top" />
+        <ignore regexp="sentio_apps_*" />
+        <ignore regexp="download_*" />
+        <ignore regexp="normal" />
+        <ignore regexp="white" />
+        <ignore regexp="maximize_window" />
+        <ignore regexp="half_left" />
+        <ignore regexp="half_right" />
+        <ignore regexp="text_shadow_color" />
+        <ignore regexp="desktop_icon_radius" />
+        <ignore regexp="asl_*" />
+        <ignore regexp="avd_*" />
+        <ignore regexp="selector_*" />
+        <ignore regexp="vector_strings.xml" />
+        <ignore regexp="colorPrimary" />
+        <ignore regexp="divider" />
+        <ignore regexp="ic_chevron_*" />
+        <ignore regexp="close" />
+        <ignore regexp="password*" />
+        <ignore regexp="ic_password*" />
+        <ignore regexp="ic_settings" />
+        <ignore regexp="add_widget" />
+        <ignore regexp="pin_to_taskbar" />
+        <ignore regexp="uninstall" />
+        <ignore regexp="refresh" />
+        <ignore regexp="desktop_selected_color" />
+        <ignore regexp="back_button_disabled" />
+        <ignore regexp="dialog_body_margin" />
+        <ignore regexp="yes" />
+    </issue>
+
+    <issue id="ButtonOrder">
+        <ignore regexp="view_wifi_connect.xml" />
+        <ignore regexp="view_wifi_detail.xml" />
+    </issue>
+
+    <issue id="all">
+        <ignore regexp=".*/generated/.*" />
+        <ignore path="build" />
+    </issue>
+
+
+    <issue id="InvalidPackage" severity="error">
+        <ignore regexp="okio.*jar" />
+        <ignore regexp="retrofit2.*.jar" />
+        <ignore regexp="okhttp3.*.jar" />
+    </issue>
 </lint>
