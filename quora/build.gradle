@@ -34,43 +34,46 @@ android {
     lintOptions {
         disable 'TypographyFractions', 'TypographyQuotes'
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     //UI
-    compile deps.support.design
-    compile deps.support.recyclerview
-    compile deps.support.cardview
+    implementation deps.support.design
+    implementation deps.support.recyclerview
+    implementation deps.support.cardview
 
     // RxJava
-    compile deps.rx.java
-    compile deps.rx.android
-    compile deps.rx.binding
-    compile deps.rx.relay
+    implementation deps.rx.java
+    implementation deps.rx.android
+    implementation deps.rx.binding
+    implementation deps.rx.relay
 
     // Dagger
-    compile deps.dagger.lib
+    implementation deps.dagger.lib
     kapt deps.dagger.compiler
 
     // Butter Knife
-    compile deps.butterknife.lib
+    implementation deps.butterknife.lib
     kapt deps.butterknife.compiler
 
     // Glide
-    compile deps.glide.lib
+    implementation deps.glide.lib
     annotationProcessor deps.glide.compiler
 
     // Retrofit
-    compile deps.retrofit.okhttp
-    compile deps.retrofit.converter
-    compile deps.retrofit.adapter
-    compile deps.retrofit.logging
+    implementation deps.retrofit.okhttp
+    implementation deps.retrofit.converter
+    implementation deps.retrofit.adapter
+    implementation deps.retrofit.logging
 
     // Testing
-    testCompile deps.test.junit
+    testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
-    androidTestImplementation deps.test.espresso.core
-    androidTestCompile deps.test.espresso.intents
 
     //Other
     implementation fileTree(dir: 'libs', include: ['*.jar'])

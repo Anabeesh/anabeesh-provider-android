@@ -1,7 +1,7 @@
 def build = [
         buildToolsVersion: '26.0.2',
         compileSdkVersion: 26,
-        minSdkVersion    : 24,
+        minSdkVersion    : 21,
         targetSdkVersion : 26,
         versionCode      : 1,
         versionName      : "1.0"
@@ -12,7 +12,6 @@ def versions = [
         dagger     : '2.11',
         butterknife: '8.6.0',
         glide      : '4.3.0',
-        espresso   : '2.2.2',
 ]
 
 def support = [
@@ -56,17 +55,9 @@ def glide = [
 
 ]
 
-def espresso = [
-        "core"   : "com.android.support.test.espresso:espresso-core:${versions.espresso}",
-        "intents": "com.android.support.test.espresso:espresso-intents:${versions.espresso}"
-]
-
 def test = [
-        "junit"      : "junit:junit:4.12",
-        "uiautomator": "com.android.support.test.uiautomator:uiautomator-v18:2.1.2",
-        "espresso"   : espresso,
-        "runner"     : "com.android.support.test:runner:0.5",
-        "rules"      : "com.android.support.test:rules:0.5"
+        "junit" : "junit:junit:4.12",
+        "runner": "com.android.support.test:runner:0.5",
 ]
 
 ext.deps = [
