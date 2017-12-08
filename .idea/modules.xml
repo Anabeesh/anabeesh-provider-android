@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/Quora.iml" filepath="$PROJECT_DIR$/Quora.iml" />
-      <module fileurl="file://$PROJECT_DIR$/quora/quora.iml" filepath="$PROJECT_DIR$/quora/quora.iml" />
-    </modules>
-  </component>
+    <component name="ProjectModuleManager">
+        <modules>
+            <module fileurl="file://$PROJECT_DIR$/Anabeesh.iml" filepath="$PROJECT_DIR$/Anabeesh.iml" />
+            <module fileurl="file://$PROJECT_DIR$/anabeesh/anabeesh.iml" filepath="$PROJECT_DIR$/anabeesh/anabeesh.iml" />
+        </modules>
+    </component>
 </project>

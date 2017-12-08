@@ -22,18 +22,18 @@ def support = [
 ]
 
 def rx = [
-        "binding": "com.jakewharton.rxbinding2:rxbinding:2.0.0",
-        "java"   : "io.reactivex.rxjava2:rxjava:2.0.5",
-        "android": "io.reactivex.rxjava2:rxandroid:2.0.1",
-        "relay"  : "com.jakewharton.rxrelay2:rxrelay:2.0.0",
+        binding: "com.jakewharton.rxbinding2:rxbinding:2.0.0",
+        java   : "io.reactivex.rxjava2:rxjava:2.0.5",
+        android: "io.reactivex.rxjava2:rxandroid:2.0.1",
+        relay  : "com.jakewharton.rxrelay2:rxrelay:2.0.0",
 ]
 
 def retrofit = [
-        "lib"      : "com.squareup.retrofit2:retrofit:2.2.0",
-        "okhttp"   : "com.squareup.okhttp3:okhttp:3.4.1",
-        "converter": "com.squareup.retrofit2:converter-gson:2.1.0",
-        "adapter"  : "com.squareup.retrofit2:adapter-rxjava2:2.2.0",
-        "logging"  : "com.squareup.okhttp3:logging-interceptor:3.8.1",
+        lib      : "com.squareup.retrofit2:retrofit:2.2.0",
+        okhttp   : "com.squareup.okhttp3:okhttp:3.4.1",
+        converter: "com.squareup.retrofit2:converter-gson:2.1.0",
+        adapter  : "com.squareup.retrofit2:adapter-rxjava2:2.2.0",
+        logging  : "com.squareup.okhttp3:logging-interceptor:3.8.1",
 ]
 
 def dagger = [
@@ -50,24 +50,24 @@ def butterknife = [
 ]
 
 def glide = [
-        "lib"     : "com.github.bumptech.glide:glide:${versions.glide}",
-        "compiler": "com.github.bumptech.glide:compiler:${versions.glide}"
+        lib     : "com.github.bumptech.glide:glide:${versions.glide}",
+        compiler: "com.github.bumptech.glide:compiler:${versions.glide}"
 
 ]
 
 def test = [
-        "junit" : "junit:junit:4.12",
-        "runner": "com.android.support.test:runner:0.5",
+        junit : "junit:junit:4.12",
+        runner: "com.android.support.test:runner:0.5",
 ]
 
 ext.deps = [
-        "versions"   : versions,
-        "build"      : build,
-        "support"    : support,
-        "dagger"     : dagger,
-        "butterknife": butterknife,
-        "glide"      : glide,
-        "rx"         : rx,
-        "retrofit"   : retrofit,
-        "test"       : test
+        versions   : versions,
+        build      : build,
+        support    : support,
+        dagger     : dagger,
+        butterknife: butterknife,
+        glide      : glide,
+        rx         : rx,
+        retrofit   : retrofit,
+        test       : test
 ]

@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$project.rootDir/tools/gradle/script/git-version.gradle"
+apply from: "$project.rootDir/tools/gradle/script/quality.gradle"
+apply from: "$project.rootDir/tools/gradle/script/java-code-coverage.gradle"
+
+android {
+    compileSdkVersion deps.build.compileSdkVersion
+    buildToolsVersion deps.build.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.cs18.anabeesh"
+        minSdkVersion deps.build.minSdkVersion
+        targetSdkVersion deps.build.targetSdkVersion
+        versionCode deps.build.versionCode
+        versionName deps.build.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), "$project.rootDir/tools/proguard/rules-proguard.pro"
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), "$project.rootDir/tools/proguard/rules-proguard-debug.pro"
+        }
+    }
+
+    lintOptions {
+        disable 'TypographyFractions', 'TypographyQuotes'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    //UI
+    implementation deps.support.design
+    implementation deps.support.recyclerview
+    implementation deps.support.cardview
+
+    // RxJava
+    implementation deps.rx.java
+    implementation deps.rx.android
+    implementation deps.rx.binding
+    implementation deps.rx.relay
+
+    // Dagger
+    implementation deps.dagger.lib
+    kapt deps.dagger.compiler
+
+    // Butter Knife
+    implementation deps.butterknife.lib
+    kapt deps.butterknife.compiler
+
+    // Glide
+    implementation deps.glide.lib
+    annotationProcessor deps.glide.compiler
+
+    // Retrofit
+    implementation deps.retrofit.okhttp
+    implementation deps.retrofit.converter
+    implementation deps.retrofit.adapter
+    implementation deps.retrofit.logging
+
+    // Testing
+    testImplementation deps.test.junit
+    androidTestImplementation deps.test.runner
+
+    //Other
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    configurations.all {
+        resolutionStrategy {
+            force deps.support.annotations
+        }
+    }
+}

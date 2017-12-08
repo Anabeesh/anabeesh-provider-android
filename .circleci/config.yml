@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/Android/Workspace/Quora
+    working_directory: ~/Android/Workspace/Anabeesh
 
     docker:
       - image: circleci/android:api-25-alpha
@@ -12,14 +12,14 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "quora/build.gradle" }}
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "anabeesh/build.gradle" }}
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
       - save_cache:
           paths:
             - ~/.gradle
-          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "quora/build.gradle" }}
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "anabeesh/build.gradle" }}
       - run:
           name: Run Tests
           command: ./gradlew lint test
@@ -28,7 +28,7 @@ jobs:
           command: ./gradlew assembleDebug
           command: ./gradlew test
       - store_artifacts:
-          path: quora/build/reports/
+          path: anabeesh/build/reports/
           destination: reports
       - store_test_results:
-          path: quora/build/reports/test_results
+          path: anabeesh/build/reports/test_results
