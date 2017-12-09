@@ -2,7 +2,7 @@
 
 Anabeesh is an arabic question-and-answer platform where questions asked by it's community get answered by experts.
 
-[![CircleCI](https://circleci.com/gh/RxMuhammadyoussef/Anabeesh.svg?style=shield&circle-token=:circle-token=4306f13218fe61fb16e8e93fb0841f91ec6ddb68)](https://circleci.com/gh/RxMuhammadyoussef/Anabeesh)
+[![CircleCI](https://circleci.com/gh/Anabeesh/anabeeshandroid.svg?style=shield&circle-token=:circle-token=6a8184ecaeb02a76d43a116290a414acb8beea3a)](https://circleci.com/gh/Anabeesh/anabeeshandroid)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://choosealicense.com/licenses/apache-2.0/)
 <h2>Features</h2> 
 
