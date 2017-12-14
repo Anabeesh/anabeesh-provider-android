@@ -46,6 +46,7 @@ dependencies {
     implementation deps.support.design
     implementation deps.support.recyclerview
     implementation deps.support.cardview
+    implementation deps.support.constraintLayout
 
     // RxJava
     implementation deps.rx.java
