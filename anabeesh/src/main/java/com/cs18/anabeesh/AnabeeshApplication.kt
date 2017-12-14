@@ -5,6 +5,7 @@ import android.content.Context
 import android.os.StrictMode
 import com.cs18.anabeesh.di.application.AppComponent
 import com.cs18.anabeesh.di.application.DaggerAppComponent
+import timber.log.Timber
 
 /**
  * This class represents Anabeesh Application.
@@ -16,8 +17,19 @@ class AnabeeshApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        setStrictModeEnabledDebug(true)
         appComponent.inject(this)
+        setStrictModeForDebugEnabled(true)
+        setTimberDebugTreeEnabled(true)
+    }
+
+    /*
+    * When enabled we should start logging using Timber class.
+    * @see https://medium.com/@caueferreira/timber-enhancing-your-logging-experience-330e8af97341
+    */
+    private fun setTimberDebugTreeEnabled(enabled: Boolean) {
+        if (enabled && BuildConfig.DEBUG) {
+            Timber.plant(Timber.DebugTree())
+        }
     }
 
     /*
@@ -25,7 +37,7 @@ class AnabeeshApplication : Application() {
      * Thread policy is used to catch accidental disk or network operations on the application's MAIN thread.
      * VmPolicy is used to detect when a closeable or other object with an explicit termination method is finalized without having been closed.
      */
-    private fun setStrictModeEnabledDebug(enabled: Boolean) {
+    private fun setStrictModeForDebugEnabled(enabled: Boolean) {
         if (enabled && BuildConfig.DEBUG) {
             StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder()
                     .detectAll()
