@@ -9,7 +9,7 @@ import dagger.Provides
  * This class is responsible for providing the requested objects for [ApplicationScope] objects
  */
 
-@Module
+@Module(includes = arrayOf(SchedulersModule::class))
 class AppModule(private val application: Application) {
 
     @ApplicationScope
