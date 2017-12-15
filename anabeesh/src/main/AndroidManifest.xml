@@ -14,9 +14,15 @@
             android:name=".ui.login.core.LoginActivity"
             android:label="@string/login"
             android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.register.core.RegisterActivity"
+            android:label="@string/create_account"
+            android:theme="@style/RegisterTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

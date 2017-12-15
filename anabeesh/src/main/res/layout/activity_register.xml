@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cs18.anabeesh.ui.register.core.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_email"
+        style="@style/RegisterTextViewLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginRegisterTextView"
+        android:labelFor="@id/et_email"
+        android:text="@string/what_is_your_email" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginRegisterEditText"
+        android:layout_marginStart="@dimen/marginRegisterEditText"
+        android:inputType="textEmailAddress"
+        tools:text="Muhammadyoussef.27@gmail.com" />
+
+    <TextView
+        android:id="@+id/tv_email_description"
+        style="@style/RegisterTextViewSubTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginRegisterTextView"
+        android:text="@string/confirm_email" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        style="@style/RegisterTextViewLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginRegisterTextView"
+        android:labelFor="@id/et_password"
+        android:text="@string/pick_password" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginRegisterEditText"
+        android:layout_marginStart="@dimen/marginRegisterEditText"
+        android:inputType="text"
+        tools:ignore="TextFields"
+        tools:text="strongPassword" />
+
+    <TextView
+        android:id="@+id/tv_password_description"
+        style="@style/RegisterTextViewSubTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginRegisterTextView"
+        android:text="@string/use_eight_characters"
+        tools:drawableEnd="@drawable/ic_done_register" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginBottomRegisterButton"
+        android:layout_marginEnd="@dimen/marginEndRegisterButton"
+        android:layout_marginStart="@dimen/marginStartRegisterButton"
+        android:layout_marginTop="@dimen/marginTopRegisterButton"
+        android:text="@string/next" />
+</LinearLayout>
