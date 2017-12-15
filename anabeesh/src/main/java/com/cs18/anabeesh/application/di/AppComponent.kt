@@ -1,8 +1,8 @@
-package com.cs18.anabeesh.di.application
+package com.cs18.anabeesh.application.di
 
-import com.cs18.anabeesh.AnabeeshApplication
-import com.cs18.anabeesh.di.activity.ActivityComponent
-import com.cs18.anabeesh.di.activity.ActivityModule
+import com.cs18.anabeesh.application.AnabeeshApplication
+import com.cs18.anabeesh.ui.login.di.LoginComponent
+import com.cs18.anabeesh.ui.login.di.LoginModule
 import dagger.Component
 
 /**
@@ -16,5 +16,5 @@ interface AppComponent {
 
     fun inject(anabeeshApplication: AnabeeshApplication)
 
-    fun plus(activityModule: ActivityModule): ActivityComponent
+    fun plus(loginModule: LoginModule): LoginComponent
 }

@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.di.activity
+package com.cs18.anabeesh.application.di
 
 import javax.inject.Qualifier
 
@@ -8,4 +8,4 @@ import javax.inject.Qualifier
  */
 
 @Qualifier
-annotation class ForActivity
+annotation class ForApplication

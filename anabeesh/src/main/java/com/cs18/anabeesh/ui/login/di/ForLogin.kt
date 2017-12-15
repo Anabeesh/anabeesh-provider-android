@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.di.application
+package com.cs18.anabeesh.ui.login.di
 
 import javax.inject.Qualifier
 
@@ -8,4 +8,4 @@ import javax.inject.Qualifier
  */
 
 @Qualifier
-annotation class ForApplication
+annotation class ForLogin

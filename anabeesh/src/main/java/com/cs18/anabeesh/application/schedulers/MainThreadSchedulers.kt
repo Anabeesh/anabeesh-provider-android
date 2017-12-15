@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.schedulers
+package com.cs18.anabeesh.application.schedulers
 
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers

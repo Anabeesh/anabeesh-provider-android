@@ -1,3 +1,10 @@
 <resources>
+    <!--Main-->
     <string name="app_name">Anabeesh</string>
+
+    <!--Login-->
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgot_password"><u>نسيت كلمة المرور؟</u></string>
+    <string name="login">تسجيل الدخول</string>
 </resources>

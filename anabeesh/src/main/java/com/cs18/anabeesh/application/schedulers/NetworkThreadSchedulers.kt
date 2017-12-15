@@ -1,16 +1,17 @@
-package com.cs18.anabeesh.schedulers
+package com.cs18.anabeesh.application.schedulers
 
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 /**
- * Heavy computation-specific Schedulers
+ * Network operations-specific schedulers
  */
 
-class ComputationalThreadSchedulers : ThreadSchedulers {
+class NetworkThreadSchedulers : ThreadSchedulers {
 
     override fun observeOn(): Scheduler = AndroidSchedulers.mainThread()
 
-    override fun subscribeOn(): Scheduler = Schedulers.computation()
+    override fun subscribeOn(): Scheduler = Schedulers.newThread()
+
 }
