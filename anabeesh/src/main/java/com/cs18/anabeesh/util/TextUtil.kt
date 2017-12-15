@@ -19,6 +19,7 @@ class TextUtil @Inject constructor() {
      *
      * @param text
      * @return true if valid format
+     * visit www.stackoverflow.com/a/3802238/7330512
      */
     fun isValidEmail(text: String): Boolean {
         val expression = "^[\\w.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$"
@@ -32,9 +33,10 @@ class TextUtil @Inject constructor() {
      *
      * @param text
      * @return true if valid format
+     * visit www.stackoverflow.com/a/3802238/7330512
      */
     fun isValidPassword(text: String): Boolean {
-        val expression = ".{8,}"
+        val expression = "(?=\\S+\$).{8,}"
         val pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE)
         val matcher = pattern.matcher(text)
         return matcher.matches()

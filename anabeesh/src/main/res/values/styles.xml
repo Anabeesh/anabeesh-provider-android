@@ -48,4 +48,49 @@
         <item name="android:textSize">@dimen/textSizeBodyLogin</item>
         <item name="android:padding">@dimen/paddingLoginTextView</item>
     </style>
+
+    <!--Registration-->
+    <style name="RegisterTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:windowBackground">@color/colorLayoutBackgroundRegister</item>
+        <item name="android:buttonStyle">@style/RegisterButtonStyle</item>
+        <item name="android:textViewStyle">@style/RegisterTextViewStyle</item>
+        <item name="android:editTextStyle">@style/RegisterEditTextStyle</item>
+    </style>
+
+    <style name="RegisterTextViewStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeBodyRegister</item>
+        <item name="android:textColor">@color/colorTextViewBodyRegister</item>
+    </style>
+
+    <style name="RegisterEditTextStyle" parent="android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/textSizeRegisterEditText</item>
+        <item name="android:textColor">@color/colorEditTextBodyRegister</item>
+        <item name="android:textColorHint">@color/colorEditTextHintRegister</item>
+        <item name="android:padding">@dimen/paddingRegisterEditText</item>
+        <item name="android:background">@drawable/shape_edittext_register</item>
+    </style>
+
+    <style name="RegisterButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">@dimen/textSizeBodyRegister</item>
+        <item name="android:textColor">@color/colorButtonTextRegister</item>
+        <item name="android:paddingTop">@dimen/paddingTopRegisterButton</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomRegisterButton</item>
+        <item name="android:paddingStart">@dimen/paddingStartRegisterButton</item>
+        <item name="android:paddingEnd">@dimen/paddingEndRegisterButton</item>
+        <item name="android:background">@drawable/selector_button_background_register</item>
+    </style>
+
+    <style name="RegisterTextViewLabelStyle" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextViewLabelRegister</item>
+        <item name="android:textSize">@dimen/textSizeLabelRegister</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RegisterTextViewSubTextStyle" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextViewBodyLogin</item>
+        <item name="android:textSize">@dimen/textSizeSubTextRegister</item>
+        <item name="android:drawablePadding">@dimen/paddingRegisterTextViewDrawable</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>

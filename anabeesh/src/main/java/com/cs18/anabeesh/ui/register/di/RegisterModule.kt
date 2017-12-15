@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.ui.login.di
+package com.cs18.anabeesh.ui.register.di
 
 import android.app.Activity
 import android.content.Context
@@ -6,18 +6,18 @@ import dagger.Module
 import dagger.Provides
 
 /**
- * This class is responsible for providing the requested objects for [LoginScope] objects
+ * This class is responsible for providing the requested objects for [RegisterScope] objects
  */
 
 @Module
-class LoginModule(private val activity: Activity) {
+class RegisterModule(private val activity: Activity) {
 
+    @RegisterScope
     @Provides
-    @LoginScope
     fun providesActivity(): Activity = activity
 
-    @LoginScope
+    @RegisterScope
     @Provides
-    @ForLogin
+    @ForRegister
     fun providesActivityContext(): Context = activity
 }

@@ -3,6 +3,8 @@ package com.cs18.anabeesh.application.di
 import com.cs18.anabeesh.application.AnabeeshApplication
 import com.cs18.anabeesh.ui.login.di.LoginComponent
 import com.cs18.anabeesh.ui.login.di.LoginModule
+import com.cs18.anabeesh.ui.register.di.RegisterComponent
+import com.cs18.anabeesh.ui.register.di.RegisterModule
 import dagger.Component
 
 /**
@@ -11,10 +13,12 @@ import dagger.Component
  */
 
 @ApplicationScope
-@Component(modules = arrayOf(AppModule::class))
+@Component(modules = arrayOf(AppModule::class, SchedulersModule::class))
 interface AppComponent {
 
     fun inject(anabeeshApplication: AnabeeshApplication)
 
     fun plus(loginModule: LoginModule): LoginComponent
+
+    fun plus(registerModule: RegisterModule): RegisterComponent
 }

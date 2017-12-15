@@ -20,4 +20,21 @@
     <color name="colorButtonDisabledLogin">#FFABABAB</color>
     <color name="colorButtonTextLogin">#FFFFFF</color>
     <color name="colorButtonRippleLogin">#FFFFFF</color>
+
+    <!--Registration-->
+    <color name="colorLayoutBackgroundRegister">#e5e5e5</color>
+    <!--TextView-->
+    <color name="colorTextViewLabelRegister">#FF525252</color>
+    <color name="colorTextViewBodyRegister">#FF525252</color>
+    <color name="colorTextClickableRegister">#FF1C77FF</color>
+    <!--EditText-->
+    <color name="colorEdittextBackgroundRegister">#ffffff</color>
+    <color name="colorEditTextBodyRegister">#FF525252</color>
+    <color name="colorEditTextIconRegister">#FF525252</color>
+    <color name="colorEditTextHintRegister">#FF525252</color>
+    <!--Button-->
+    <color name="colorButtonRegister">#FF696969</color>
+    <color name="colorButtonDisabledRegister">#FFABABAB</color>
+    <color name="colorButtonTextRegister">#FFFFFF</color>
+    <color name="colorButtonRippleRegister">#FFFFFF</color>
 </resources>

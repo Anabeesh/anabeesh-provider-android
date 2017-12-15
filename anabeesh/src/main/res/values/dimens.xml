@@ -26,4 +26,28 @@
     <dimen name="paddingStartLoginButton">48dp</dimen>
     <dimen name="paddingEndLoginButton">48dp</dimen>
     <dimen name="radiusButtonLogin">50dp</dimen>
+
+    <!--Registration-->
+    <!--EditText-->
+    <dimen name="textSizeRegisterEditText">16sp</dimen>
+    <dimen name="marginRegisterEditText">16dp</dimen>
+    <dimen name="paddingRegisterEditText">16dp</dimen>
+    <dimen name="radiusEditTextRegister">4dp</dimen>
+    <!--TextView-->
+    <dimen name="paddingRegisterTextView">16dp</dimen>
+    <dimen name="paddingRegisterTextViewDrawable">8dp</dimen>
+    <dimen name="marginRegisterTextView">16dp</dimen>
+    <dimen name="textSizeLabelRegister">20sp</dimen>
+    <dimen name="textSizeBodyRegister">16sp</dimen>
+    <dimen name="textSizeSubTextRegister">14sp</dimen>
+    <!--Button-->
+    <dimen name="marginTopRegisterButton">40dp</dimen>
+    <dimen name="marginBottomRegisterButton">0dp</dimen>
+    <dimen name="marginStartRegisterButton">0dp</dimen>
+    <dimen name="marginEndRegisterButton">0dp</dimen>
+    <dimen name="paddingTopRegisterButton">16dp</dimen>
+    <dimen name="paddingBottomRegisterButton">16dp</dimen>
+    <dimen name="paddingStartRegisterButton">48dp</dimen>
+    <dimen name="paddingEndRegisterButton">48dp</dimen>
+    <dimen name="radiusButtonRegister">50dp</dimen>
 </resources>
