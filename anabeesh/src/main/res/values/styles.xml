@@ -1,8 +1,51 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!--Base application theme-->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+
     </style>
 
+    <!--LOGIN-->
+    <style name="LoginTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:windowBackground">@color/colorLayoutBackgroundLogin</item>
+        <item name="android:buttonStyle">@style/LoginButtonStyle</item>
+        <item name="android:textViewStyle">@style/LoginTextViewStyle</item>
+        <item name="android:editTextStyle">@style/LoginEditTextStyle</item>
+    </style>
+
+    <style name="LoginTextViewStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeBodyLogin</item>
+        <item name="android:textColor">@color/colorTextViewBodyLogin</item>
+    </style>
+
+    <style name="LoginEditTextStyle" parent="android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/textSizeLoginEditText</item>
+        <item name="android:textColor">@color/colorEditTextBodyLogin</item>
+        <item name="android:textColorHint">@color/colorEditTextHintLogin</item>
+        <item name="android:padding">@dimen/paddingLoginEditText</item>
+        <item name="android:background">@drawable/shape_edittext_login</item>
+    </style>
+
+    <style name="LoginButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">@dimen/textSizeBodyLogin</item>
+        <item name="android:textColor">@color/colorButtonTextLogin</item>
+        <item name="android:paddingTop">@dimen/paddingTopLoginButton</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomLoginButton</item>
+        <item name="android:paddingStart">@dimen/paddingStartLoginButton</item>
+        <item name="android:paddingEnd">@dimen/paddingEndLoginButton</item>
+        <item name="android:background">@drawable/selector_button_background_login</item>
+    </style>
+
+    <style name="LoginTextViewLabelStyle" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextViewLabelLogin</item>
+        <item name="android:textSize">@dimen/textSizeLabelLogin</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LoginTextViewSubTextClickableStyle" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorTextClickableLogin</item>
+        <item name="android:textSize">@dimen/textSizeBodyLogin</item>
+        <item name="android:padding">@dimen/paddingLoginTextView</item>
+    </style>
 </resources>

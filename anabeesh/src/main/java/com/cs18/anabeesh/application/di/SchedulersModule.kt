@@ -1,10 +1,10 @@
-package com.cs18.anabeesh.di.application
+package com.cs18.anabeesh.application.di
 
-import com.cs18.anabeesh.schedulers.*
-import com.cs18.anabeesh.schedulers.qualifier.ComputationalThread
-import com.cs18.anabeesh.schedulers.qualifier.IOThread
-import com.cs18.anabeesh.schedulers.qualifier.MainThread
-import com.cs18.anabeesh.schedulers.qualifier.NetworkThread
+import com.cs18.anabeesh.application.schedulers.*
+import com.cs18.anabeesh.application.schedulers.qualifier.ComputationalThread
+import com.cs18.anabeesh.application.schedulers.qualifier.IOThread
+import com.cs18.anabeesh.application.schedulers.qualifier.MainThread
+import com.cs18.anabeesh.application.schedulers.qualifier.NetworkThread
 import dagger.Module
 import dagger.Provides
 

@@ -1,10 +1,11 @@
-package com.cs18.anabeesh
+package com.cs18.anabeesh.application
 
 import android.app.Application
 import android.content.Context
 import android.os.StrictMode
-import com.cs18.anabeesh.di.application.AppComponent
-import com.cs18.anabeesh.di.application.DaggerAppComponent
+import com.cs18.anabeesh.BuildConfig
+import com.cs18.anabeesh.application.di.AppComponent
+import com.cs18.anabeesh.application.di.DaggerAppComponent
 import timber.log.Timber
 
 /**

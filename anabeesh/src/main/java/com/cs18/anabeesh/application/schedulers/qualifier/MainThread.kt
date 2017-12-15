@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.schedulers.qualifier
+package com.cs18.anabeesh.application.schedulers.qualifier
 
 import javax.inject.Qualifier
 
@@ -7,4 +7,4 @@ import javax.inject.Qualifier
  */
 
 @Qualifier
-annotation class NetworkThread
+annotation class MainThread
