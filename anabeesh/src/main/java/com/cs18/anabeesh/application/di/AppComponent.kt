@@ -1,6 +1,8 @@
 package com.cs18.anabeesh.application.di
 
 import com.cs18.anabeesh.application.AnabeeshApplication
+import com.cs18.anabeesh.ui.landingpage.di.LandingPageComponent
+import com.cs18.anabeesh.ui.landingpage.di.LandingPageModule
 import com.cs18.anabeesh.ui.login.di.LoginComponent
 import com.cs18.anabeesh.ui.login.di.LoginModule
 import com.cs18.anabeesh.ui.register.di.RegisterComponent
@@ -21,4 +23,6 @@ interface AppComponent {
     fun plus(loginModule: LoginModule): LoginComponent
 
     fun plus(registerModule: RegisterModule): RegisterComponent
+
+    fun plus(landingPageModule: LandingPageModule): LandingPageComponent
 }
