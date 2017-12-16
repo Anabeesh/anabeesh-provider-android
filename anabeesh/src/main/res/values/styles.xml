@@ -5,7 +5,30 @@
 
     </style>
 
-    <!--LOGIN-->
+    <!--Landing page-->
+    <style name="LandingPageTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:windowBackground">@color/colorLayoutBackgroundLandingPage</item>
+        <item name="android:buttonStyle">@style/LandingPageButtonStyle</item>
+        <item name="android:textViewStyle">@style/LandingPageTextViewStyle</item>
+    </style>
+
+    <style name="LandingPageTextViewStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeBodyLandingPage</item>
+        <item name="android:textColor">@color/colorTextViewBodyLandingPage</item>
+    </style>
+
+    <style name="LandingPageButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">@dimen/textSizeBodyLandingPage</item>
+        <item name="android:textColor">@color/colorButtonTextLandingPage</item>
+        <item name="android:paddingTop">@dimen/paddingTopLandingPageButton</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomLandingPageButton</item>
+        <item name="android:paddingStart">@dimen/paddingStartLandingPageButton</item>
+        <item name="android:paddingEnd">@dimen/paddingEndLandingPageButton</item>
+        <item name="android:drawablePadding">@dimen/paddingDrawableLandingPage</item>
+    </style>
+
+    <!--Login-->
     <style name="LoginTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:layoutDirection">rtl</item>
         <item name="android:windowBackground">@color/colorLayoutBackgroundLogin</item>

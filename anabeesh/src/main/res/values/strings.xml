@@ -2,6 +2,15 @@
     <!--Main-->
     <string name="app_name">Anabeesh</string>
 
+    <!--Landing page-->
+    <string name="continue_with_facebook">تابع بواسطة فيسبوك</string>
+    <string name="continue_with_google_plus">تابع بواسطة جوجل بلس</string>
+    <string name="or">أو</string>
+    <string name="create_new_account">انشئ حساب جديد</string>
+    <string name="already_a_user">لديك حسـاب؟</string>
+    <string name="sign_in">سجـل دخـول</string>
+    <string name="anabeesh_logo_content_description">لوجو أنابيـش</string>
+
     <!--Login-->
     <string name="email">البريد الالكتروني</string>
     <string name="password">كلمة المرور</string>

@@ -5,6 +5,27 @@
     <dimen name="margin">16dp</dimen>
     <dimen name="padding">16dp</dimen>
 
+    <!--Landing page-->
+    <!--ImageView-->
+    <dimen name="marginTopLandingPageImageView">16dp</dimen>
+    <dimen name="marginBottomLandingPageImageView">56dp</dimen>
+    <!--TextView-->
+    <dimen name="paddingLandingPageTextView">16dp</dimen>
+    <dimen name="marginLandingPageTextView">16dp</dimen>
+    <dimen name="textSizeLabelLandingPage">20sp</dimen>
+    <dimen name="textSizeBodyLandingPage">18sp</dimen>
+    <!--Button-->
+    <dimen name="marginTopLandingPageButton">16dp</dimen>
+    <dimen name="marginBottomLandingPageButton">0dp</dimen>
+    <dimen name="marginStartLandingPageButton">0dp</dimen>
+    <dimen name="marginEndLandingPageButton">0dp</dimen>
+    <dimen name="paddingDrawableLandingPage">16dp</dimen>
+    <dimen name="paddingTopLandingPageButton">16dp</dimen>
+    <dimen name="paddingBottomLandingPageButton">16dp</dimen>
+    <dimen name="paddingStartLandingPageButton">48dp</dimen>
+    <dimen name="paddingEndLandingPageButton">48dp</dimen>
+    <dimen name="radiusButtonLandingPage">50dp</dimen>
+
     <!--Login-->
     <!--EditText-->
     <dimen name="textSizeLoginEditText">16sp</dimen>

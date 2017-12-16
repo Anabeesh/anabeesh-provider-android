@@ -5,6 +5,21 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!--Landing page-->
+    <color name="colorLayoutBackgroundLandingPage">#e5e5e5</color>
+    <!--ImageView-->
+    <color name="colorIconLandingPage">#ffffff</color>
+    <!--TextView-->
+    <color name="colorTextViewLabelLandingPage">#FF525252</color>
+    <color name="colorTextViewBodyLandingPage">#FF525252</color>
+    <!--Button-->
+    <color name="colorButtonFacebookLandingPage">#FF4268B3</color>
+    <color name="colorButtonGooglePlusLandingPage">#FFBF3020</color>
+    <color name="colorButtonSignUpLandingPage">#FF696969</color>
+    <color name="colorButtonLoginLandingPage">#FFFFFF</color>
+    <color name="colorButtonTextLandingPage">#FFFFFF</color>
+    <color name="colorButtonRippleLandingPage">#FFFFFF</color>
+
     <!--Login-->
     <color name="colorLayoutBackgroundLogin">#e5e5e5</color>
     <!--TextView-->
