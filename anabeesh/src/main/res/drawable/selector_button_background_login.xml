@@ -2,15 +2,15 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false">
         <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <solid android:color="@color/colorButtonDisabledLogin" />
+            <solid android:color="@color/colorLoginButtonDisabled" />
             <corners android:radius="@dimen/radiusButtonLogin" />
         </shape>
     </item>
     <item android:state_enabled="true" android:state_pressed="true">
-        <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/colorButtonRippleLogin">
+        <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/colorLoginButtonRipple">
             <item android:id="@android:id/background">
                 <shape>
-                    <solid android:color="@color/colorButtonLogin" />
+                    <solid android:color="@color/colorLoginButton" />
                     <corners android:radius="@dimen/radiusButtonLogin" />
                 </shape>
             </item>
@@ -18,7 +18,7 @@
     </item>
     <item android:state_enabled="true">
         <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <solid android:color="@color/colorButtonLogin" />
+            <solid android:color="@color/colorLoginButton" />
             <corners android:radius="@dimen/radiusButtonLogin" />
         </shape>
     </item>

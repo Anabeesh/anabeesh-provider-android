@@ -5,7 +5,7 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context="com.cs18.anabeesh.ui.landingpage.core.LandingPageActivity">
+    tools:context="com.cs18.anabeesh.ui.landingpage.LandingPageActivity">
 
     <ImageView
         android:id="@+id/iv_logo"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/marginLandingPageTextView"
+        android:layout_marginTop="@dimen/marginLandingPageTextView"
         android:padding="@dimen/marginLandingPageTextView"
         android:text="@string/or"
         android:textStyle="bold"
@@ -91,6 +91,6 @@
         android:layout_marginBottom="@dimen/marginTopLandingPageButton"
         android:background="@drawable/selector_button_sign_in"
         android:text="@string/sign_in"
-        android:textColor="@color/colorTextViewBodyLandingPage"
+        android:textColor="@color/colorLandingPageTextViewBody"
         app:layout_constraintBottom_toBottomOf="parent" />
 </android.support.constraint.ConstraintLayout>

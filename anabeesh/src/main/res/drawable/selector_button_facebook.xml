@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="true" android:state_pressed="true">
-        <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/colorButtonRippleLandingPage">
+        <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/colorLandingPageButtonRipple">
             <item android:id="@android:id/background">
                 <shape>
-                    <solid android:color="@color/colorButtonFacebookLandingPage" />
+                    <solid android:color="@color/colorLandingPageButtonFacebook" />
                     <corners android:radius="@dimen/radiusButtonLandingPage" />
                 </shape>
             </item>
@@ -12,7 +12,7 @@
     </item>
     <item android:state_enabled="true">
         <shape xmlns:android="http://schemas.android.com/apk/res/android">
-            <solid android:color="@color/colorButtonFacebookLandingPage" />
+            <solid android:color="@color/colorLandingPageButtonFacebook" />
             <corners android:radius="@dimen/radiusButtonLandingPage" />
         </shape>
     </item>

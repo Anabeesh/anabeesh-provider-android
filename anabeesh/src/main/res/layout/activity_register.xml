@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.cs18.anabeesh.ui.register.core.RegisterActivity">
+    tools:context="com.cs18.anabeesh.ui.register.RegisterActivity">
 
     <TextView
         android:id="@+id/tv_email"

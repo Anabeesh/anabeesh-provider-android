@@ -8,19 +8,19 @@
     <!--Landing page-->
     <style name="LandingPageTheme" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:layoutDirection">rtl</item>
-        <item name="android:windowBackground">@color/colorLayoutBackgroundLandingPage</item>
+        <item name="android:windowBackground">@color/colorLandingPageLayoutBackground</item>
         <item name="android:buttonStyle">@style/LandingPageButtonStyle</item>
         <item name="android:textViewStyle">@style/LandingPageTextViewStyle</item>
     </style>
 
     <style name="LandingPageTextViewStyle" parent="android:style/Widget.TextView">
         <item name="android:textSize">@dimen/textSizeBodyLandingPage</item>
-        <item name="android:textColor">@color/colorTextViewBodyLandingPage</item>
+        <item name="android:textColor">@color/colorLandingPageTextViewBody</item>
     </style>
 
     <style name="LandingPageButtonStyle" parent="android:style/Widget.Button">
         <item name="android:textSize">@dimen/textSizeBodyLandingPage</item>
-        <item name="android:textColor">@color/colorButtonTextLandingPage</item>
+        <item name="android:textColor">@color/colorLandingPageButtonText</item>
         <item name="android:paddingTop">@dimen/paddingTopLandingPageButton</item>
         <item name="android:paddingBottom">@dimen/paddingBottomLandingPageButton</item>
         <item name="android:paddingStart">@dimen/paddingStartLandingPageButton</item>
@@ -31,7 +31,7 @@
     <!--Login-->
     <style name="LoginTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:layoutDirection">rtl</item>
-        <item name="android:windowBackground">@color/colorLayoutBackgroundLogin</item>
+        <item name="android:windowBackground">@color/colorLoginLayoutBackground</item>
         <item name="android:buttonStyle">@style/LoginButtonStyle</item>
         <item name="android:textViewStyle">@style/LoginTextViewStyle</item>
         <item name="android:editTextStyle">@style/LoginEditTextStyle</item>
@@ -39,20 +39,20 @@
 
     <style name="LoginTextViewStyle" parent="android:style/Widget.TextView">
         <item name="android:textSize">@dimen/textSizeBodyLogin</item>
-        <item name="android:textColor">@color/colorTextViewBodyLogin</item>
+        <item name="android:textColor">@color/colorLoginTextViewBody</item>
     </style>
 
     <style name="LoginEditTextStyle" parent="android:style/Widget.EditText">
         <item name="android:textSize">@dimen/textSizeLoginEditText</item>
-        <item name="android:textColor">@color/colorEditTextBodyLogin</item>
-        <item name="android:textColorHint">@color/colorEditTextHintLogin</item>
+        <item name="android:textColor">@color/colorLoginEditTextBody</item>
+        <item name="android:textColorHint">@color/colorLoginEditTextHint</item>
         <item name="android:padding">@dimen/paddingLoginEditText</item>
         <item name="android:background">@drawable/shape_edittext_login</item>
     </style>
 
     <style name="LoginButtonStyle" parent="android:style/Widget.Button">
         <item name="android:textSize">@dimen/textSizeBodyLogin</item>
-        <item name="android:textColor">@color/colorButtonTextLogin</item>
+        <item name="android:textColor">@color/colorLoginButtonText</item>
         <item name="android:paddingTop">@dimen/paddingTopLoginButton</item>
         <item name="android:paddingBottom">@dimen/paddingBottomLoginButton</item>
         <item name="android:paddingStart">@dimen/paddingStartLoginButton</item>
@@ -61,13 +61,13 @@
     </style>
 
     <style name="LoginTextViewLabelStyle" parent="android:style/Widget.TextView">
-        <item name="android:textColor">@color/colorTextViewLabelLogin</item>
+        <item name="android:textColor">@color/colorLoginTextViewHeader</item>
         <item name="android:textSize">@dimen/textSizeLabelLogin</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="LoginTextViewSubTextClickableStyle" parent="android:style/Widget.TextView">
-        <item name="android:textColor">@color/colorTextClickableLogin</item>
+        <item name="android:textColor">@color/colorLoginTextClickable</item>
         <item name="android:textSize">@dimen/textSizeBodyLogin</item>
         <item name="android:padding">@dimen/paddingLoginTextView</item>
     </style>
@@ -75,7 +75,7 @@
     <!--Registration-->
     <style name="RegisterTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:layoutDirection">rtl</item>
-        <item name="android:windowBackground">@color/colorLayoutBackgroundRegister</item>
+        <item name="android:windowBackground">@color/colorRegisterLayoutBackground</item>
         <item name="android:buttonStyle">@style/RegisterButtonStyle</item>
         <item name="android:textViewStyle">@style/RegisterTextViewStyle</item>
         <item name="android:editTextStyle">@style/RegisterEditTextStyle</item>
@@ -83,20 +83,20 @@
 
     <style name="RegisterTextViewStyle" parent="android:style/Widget.TextView">
         <item name="android:textSize">@dimen/textSizeBodyRegister</item>
-        <item name="android:textColor">@color/colorTextViewBodyRegister</item>
+        <item name="android:textColor">@color/colorRegisterTextViewBody</item>
     </style>
 
     <style name="RegisterEditTextStyle" parent="android:style/Widget.EditText">
         <item name="android:textSize">@dimen/textSizeRegisterEditText</item>
-        <item name="android:textColor">@color/colorEditTextBodyRegister</item>
-        <item name="android:textColorHint">@color/colorEditTextHintRegister</item>
+        <item name="android:textColor">@color/colorRegisterEditTextBody</item>
+        <item name="android:textColorHint">@color/colorRegisterEditTextHint</item>
         <item name="android:padding">@dimen/paddingRegisterEditText</item>
         <item name="android:background">@drawable/shape_edittext_register</item>
     </style>
 
     <style name="RegisterButtonStyle" parent="android:style/Widget.Button">
         <item name="android:textSize">@dimen/textSizeBodyRegister</item>
-        <item name="android:textColor">@color/colorButtonTextRegister</item>
+        <item name="android:textColor">@color/colorRegisterButtonText</item>
         <item name="android:paddingTop">@dimen/paddingTopRegisterButton</item>
         <item name="android:paddingBottom">@dimen/paddingBottomRegisterButton</item>
         <item name="android:paddingStart">@dimen/paddingStartRegisterButton</item>
@@ -105,13 +105,13 @@
     </style>
 
     <style name="RegisterTextViewLabelStyle" parent="android:style/Widget.TextView">
-        <item name="android:textColor">@color/colorTextViewLabelRegister</item>
+        <item name="android:textColor">@color/colorRegisterTextViewLabel</item>
         <item name="android:textSize">@dimen/textSizeLabelRegister</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="RegisterTextViewSubTextStyle" parent="android:style/Widget.TextView">
-        <item name="android:textColor">@color/colorTextViewBodyLogin</item>
+        <item name="android:textColor">@color/colorLoginTextViewBody</item>
         <item name="android:textSize">@dimen/textSizeSubTextRegister</item>
         <item name="android:drawablePadding">@dimen/paddingRegisterTextViewDrawable</item>
         <item name="android:gravity">center</item>

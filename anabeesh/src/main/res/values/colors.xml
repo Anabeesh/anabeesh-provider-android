@@ -6,50 +6,50 @@
     <color name="colorAccent">#FF4081</color>
 
     <!--Landing page-->
-    <color name="colorLayoutBackgroundLandingPage">#e5e5e5</color>
+    <color name="colorLandingPageLayoutBackground">#e5e5e5</color>
     <!--ImageView-->
-    <color name="colorIconLandingPage">#ffffff</color>
+    <color name="colorLandingPageIcon">#ffffff</color>
     <!--TextView-->
-    <color name="colorTextViewLabelLandingPage">#FF525252</color>
-    <color name="colorTextViewBodyLandingPage">#FF525252</color>
+    <color name="colorLandingPageTextViewHeader">#FF525252</color>
+    <color name="colorLandingPageTextViewBody">#FF525252</color>
     <!--Button-->
-    <color name="colorButtonFacebookLandingPage">#FF4268B3</color>
-    <color name="colorButtonGooglePlusLandingPage">#FFBF3020</color>
-    <color name="colorButtonSignUpLandingPage">#FF696969</color>
-    <color name="colorButtonLoginLandingPage">#FFFFFF</color>
-    <color name="colorButtonTextLandingPage">#FFFFFF</color>
-    <color name="colorButtonRippleLandingPage">#FFFFFF</color>
+    <color name="colorLandingPageButtonFacebook">#FF4268B3</color>
+    <color name="colorLandingPageButtonGooglePlus">#FFBF3020</color>
+    <color name="colorLandingPageButtonSignUp">#FF696969</color>
+    <color name="colorLandingPageButtonLogin">#FFFFFF</color>
+    <color name="colorLandingPageButtonText">#FFFFFF</color>
+    <color name="colorLandingPageButtonRipple">#FFFFFF</color>
 
     <!--Login-->
-    <color name="colorLayoutBackgroundLogin">#e5e5e5</color>
+    <color name="colorLoginLayoutBackground">#e5e5e5</color>
     <!--TextView-->
-    <color name="colorTextViewLabelLogin">#FF525252</color>
-    <color name="colorTextViewBodyLogin">#FF525252</color>
-    <color name="colorTextClickableLogin">#FF1C77FF</color>
+    <color name="colorLoginTextViewHeader">#FF525252</color>
+    <color name="colorLoginTextViewBody">#FF525252</color>
+    <color name="colorLoginTextClickable">#FF1C77FF</color>
     <!--EditText-->
-    <color name="colorEdittextBackgroundLogin">#ffffff</color>
-    <color name="colorEditTextBodyLogin">#FF525252</color>
-    <color name="colorEditTextHintLogin">#FF525252</color>
+    <color name="colorLoginEdittextBackground">#ffffff</color>
+    <color name="colorLoginEditTextBody">#FF525252</color>
+    <color name="colorLoginEditTextHint">#FF525252</color>
     <!--Button-->
-    <color name="colorButtonLogin">#FF696969</color>
-    <color name="colorButtonDisabledLogin">#FFABABAB</color>
-    <color name="colorButtonTextLogin">#FFFFFF</color>
-    <color name="colorButtonRippleLogin">#FFFFFF</color>
+    <color name="colorLoginButton">#FF696969</color>
+    <color name="colorLoginButtonDisabled">#FFABABAB</color>
+    <color name="colorLoginButtonText">#FFFFFF</color>
+    <color name="colorLoginButtonRipple">#FFFFFF</color>
 
     <!--Registration-->
-    <color name="colorLayoutBackgroundRegister">#e5e5e5</color>
+    <color name="colorRegisterLayoutBackground">#e5e5e5</color>
     <!--TextView-->
-    <color name="colorTextViewLabelRegister">#FF525252</color>
-    <color name="colorTextViewBodyRegister">#FF525252</color>
-    <color name="colorTextClickableRegister">#FF1C77FF</color>
+    <color name="colorRegisterTextViewLabel">#FF525252</color>
+    <color name="colorRegisterTextViewBody">#FF525252</color>
+    <color name="colorRegisterTextClickable">#FF1C77FF</color>
     <!--EditText-->
-    <color name="colorEdittextBackgroundRegister">#ffffff</color>
-    <color name="colorEditTextBodyRegister">#FF525252</color>
-    <color name="colorEditTextIconRegister">#FF525252</color>
-    <color name="colorEditTextHintRegister">#FF525252</color>
+    <color name="colorRegisterEdittextBackground">#ffffff</color>
+    <color name="colorRegisterEditTextBody">#FF525252</color>
+    <color name="colorRegisterEditTextIcon">#FF525252</color>
+    <color name="colorRegisterEditTextHint">#FF525252</color>
     <!--Button-->
-    <color name="colorButtonRegister">#FF696969</color>
-    <color name="colorButtonDisabledRegister">#FFABABAB</color>
-    <color name="colorButtonTextRegister">#FFFFFF</color>
-    <color name="colorButtonRippleRegister">#FFFFFF</color>
+    <color name="colorRegisterButton">#FF696969</color>
+    <color name="colorRegisterButtonDisabled">#FFABABAB</color>
+    <color name="colorRegisterButtonText">#FFFFFF</color>
+    <color name="colorRegisterButtonRipple">#FFFFFF</color>
 </resources>

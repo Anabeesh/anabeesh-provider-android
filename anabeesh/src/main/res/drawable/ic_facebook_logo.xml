@@ -4,6 +4,6 @@
     android:viewportHeight="60.733"
     android:viewportWidth="60.734">
     <path
-        android:fillColor="@color/colorIconLandingPage"
+        android:fillColor="@color/colorLandingPageIcon"
         android:pathData="M57.38,0H3.35C1.5,0 0,1.5 0,3.35v54.03c0,1.85 1.5,3.35 3.35,3.35h29.09V37.21h-7.91v-9.17h7.91v-6.76c0,-7.84 4.79,-12.12 11.79,-12.12c3.36,0 6.23,0.25 7.07,0.36v8.2l-4.85,0c-3.81,0 -4.54,1.81 -4.54,4.46v5.85h9.08l-1.19,9.17h-7.89v23.52h15.48c1.85,0 3.36,-1.5 3.36,-3.35V3.35C60.73,1.5 59.23,0 57.38,0z" />
 </vector>
