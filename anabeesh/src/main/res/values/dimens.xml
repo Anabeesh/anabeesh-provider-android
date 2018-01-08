@@ -12,18 +12,18 @@
     <!--TextView-->
     <dimen name="paddingLandingPageTextView">16dp</dimen>
     <dimen name="marginLandingPageTextView">16dp</dimen>
-    <dimen name="textSizeLabelLandingPage">20sp</dimen>
-    <dimen name="textSizeBodyLandingPage">18sp</dimen>
+    <dimen name="textSizeLabelLandingPage">18sp</dimen>
+    <dimen name="textSizeBodyLandingPage">16sp</dimen>
     <!--Button-->
     <dimen name="marginTopLandingPageButton">16dp</dimen>
     <dimen name="marginBottomLandingPageButton">0dp</dimen>
     <dimen name="marginStartLandingPageButton">0dp</dimen>
     <dimen name="marginEndLandingPageButton">0dp</dimen>
     <dimen name="paddingDrawableLandingPage">16dp</dimen>
-    <dimen name="paddingTopLandingPageButton">16dp</dimen>
-    <dimen name="paddingBottomLandingPageButton">16dp</dimen>
-    <dimen name="paddingStartLandingPageButton">48dp</dimen>
-    <dimen name="paddingEndLandingPageButton">48dp</dimen>
+    <dimen name="paddingTopLandingPageButton">12dp</dimen>
+    <dimen name="paddingBottomLandingPageButton">12dp</dimen>
+    <dimen name="paddingStartLandingPageButton">80dp</dimen>
+    <dimen name="paddingEndLandingPageButton">80dp</dimen>
     <dimen name="radiusButtonLandingPage">50dp</dimen>
 
     <!--Login-->
@@ -35,17 +35,17 @@
     <!--TextView-->
     <dimen name="paddingLoginTextView">16dp</dimen>
     <dimen name="marginLoginTextView">16dp</dimen>
-    <dimen name="textSizeLabelLogin">20sp</dimen>
+    <dimen name="textSizeLabelLogin">18sp</dimen>
     <dimen name="textSizeBodyLogin">16sp</dimen>
     <!--Button-->
     <dimen name="marginTopLoginButton">40dp</dimen>
     <dimen name="marginBottomLoginButton">0dp</dimen>
     <dimen name="marginStartLoginButton">0dp</dimen>
     <dimen name="marginEndLoginButton">0dp</dimen>
-    <dimen name="paddingTopLoginButton">16dp</dimen>
-    <dimen name="paddingBottomLoginButton">16dp</dimen>
-    <dimen name="paddingStartLoginButton">48dp</dimen>
-    <dimen name="paddingEndLoginButton">48dp</dimen>
+    <dimen name="paddingTopLoginButton">12dp</dimen>
+    <dimen name="paddingBottomLoginButton">12dp</dimen>
+    <dimen name="paddingStartLoginButton">80dp</dimen>
+    <dimen name="paddingEndLoginButton">80dp</dimen>
     <dimen name="radiusButtonLogin">50dp</dimen>
 
     <!--Registration-->
@@ -58,7 +58,7 @@
     <dimen name="paddingRegisterTextView">16dp</dimen>
     <dimen name="paddingRegisterTextViewDrawable">8dp</dimen>
     <dimen name="marginRegisterTextView">16dp</dimen>
-    <dimen name="textSizeLabelRegister">20sp</dimen>
+    <dimen name="textSizeLabelRegister">18sp</dimen>
     <dimen name="textSizeBodyRegister">16sp</dimen>
     <dimen name="textSizeSubTextRegister">14sp</dimen>
     <!--Button-->
@@ -66,9 +66,9 @@
     <dimen name="marginBottomRegisterButton">0dp</dimen>
     <dimen name="marginStartRegisterButton">0dp</dimen>
     <dimen name="marginEndRegisterButton">0dp</dimen>
-    <dimen name="paddingTopRegisterButton">16dp</dimen>
-    <dimen name="paddingBottomRegisterButton">16dp</dimen>
-    <dimen name="paddingStartRegisterButton">48dp</dimen>
-    <dimen name="paddingEndRegisterButton">48dp</dimen>
+    <dimen name="paddingTopRegisterButton">12dp</dimen>
+    <dimen name="paddingBottomRegisterButton">12dp</dimen>
+    <dimen name="paddingStartRegisterButton">80dp</dimen>
+    <dimen name="paddingEndRegisterButton">80dp</dimen>
     <dimen name="radiusButtonRegister">50dp</dimen>
 </resources>

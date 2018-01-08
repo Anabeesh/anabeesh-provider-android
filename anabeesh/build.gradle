@@ -44,15 +44,14 @@ android {
 dependencies {
     //UI
     implementation deps.support.design
-    implementation deps.support.recyclerview
     implementation deps.support.cardview
+    implementation deps.support.recyclerview
     implementation deps.support.constraintLayout
 
     // RxJava
     implementation deps.rx.java
-    implementation deps.rx.android
-    implementation deps.rx.binding
     implementation deps.rx.relay
+    implementation deps.rx.android
 
     // Dagger
     implementation deps.dagger.lib
@@ -64,21 +63,18 @@ dependencies {
 
     // Glide
     implementation deps.glide.lib
-    annotationProcessor deps.glide.compiler
+    kapt deps.glide.compiler
 
     // Retrofit
-    implementation deps.retrofit.okhttp
-    implementation deps.retrofit.converter
-    implementation deps.retrofit.adapter
-    implementation deps.retrofit.logging
+    implementation deps.retrofit.lib
 
     // Testing
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
 
     //Other
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation deps.timber.lib
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     configurations.all {
