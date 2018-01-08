@@ -33,7 +33,7 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 
 - [Muhammad Youssef](https://github.com/rxmuhammadyoussef)
 
-- [Omar Salem](https://github.com/OmarSalem977)
+- [Omar Salem](https://github.com/OmaRoiid)
 
 - [Omar Beshary](https://github.com/OmarBeshary)
 
@@ -41,10 +41,4 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 
 Copyright 2017 Anabeesh
 
-Licensed under the [Apache License Version 2.0](LICENSE.md);
-you may not use this file except in compliance with the License.
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Licensed under the [Apache License Version 2.0](LICENSE.md)
