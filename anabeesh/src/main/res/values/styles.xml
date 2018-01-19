@@ -61,7 +61,7 @@
     </style>
 
     <style name="LoginTextViewLabelStyle" parent="android:style/Widget.TextView">
-        <item name="android:textColor">@color/colorLoginTextViewHeader</item>
+        <item name="android:textColor">@color/colorLoginTextViewTitle</item>
         <item name="android:textSize">@dimen/textSizeLoginTitle</item>
         <item name="android:textStyle">bold</item>
     </style>
