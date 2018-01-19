@@ -14,12 +14,12 @@
     </style>
 
     <style name="LandingPageTextViewStyle" parent="android:style/Widget.TextView">
-        <item name="android:textSize">@dimen/textSizeBodyLandingPage</item>
+        <item name="android:textSize">@dimen/textSizeLandingPageText</item>
         <item name="android:textColor">@color/colorLandingPageTextViewBody</item>
     </style>
 
     <style name="LandingPageButtonStyle" parent="android:style/Widget.Button">
-        <item name="android:textSize">@dimen/textSizeBodyLandingPage</item>
+        <item name="android:textSize">@dimen/textSizeLandingPageText</item>
         <item name="android:textColor">@color/colorLandingPageButtonText</item>
         <item name="android:paddingTop">@dimen/paddingTopLandingPageButton</item>
         <item name="android:paddingBottom">@dimen/paddingBottomLandingPageButton</item>
@@ -38,7 +38,7 @@
     </style>
 
     <style name="LoginTextViewStyle" parent="android:style/Widget.TextView">
-        <item name="android:textSize">@dimen/textSizeBodyLogin</item>
+        <item name="android:textSize">@dimen/textSizeLoginText</item>
         <item name="android:textColor">@color/colorLoginTextViewBody</item>
     </style>
 
@@ -51,7 +51,7 @@
     </style>
 
     <style name="LoginButtonStyle" parent="android:style/Widget.Button">
-        <item name="android:textSize">@dimen/textSizeBodyLogin</item>
+        <item name="android:textSize">@dimen/textSizeLoginText</item>
         <item name="android:textColor">@color/colorLoginButtonText</item>
         <item name="android:paddingTop">@dimen/paddingTopLoginButton</item>
         <item name="android:paddingBottom">@dimen/paddingBottomLoginButton</item>
@@ -62,13 +62,13 @@
 
     <style name="LoginTextViewLabelStyle" parent="android:style/Widget.TextView">
         <item name="android:textColor">@color/colorLoginTextViewHeader</item>
-        <item name="android:textSize">@dimen/textSizeLabelLogin</item>
+        <item name="android:textSize">@dimen/textSizeLoginTitle</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="LoginTextViewSubTextClickableStyle" parent="android:style/Widget.TextView">
         <item name="android:textColor">@color/colorLoginTextClickable</item>
-        <item name="android:textSize">@dimen/textSizeBodyLogin</item>
+        <item name="android:textSize">@dimen/textSizeLoginText</item>
         <item name="android:padding">@dimen/paddingLoginTextView</item>
     </style>
 
@@ -82,7 +82,7 @@
     </style>
 
     <style name="RegisterTextViewStyle" parent="android:style/Widget.TextView">
-        <item name="android:textSize">@dimen/textSizeBodyRegister</item>
+        <item name="android:textSize">@dimen/textSizeRegisterTitle</item>
         <item name="android:textColor">@color/colorRegisterTextViewBody</item>
     </style>
 
@@ -95,7 +95,7 @@
     </style>
 
     <style name="RegisterButtonStyle" parent="android:style/Widget.Button">
-        <item name="android:textSize">@dimen/textSizeBodyRegister</item>
+        <item name="android:textSize">@dimen/textSizeRegisterTitle</item>
         <item name="android:textColor">@color/colorRegisterButtonText</item>
         <item name="android:paddingTop">@dimen/paddingTopRegisterButton</item>
         <item name="android:paddingBottom">@dimen/paddingBottomRegisterButton</item>
@@ -106,13 +106,13 @@
 
     <style name="RegisterTextViewLabelStyle" parent="android:style/Widget.TextView">
         <item name="android:textColor">@color/colorRegisterTextViewLabel</item>
-        <item name="android:textSize">@dimen/textSizeLabelRegister</item>
+        <item name="android:textSize">@dimen/textSizeRegisterTitle</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="RegisterTextViewSubTextStyle" parent="android:style/Widget.TextView">
         <item name="android:textColor">@color/colorLoginTextViewBody</item>
-        <item name="android:textSize">@dimen/textSizeSubTextRegister</item>
+        <item name="android:textSize">@dimen/textSizeRegisterTitle</item>
         <item name="android:drawablePadding">@dimen/paddingRegisterTextViewDrawable</item>
         <item name="android:gravity">center</item>
     </style>

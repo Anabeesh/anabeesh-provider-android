@@ -12,8 +12,9 @@
     <!--TextView-->
     <dimen name="paddingLandingPageTextView">16dp</dimen>
     <dimen name="marginLandingPageTextView">16dp</dimen>
-    <dimen name="textSizeLabelLandingPage">18sp</dimen>
-    <dimen name="textSizeBodyLandingPage">16sp</dimen>
+    <dimen name="textSizeLandingPageTitle">18sp</dimen>
+    <dimen name="textSizeLandingPageText">16sp</dimen>
+    <dimen name="textSizeLandingPageSubText">14sp</dimen>
     <!--Button-->
     <dimen name="marginTopLandingPageButton">16dp</dimen>
     <dimen name="marginBottomLandingPageButton">0dp</dimen>
@@ -35,8 +36,9 @@
     <!--TextView-->
     <dimen name="paddingLoginTextView">16dp</dimen>
     <dimen name="marginLoginTextView">16dp</dimen>
-    <dimen name="textSizeLabelLogin">18sp</dimen>
-    <dimen name="textSizeBodyLogin">16sp</dimen>
+    <dimen name="textSizeLoginTitle">18sp</dimen>
+    <dimen name="textSizeLoginText">16sp</dimen>
+    <dimen name="textSizeLoginSubText">14sp</dimen>
     <!--Button-->
     <dimen name="marginTopLoginButton">40dp</dimen>
     <dimen name="marginBottomLoginButton">0dp</dimen>
@@ -58,9 +60,9 @@
     <dimen name="paddingRegisterTextView">16dp</dimen>
     <dimen name="paddingRegisterTextViewDrawable">8dp</dimen>
     <dimen name="marginRegisterTextView">16dp</dimen>
-    <dimen name="textSizeLabelRegister">18sp</dimen>
-    <dimen name="textSizeBodyRegister">16sp</dimen>
-    <dimen name="textSizeSubTextRegister">14sp</dimen>
+    <dimen name="textSizeRegisterTitle">18sp</dimen>
+    <dimen name="textSizeRegisterText">16sp</dimen>
+    <dimen name="textSizeRegisterSubText">14sp</dimen>
     <!--Button-->
     <dimen name="marginTopRegisterButton">40dp</dimen>
     <dimen name="marginBottomRegisterButton">0dp</dimen>
