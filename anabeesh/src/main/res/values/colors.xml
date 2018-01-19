@@ -10,7 +10,7 @@
     <!--ImageView-->
     <color name="colorLandingPageIcon">#ffffff</color>
     <!--TextView-->
-    <color name="colorLandingPageTextViewHeader">#FF525252</color>
+    <color name="colorLandingPageTextViewTitle">#FF525252</color>
     <color name="colorLandingPageTextViewBody">#FF525252</color>
     <!--Button-->
     <color name="colorLandingPageButtonFacebook">#FF4268B3</color>
@@ -23,11 +23,11 @@
     <!--Login-->
     <color name="colorLoginLayoutBackground">#e5e5e5</color>
     <!--TextView-->
-    <color name="colorLoginTextViewHeader">#FF525252</color>
+    <color name="colorLoginTextViewTitle">#FF525252</color>
     <color name="colorLoginTextViewBody">#FF525252</color>
     <color name="colorLoginTextClickable">#FF1C77FF</color>
     <!--EditText-->
-    <color name="colorLoginEdittextBackground">#ffffff</color>
+    <color name="colorLoginEditTextBackground">#ffffff</color>
     <color name="colorLoginEditTextBody">#FF525252</color>
     <color name="colorLoginEditTextHint">#FF525252</color>
     <!--Button-->
@@ -43,7 +43,7 @@
     <color name="colorRegisterTextViewBody">#FF525252</color>
     <color name="colorRegisterTextClickable">#FF1C77FF</color>
     <!--EditText-->
-    <color name="colorRegisterEdittextBackground">#ffffff</color>
+    <color name="colorRegisterEditTextBackground">#ffffff</color>
     <color name="colorRegisterEditTextBody">#FF525252</color>
     <color name="colorRegisterEditTextIcon">#FF525252</color>
     <color name="colorRegisterEditTextHint">#FF525252</color>
