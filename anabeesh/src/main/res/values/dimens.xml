@@ -3,7 +3,14 @@
 
     <!--Main-->
     <dimen name="margin">16dp</dimen>
+    <dimen name="margin_micro">8dp</dimen>
+    <dimen name="margin_nano">4dp</dimen>
+    <dimen name="margin_extra">24dp</dimen>
     <dimen name="padding">16dp</dimen>
+    <dimen name="padding_nano">4dp</dimen>
+    <dimen name="padding_micro">8dp</dimen>
+    <dimen name="padding_extra">24dp</dimen>
+
 
     <!--Landing page-->
     <!--ImageView-->
@@ -12,9 +19,9 @@
     <!--TextView-->
     <dimen name="paddingLandingPageTextView">16dp</dimen>
     <dimen name="marginLandingPageTextView">16dp</dimen>
-    <dimen name="textSizeLandingPageTitle">18sp</dimen>
-    <dimen name="textSizeLandingPageText">16sp</dimen>
-    <dimen name="textSizeLandingPageSubText">14sp</dimen>
+    <dimen name="textSizeLandingPageTitle">16sp</dimen>
+    <dimen name="textSizeLandingPageText">14sp</dimen>
+    <dimen name="textSizeLandingPageSubText">12sp</dimen>
     <!--Button-->
     <dimen name="marginTopLandingPageButton">16dp</dimen>
     <dimen name="marginBottomLandingPageButton">0dp</dimen>
@@ -29,16 +36,16 @@
 
     <!--Login-->
     <!--EditText-->
-    <dimen name="textSizeLoginEditText">16sp</dimen>
+    <dimen name="textSizeLoginEditText">14sp</dimen>
     <dimen name="marginLoginEditText">16dp</dimen>
     <dimen name="paddingLoginEditText">16dp</dimen>
     <dimen name="radiusEditTextLogin">4dp</dimen>
     <!--TextView-->
     <dimen name="paddingLoginTextView">16dp</dimen>
     <dimen name="marginLoginTextView">16dp</dimen>
-    <dimen name="textSizeLoginTitle">18sp</dimen>
-    <dimen name="textSizeLoginText">16sp</dimen>
-    <dimen name="textSizeLoginSubText">14sp</dimen>
+    <dimen name="textSizeLoginTitle">16sp</dimen>
+    <dimen name="textSizeLoginText">14sp</dimen>
+    <dimen name="textSizeLoginSubText">12sp</dimen>
     <!--Button-->
     <dimen name="marginTopLoginButton">40dp</dimen>
     <dimen name="marginBottomLoginButton">0dp</dimen>
@@ -52,7 +59,7 @@
 
     <!--Registration-->
     <!--EditText-->
-    <dimen name="textSizeRegisterEditText">16sp</dimen>
+    <dimen name="textSizeRegisterEditText">14sp</dimen>
     <dimen name="marginRegisterEditText">16dp</dimen>
     <dimen name="paddingRegisterEditText">16dp</dimen>
     <dimen name="radiusEditTextRegister">4dp</dimen>
@@ -60,9 +67,9 @@
     <dimen name="paddingRegisterTextView">16dp</dimen>
     <dimen name="paddingRegisterTextViewDrawable">8dp</dimen>
     <dimen name="marginRegisterTextView">16dp</dimen>
-    <dimen name="textSizeRegisterTitle">18sp</dimen>
-    <dimen name="textSizeRegisterText">16sp</dimen>
-    <dimen name="textSizeRegisterSubText">14sp</dimen>
+    <dimen name="textSizeRegisterTitle">16sp</dimen>
+    <dimen name="textSizeRegisterText">14sp</dimen>
+    <dimen name="textSizeRegisterSubText">12sp</dimen>
     <!--Button-->
     <dimen name="marginTopRegisterButton">40dp</dimen>
     <dimen name="marginBottomRegisterButton">0dp</dimen>
@@ -73,4 +80,22 @@
     <dimen name="paddingStartRegisterButton">80dp</dimen>
     <dimen name="paddingEndRegisterButton">80dp</dimen>
     <dimen name="radiusButtonRegister">50dp</dimen>
+
+    <!--Home-->
+    <dimen name="elevationHomeCard">2dp</dimen>
+    <!--EditText-->
+    <dimen name="textSizeHomeEditText">12sp</dimen>
+    <dimen name="marginHomeEditText">16dp</dimen>
+    <dimen name="paddingHomeEditText">16dp</dimen>
+    <dimen name="radiusHomeEditText">4dp</dimen>
+    <!--TextView-->
+    <dimen name="paddingDrawableHome">8dp</dimen>
+    <dimen name="paddingHomeTextView">16dp</dimen>
+    <dimen name="marginHomeTextView">16dp</dimen>
+    <dimen name="textSizeHomeTitle">14sp</dimen>
+    <dimen name="textSizeHomeText">12sp</dimen>
+    <dimen name="textSizeHomeSubText">10sp</dimen>
+    <dimen name="radiusQuestionTag">8dp</dimen>
+    <!--ImageView-->
+    <dimen name="imageSizeHomeQuestion">80dp</dimen>
 </resources>

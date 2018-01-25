@@ -25,4 +25,10 @@
     <string name="pick_password">اختر كلمة مرور</string>
     <string name="use_eight_characters">استخدم ثمانية احرف علي الاقل</string>
     <string name="next">التالـي</string>
+
+    <!--Home-->
+    <string name="ask_or_search_for_any_question">Ask or search for any question…</string>
+    <string name="good_morning">Good morning,</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
 </resources>

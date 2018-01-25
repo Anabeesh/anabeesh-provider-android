@@ -3,6 +3,8 @@ package com.cs18.anabeesh.muhammad.di.activity;
 import android.app.Activity;
 import android.content.Context;
 
+import com.cs18.anabeesh.muhammad.ui.home.HomeScreen;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -28,5 +30,11 @@ public class ActivityModule {
     @ForActivity
     Context provideActivityContext() {
         return activity;
+    }
+
+    @ActivityScope
+    @Provides
+    HomeScreen providesHomeScreen() {
+        return (HomeScreen) activity;
     }
 }

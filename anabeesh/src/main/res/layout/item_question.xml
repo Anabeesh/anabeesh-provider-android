@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin"
+    android:layout_marginEnd="@dimen/margin"
+    android:layout_marginStart="@dimen/margin"
+    android:background="@drawable/shape_card_home"
+    android:elevation="@dimen/elevationHomeCard"
+    android:orientation="vertical">
+
+    <include layout="@layout/content_question_info" />
+
+    <include layout="@layout/content_question_user_header" />
+</LinearLayout>

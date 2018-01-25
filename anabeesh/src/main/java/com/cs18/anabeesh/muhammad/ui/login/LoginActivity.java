@@ -1,6 +1,7 @@
 package com.cs18.anabeesh.muhammad.ui.login;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.Button;
@@ -10,6 +11,7 @@ import com.cs18.anabeesh.AnabeeshApplication;
 import com.cs18.anabeesh.R;
 import com.cs18.anabeesh.muhammad.di.activity.ActivityModule;
 import com.cs18.anabeesh.muhammad.di.activity.ActivityScope;
+import com.cs18.anabeesh.muhammad.ui.home.HomeActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -24,10 +26,8 @@ public class LoginActivity extends Activity {
 
     @BindView(R.id.et_email)
     EditText emailEditText;
-
     @BindView(R.id.et_password)
     EditText passwordEditText;
-
     @BindView(R.id.btn_login)
     Button loginButton;
 
@@ -44,6 +44,10 @@ public class LoginActivity extends Activity {
 
     @OnClick(R.id.btn_login)
     void login() {
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
     }
 
     @OnClick(R.id.tv_forgot_password)

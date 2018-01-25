@@ -1,5 +1,6 @@
 package com.cs18.anabeesh.muhammad.di.activity;
 
+import com.cs18.anabeesh.muhammad.ui.home.HomeActivity;
 import com.cs18.anabeesh.muhammad.ui.landingpage.LandingPageActivity;
 import com.cs18.anabeesh.muhammad.ui.login.LoginActivity;
 import com.cs18.anabeesh.muhammad.ui.register.RegisterActivity;
@@ -22,4 +23,6 @@ public interface ActivityComponent {
     void inject(LoginActivity loginActivity);
 
     void inject(RegisterActivity registerActivity);
+
+    void inject(HomeActivity homeActivity);
 }
