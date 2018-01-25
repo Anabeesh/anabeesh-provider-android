@@ -2,10 +2,18 @@ package com.cs18.anabeesh;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.StrictMode;
+import android.util.Base64;
+import android.util.Log;
 
 import com.cs18.anabeesh.di.application.AppComponent;
 import com.cs18.anabeesh.di.application.DaggerAppComponent;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import timber.log.Timber;
 
@@ -32,6 +40,7 @@ public class AnabeeshApplication extends Application {
         appComponent.inject(this);
         setStrictModeForDebugEnabled(true);
         setTimberDebugTreeEnabled(true);
+        printMyHashKey(this);
     }
 
     /*
@@ -59,6 +68,25 @@ public class AnabeeshApplication extends Application {
                     .detectAll()
                     .penaltyLog()
                     .build());
+        }
+    }
+
+    private void printMyHashKey(Context context) {
+
+        try {
+
+            PackageInfo info = context.getPackageManager().getPackageInfo(
+                    "com.cs18.anabeesh",
+                    PackageManager.GET_SIGNATURES);
+
+            for (Signature signature : info.signatures) {
+
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.d("MyHashKeyIs", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+            }
+        } catch (PackageManager.NameNotFoundException | NoSuchAlgorithmException ignored) {
+
         }
     }
 }

@@ -1,6 +1,9 @@
 <resources>
     <!--Main-->
     <string name="app_name">Anabeesh</string>
+    <!--FaceBook-->
+    <string name="facebook_app_id">1986119151638876</string>
+    <string name="fb_login_protocol_scheme">fb1986119151638876</string>
 
     <!--Landing page-->
     <string name="continue_with_facebook">تابع بواسطة فيسبوك</string>
