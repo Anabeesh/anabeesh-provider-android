@@ -1,12 +1,12 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--Base application theme-->
-    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
     <!--Landing page-->
-    <style name="LandingPageTheme" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="LandingPageTheme" parent="AppTheme">
         <item name="android:layoutDirection">rtl</item>
         <item name="android:windowBackground">@color/colorLandingPageLayoutBackground</item>
         <item name="android:buttonStyle">@style/LandingPageButtonStyle</item>
@@ -35,6 +35,7 @@
         <item name="android:buttonStyle">@style/LoginButtonStyle</item>
         <item name="android:textViewStyle">@style/LoginTextViewStyle</item>
         <item name="android:editTextStyle">@style/LoginEditTextStyle</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
     <style name="LoginTextViewStyle" parent="android:style/Widget.TextView">
@@ -79,6 +80,7 @@
         <item name="android:buttonStyle">@style/RegisterButtonStyle</item>
         <item name="android:textViewStyle">@style/RegisterTextViewStyle</item>
         <item name="android:editTextStyle">@style/RegisterEditTextStyle</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
     <style name="RegisterTextViewStyle" parent="android:style/Widget.TextView">
@@ -115,5 +117,90 @@
         <item name="android:textSize">@dimen/textSizeRegisterTitle</item>
         <item name="android:drawablePadding">@dimen/paddingRegisterTextViewDrawable</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <!--Home-->
+    <style name="HomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:layoutDirection">rtl</item>-->
+        <item name="android:windowBackground">@color/colorHomeLayoutBackground</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="HomeSearchBoxStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeText</item>
+        <item name="android:textColor">@color/colorHomeEditTextHint</item>
+        <item name="android:background">@drawable/shape_card_home</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:drawableEnd">@drawable/ic_mic</item>
+        <item name="android:drawablePadding">@dimen/paddingDrawableLandingPage</item>
+        <item name="android:elevation">@dimen/elevationHomeCard</item>
+    </style>
+
+    <style name="HomeGreetingStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeTitle</item>
+        <item name="android:textColor">@color/colorHomeTextViewPrimaryText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/padding_micro</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+    </style>
+
+    <style name="HomeCategoryStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeText</item>
+        <item name="android:textColor">@color/colorHomeTextViewPrimaryText</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="HomeQuestionTitleStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeTitle</item>
+        <item name="android:textColor">@color/colorHomeTextViewPrimaryText</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">@dimen/padding_micro</item>
+    </style>
+
+    <style name="HomeQuestionTextStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeText</item>
+        <item name="android:textColor">@color/colorHomeTextViewSecondaryText</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingStart">@dimen/padding_micro</item>
+        <item name="android:paddingEnd">@dimen/padding_micro</item>
+        <item name="android:paddingBottom">@dimen/padding_micro</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="HomeQuestionTagStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeSubText</item>
+        <item name="android:textColor">@color/colorHomeTextViewPrimaryText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/padding_nano</item>
+        <item name="android:paddingBottom">@dimen/padding_nano</item>
+        <item name="android:paddingEnd">@dimen/padding</item>
+        <item name="android:paddingStart">@dimen/padding</item>
+        <item name="android:background">@drawable/shape_question_tag_home</item>
+    </style>
+
+    <style name="HomeQuestionUserNameStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeSubText</item>
+        <item name="android:textColor">@color/colorHomeTextViewPrimaryText</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HomeQuestionDateStyle" parent="android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/textSizeHomeSubText</item>
+        <item name="android:textColor">@color/colorHomeTextViewSecondaryText</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingEnd">@dimen/padding</item>
     </style>
 </resources>

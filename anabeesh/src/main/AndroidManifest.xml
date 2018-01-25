@@ -12,6 +12,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".muhammad.ui.landingpage.LandingPageActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/LandingPageTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +24,7 @@
             android:name=".muhammad.ui.login.LoginActivity"
             android:label="@string/login"
             android:parentActivityName=".muhammad.ui.landingpage.LandingPageActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
@@ -33,12 +35,18 @@
             android:name=".muhammad.ui.register.RegisterActivity"
             android:label="@string/create_account"
             android:parentActivityName=".muhammad.ui.landingpage.LandingPageActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/RegisterTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".muhammad.ui.landingpage.LandingPageActivity" />
         </activity>
+        <activity
+            android:name=".muhammad.ui.home.HomeActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
     </application>
-
 </manifest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/item_question">
+
+    <TextView
+        android:id="@+id/tv_header"
+        style="@style/HomeQuestionTitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="How to make pepperoni pizza?"
+        app:layout_constraintBottom_toTopOf="@id/tv_description"
+        app:layout_constraintEnd_toStartOf="@id/iv_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/HomeQuestionTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea"
+        app:layout_constraintBottom_toTopOf="@id/tv_tag1"
+        app:layout_constraintEnd_toEndOf="@id/tv_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_header" />
+
+    <ImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="@dimen/imageSizeHomeQuestion"
+        android:layout_height="@dimen/imageSizeHomeQuestion"
+        android:layout_margin="@dimen/margin_micro"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tag1"
+        style="@style/HomeQuestionTagStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin_nano"
+        android:layout_marginStart="@dimen/margin_micro"
+        android:layout_marginTop="@dimen/margin_micro"
+        android:text="Food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_tag2"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+    <TextView
+        android:id="@+id/tv_tag2"
+        style="@style/HomeQuestionTagStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin_nano"
+        android:layout_marginStart="@dimen/margin_nano"
+        android:layout_marginTop="@dimen/margin_micro"
+        android:text="Italian"
+        app:layout_constraintBottom_toBottomOf="@id/tv_tag1"
+        app:layout_constraintEnd_toStartOf="@id/tv_tag3"
+        app:layout_constraintStart_toEndOf="@id/tv_tag1"
+        app:layout_constraintTop_toTopOf="@+id/tv_tag1" />
+
+    <TextView
+        android:id="@+id/tv_tag3"
+        style="@style/HomeQuestionTagStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin_micro"
+        android:layout_marginStart="@dimen/margin_nano"
+        android:layout_marginTop="@dimen/margin_micro"
+        android:text="Pizza"
+        app:layout_constraintBottom_toBottomOf="@id/tv_tag2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_tag2"
+        app:layout_constraintTop_toTopOf="@+id/tv_tag2" />
+
+</android.support.constraint.ConstraintLayout>

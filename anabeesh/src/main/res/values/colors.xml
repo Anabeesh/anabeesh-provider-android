@@ -52,4 +52,18 @@
     <color name="colorRegisterButtonDisabled">#FFABABAB</color>
     <color name="colorRegisterButtonText">#FFFFFF</color>
     <color name="colorRegisterButtonRipple">#FFFFFF</color>
+
+    <!--Home-->
+    <color name="colorHomeLayoutBackground">#f8f8f8</color>
+    <color name="colorHomeDivider">#FFABABAB</color>
+    <!--TextView-->
+    <color name="colorHomeTextViewTitle">#FF525252</color>
+    <color name="colorHomeTextViewPrimaryText">#FF525252</color>
+    <color name="colorHomeTextViewSecondaryText">#FF707070</color>
+    <color name="colorHomeQuestionTag">#4C696969</color>
+    <!--EditText-->
+    <color name="colorHomeEditTextBackground">#ffffff</color>
+    <color name="colorHomeEditTextText">#FF525252</color>
+    <color name="colorHomeEditTextIcon">#FF525252</color>
+    <color name="colorHomeEditTextHint">#FFABABAB</color>
 </resources>
