@@ -11,7 +11,7 @@
     <color name="colorLandingPageIcon">#ffffff</color>
     <!--TextView-->
     <color name="colorLandingPageTextViewTitle">#FF525252</color>
-    <color name="colorLandingPageTextViewBody">#FF525252</color>
+    <color name="colorLandingPageTextViewText">#FF525252</color>
     <!--Button-->
     <color name="colorLandingPageButtonFacebook">#FF4268B3</color>
     <color name="colorLandingPageButtonGooglePlus">#FFBF3020</color>
@@ -24,11 +24,11 @@
     <color name="colorLoginLayoutBackground">#e5e5e5</color>
     <!--TextView-->
     <color name="colorLoginTextViewTitle">#FF525252</color>
-    <color name="colorLoginTextViewBody">#FF525252</color>
+    <color name="colorLoginTextViewText">#FF525252</color>
     <color name="colorLoginTextClickable">#FF1C77FF</color>
     <!--EditText-->
     <color name="colorLoginEditTextBackground">#ffffff</color>
-    <color name="colorLoginEditTextBody">#FF525252</color>
+    <color name="colorLoginEditTextText">#FF525252</color>
     <color name="colorLoginEditTextHint">#FF525252</color>
     <!--Button-->
     <color name="colorLoginButton">#FF696969</color>
@@ -39,12 +39,12 @@
     <!--Registration-->
     <color name="colorRegisterLayoutBackground">#e5e5e5</color>
     <!--TextView-->
-    <color name="colorRegisterTextViewLabel">#FF525252</color>
-    <color name="colorRegisterTextViewBody">#FF525252</color>
+    <color name="colorRegisterTextViewTitle">#FF525252</color>
+    <color name="colorRegisterTextViewText">#FF525252</color>
     <color name="colorRegisterTextClickable">#FF1C77FF</color>
     <!--EditText-->
     <color name="colorRegisterEditTextBackground">#ffffff</color>
-    <color name="colorRegisterEditTextBody">#FF525252</color>
+    <color name="colorRegisterEditTextText">#FF525252</color>
     <color name="colorRegisterEditTextIcon">#FF525252</color>
     <color name="colorRegisterEditTextHint">#FF525252</color>
     <!--Button-->
