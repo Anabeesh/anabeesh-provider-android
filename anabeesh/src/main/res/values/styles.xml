@@ -15,7 +15,7 @@
 
     <style name="LandingPageTextViewStyle" parent="android:style/Widget.TextView">
         <item name="android:textSize">@dimen/textSizeLandingPageText</item>
-        <item name="android:textColor">@color/colorLandingPageTextViewBody</item>
+        <item name="android:textColor">@color/colorLandingPageTextViewText</item>
     </style>
 
     <style name="LandingPageButtonStyle" parent="android:style/Widget.Button">
@@ -39,12 +39,12 @@
 
     <style name="LoginTextViewStyle" parent="android:style/Widget.TextView">
         <item name="android:textSize">@dimen/textSizeLoginText</item>
-        <item name="android:textColor">@color/colorLoginTextViewBody</item>
+        <item name="android:textColor">@color/colorLoginTextViewText</item>
     </style>
 
     <style name="LoginEditTextStyle" parent="android:style/Widget.EditText">
         <item name="android:textSize">@dimen/textSizeLoginEditText</item>
-        <item name="android:textColor">@color/colorLoginEditTextBody</item>
+        <item name="android:textColor">@color/colorLoginEditTextText</item>
         <item name="android:textColorHint">@color/colorLoginEditTextHint</item>
         <item name="android:padding">@dimen/paddingLoginEditText</item>
         <item name="android:background">@drawable/shape_edittext_login</item>
@@ -83,12 +83,12 @@
 
     <style name="RegisterTextViewStyle" parent="android:style/Widget.TextView">
         <item name="android:textSize">@dimen/textSizeRegisterTitle</item>
-        <item name="android:textColor">@color/colorRegisterTextViewBody</item>
+        <item name="android:textColor">@color/colorRegisterTextViewText</item>
     </style>
 
     <style name="RegisterEditTextStyle" parent="android:style/Widget.EditText">
         <item name="android:textSize">@dimen/textSizeRegisterEditText</item>
-        <item name="android:textColor">@color/colorRegisterEditTextBody</item>
+        <item name="android:textColor">@color/colorRegisterEditTextText</item>
         <item name="android:textColorHint">@color/colorRegisterEditTextHint</item>
         <item name="android:padding">@dimen/paddingRegisterEditText</item>
         <item name="android:background">@drawable/shape_edittext_register</item>
@@ -111,7 +111,7 @@
     </style>
 
     <style name="RegisterTextViewSubTextStyle" parent="android:style/Widget.TextView">
-        <item name="android:textColor">@color/colorLoginTextViewBody</item>
+        <item name="android:textColor">@color/colorLoginTextViewText</item>
         <item name="android:textSize">@dimen/textSizeRegisterTitle</item>
         <item name="android:drawablePadding">@dimen/paddingRegisterTextViewDrawable</item>
         <item name="android:gravity">center</item>
