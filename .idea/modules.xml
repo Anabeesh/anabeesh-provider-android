@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/anabeesh/anabeesh.iml" filepath="$PROJECT_DIR$/anabeesh/anabeesh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/anabeesh-provider-android.iml" filepath="$PROJECT_DIR$/anabeesh-provider-android.iml" />
       <module fileurl="file://$PROJECT_DIR$/anabeeshandroid.iml" filepath="$PROJECT_DIR$/anabeeshandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
     </modules>

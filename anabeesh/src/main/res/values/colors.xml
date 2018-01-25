@@ -2,7 +2,7 @@
 <resources>
     <!--Main-->
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorLayoutBackground">#f8f8f8</color>
     <color name="colorError">#f54f43</color>
@@ -84,5 +84,7 @@
     <!--TextView-->
     <color name="colorNavigationDrawerUserTitleTextView">#000000</color>
     <color name="colorNavigationDrawerUserProfileTextView">#000000</color>
+    <color name="ItemSelected">#d1c4e9</color>
+    <color name="colorInterTextBackground">#b1000000</color>
 
 </resources>
