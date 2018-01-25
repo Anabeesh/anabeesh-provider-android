@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:layoutDirection="rtl"
+    tools:context="com.cs18.anabeesh.salem.ui.AllArticle.AllArticlesActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_all_articles"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000"
+        android:layoutDirection="rtl"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_all_articles"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_all_articles"
+        tools:listitem="@layout/card_view_article" />
+
+</android.support.constraint.ConstraintLayout>

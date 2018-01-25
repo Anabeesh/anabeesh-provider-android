@@ -1,6 +1,9 @@
 <resources>
     <!--Main-->
     <string name="app_name">Anabeesh</string>
+    <!--FaceBook-->
+    <string name="facebook_app_id">1986119151638876</string>
+    <string name="fb_login_protocol_scheme">fb1986119151638876</string>
 
     <!--Landing page-->
     <string name="continue_with_facebook">تابع بواسطة فيسبوك</string>
@@ -74,6 +77,26 @@
     <string name="ok">حسنا</string>
     <string name="not_valid_fields">يوجد بعض المحتويات غير صحيحه</string>
     <string name="not_valid_user">المستخدم غير موجود</string>
+
+
+    <!--intrasting-->
+    <string name="intrastes">الاهتمامات</string>
+    <string name="itnrestesText">لنري ما هي اهتماماتك ؟</string>
+    <!-- Expert Home-->
+    <string name="expert_name">Omar Mahmmoud Salem</string>
+    <string name="article_description">Android Development This day became more  proffsional  because this libs. that make it so efficiency like Rxjava,Rxandroid and Glide  </string>
+    <string name="viewmore">المزيد</string>
+    <string name="post_tittle">android architecture components</string>
+    <string name="post_description">A collection of libraries that help you design robust A collection of libraries that help you design robustA collection of libraries that help you design robust</string>
+    <string name="poster_name">Omar Salem</string>
+    <!--Write Article Activity-->
+    <string name="article_tittle">العنوان</string>
+    <string name="post_article">نشر</string>
+    <string name="article_body">المحتوي</string>
+
+    <!--All Article Activity-->
+    <string name="allarticles">المقالات</string>
+    <string name="question_details">تفاصيل السؤال</string>
 
 
 </resources>
