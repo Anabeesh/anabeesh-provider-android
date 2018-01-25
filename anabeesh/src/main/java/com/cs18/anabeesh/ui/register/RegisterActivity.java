@@ -1,33 +1,27 @@
 package com.cs18.anabeesh.ui.register;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.widget.Button;
-import android.widget.EditText;
 
 import com.cs18.anabeesh.AnabeeshApplication;
 import com.cs18.anabeesh.R;
 import com.cs18.anabeesh.di.activity.ActivityModule;
+import com.cs18.anabeesh.di.activity.ActivityScope;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+import javax.inject.Inject;
 
 /**
  This class represents the View layer of the registration process which handles all the UI interaction
  */
 
-public class RegisterActivity extends Activity {
+@ActivityScope
+public class RegisterActivity extends Activity implements RegisterScreen{
 
-    @BindView(R.id.et_email)
-    EditText emailEditText;
-
-    @BindView(R.id.et_password)
-    EditText passwordEditText;
-
-    @BindView(R.id.btn_next)
-    Button nextButton;
+    @Inject
+    RegisterPresenter presenter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,11 +30,18 @@ public class RegisterActivity extends Activity {
         AnabeeshApplication.getComponent(this)
                 .plus(new ActivityModule(this))
                 .inject(this);
-        ButterKnife.bind(this);
+        presenter.onCreate();
+    }
+
+    @Override
+    public void setupToolbar() {
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    @OnClick(R.id.btn_next)
-    void next() {
+    @Override
+    public void setFragment(Fragment fragment) {
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.replace(R.id.email_pass_fragment, fragment);
+        ft.commit();
     }
 }

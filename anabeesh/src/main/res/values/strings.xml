@@ -17,12 +17,16 @@
     <string name="forgot_password"><u>نسيت كلمة المرور؟</u></string>
     <string name="login">تسجيل الدخول</string>
 
-    <!--Registration-->
+    <!--Registration email and password-->
     <string name="create_account">إنشاء حساب</string>
     <string name="register">تسجيل</string>
     <string name="what_is_your_email">ما هو بريدك الالكتروني؟</string>
-    <string name="confirm_email">ستحتاج الي ان تأكد هذا البريد الاكتروني لاحقا</string>
-    <string name="pick_password">اختر كلمة مرور</string>
-    <string name="use_eight_characters">استخدم ثمانية احرف علي الاقل</string>
+    <string name="confirm_email">ستحتاج إلي أن تأكد هذا البريد الاكتروني لاحقا</string>
+    <string name="pick_password">إختر كلمة مرور</string>
+    <string name="use_eight_characters">إستخدم ثمانية أحرف علي الأقل</string>
     <string name="next">التالـي</string>
+
+    <!--Registration first and last name-->
+    <string name="first_name">الإسم الأول</string>
+    <string name="last_name">إسم العائلة</string>
 </resources>

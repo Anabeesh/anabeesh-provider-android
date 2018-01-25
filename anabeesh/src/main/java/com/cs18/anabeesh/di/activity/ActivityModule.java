@@ -3,6 +3,8 @@ package com.cs18.anabeesh.di.activity;
 import android.app.Activity;
 import android.content.Context;
 
+import com.cs18.anabeesh.ui.register.RegisterScreen;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -15,7 +17,9 @@ public class ActivityModule {
 
     private final Activity activity;
 
-    public ActivityModule(Activity activity) {this.activity = activity;}
+    public ActivityModule(Activity activity) {
+        this.activity = activity;
+    }
 
     @ActivityScope
     @Provides
@@ -28,5 +32,11 @@ public class ActivityModule {
     @ForActivity
     Context provideActivityContext() {
         return activity;
+    }
+
+    @ActivityScope
+    @Provides
+    RegisterScreen providesRegisterScreen(){
+        return (RegisterScreen) activity;
     }
 }

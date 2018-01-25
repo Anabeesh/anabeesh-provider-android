@@ -41,6 +41,7 @@ public class LandingPageActivity extends Activity {
     }
 
     @OnClick(R.id.btn_sign_up)
+    // أنشئ حساب جديد ::
     void signUpByEmail() {
         startActivity(new Intent(this, RegisterActivity.class));
     }

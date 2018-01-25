@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cs18.anabeesh.ui.register.RegisterActivity">
+
+    <TextView
+        android:id="@+id/tv_first_name"
+        style="@style/RegisterTextViewLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginRegisterTextView"
+        android:labelFor="@id/et_first_name"
+        android:text="@string/first_name" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginRegisterEditText"
+        android:layout_marginStart="@dimen/marginRegisterEditText"
+        android:inputType="textEmailAddress"
+        tools:text="عمر" />
+
+
+    <TextView
+        android:id="@+id/tv_last_name"
+        style="@style/RegisterTextViewLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginRegisterTextView"
+        android:labelFor="@id/et_last_name"
+        android:text="@string/last_name" />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginRegisterEditText"
+        android:layout_marginStart="@dimen/marginRegisterEditText"
+        android:inputType="text"
+        tools:ignore="TextFields"
+        tools:text="بشاري" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginBottomRegisterButton"
+        android:layout_marginEnd="@dimen/marginEndRegisterButton"
+        android:layout_marginStart="@dimen/marginStartRegisterButton"
+        android:layout_marginTop="@dimen/marginTopRegisterButton"
+        android:text="@string/next" />
+</LinearLayout>
