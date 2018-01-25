@@ -17,7 +17,7 @@ import dagger.Component;
 )
 public interface AppComponent {
 
-    ActivityComponent plus(ActivityModule activityModule);
-
     void inject(AnabeeshApplication anabeeshApplication);
+
+    ActivityComponent plus(ActivityModule activityModule);
 }

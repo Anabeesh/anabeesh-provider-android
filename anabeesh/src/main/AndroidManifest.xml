@@ -2,6 +2,8 @@
 <manifest package="com.cs18.anabeesh"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".AnabeeshApplication"
         android:allowBackup="true"
@@ -14,11 +16,7 @@
             android:name=".muhammad.ui.landingpage.LandingPageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/LandingPageTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".muhammad.ui.login.LoginActivity"
@@ -48,5 +46,25 @@
             android:screenOrientation="portrait"
             android:theme="@style/HomeTheme"
             android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".salem.ui.interestes.InterestsActivity"
+            android:label="@string/intrastes"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<<<<<<< HEAD
+=======
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".salem.ui.interestes.InterestsActivity" />
+>>>>>>> f9a4717... S
     </application>
 </manifest>

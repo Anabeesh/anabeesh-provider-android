@@ -4,6 +4,7 @@ import com.cs18.anabeesh.muhammad.ui.home.HomeActivity;
 import com.cs18.anabeesh.muhammad.ui.landingpage.LandingPageActivity;
 import com.cs18.anabeesh.muhammad.ui.login.LoginActivity;
 import com.cs18.anabeesh.muhammad.ui.register.RegisterActivity;
+import com.cs18.anabeesh.salem.ui.interestes.InterestsActivity;
 
 import dagger.Subcomponent;
 
@@ -24,5 +25,11 @@ public interface ActivityComponent {
 
     void inject(RegisterActivity registerActivity);
 
+<<<<<<< HEAD
     void inject(HomeActivity homeActivity);
+
+    void inject(InterestesActivity interestesActivity);
+=======
+    void inject(InterestsActivity interestesActivity);
+>>>>>>> f9a4717... S
 }

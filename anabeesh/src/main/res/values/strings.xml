@@ -1,6 +1,9 @@
 <resources>
     <!--Main-->
     <string name="app_name">Anabeesh</string>
+    <!--FaceBook-->
+    <string name="facebook_app_id">1986119151638876</string>
+    <string name="fb_login_protocol_scheme">fb1986119151638876</string>
 
     <!--Landing page-->
     <string name="continue_with_facebook">تابع بواسطة فيسبوك</string>
@@ -31,4 +34,9 @@
     <string name="good_morning">Good morning,</string>
     <string name="profile">الملف الشخصي</string>
     <string name="notification">الاشعارات</string>
+    <!--intrasting-->
+    <string name="intrastes">الاهتمامات</string>
+    <string name="itnrestesText">لنري ما هي اهتماماتك ؟</string>
+
+
 </resources>
