@@ -1,21 +1,34 @@
 package com.cs18.anabeesh.model;
 
-import android.graphics.Bitmap;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  TODO: Add class header
  */
 
 public class User {
-    private final String firstname;
-    private final String lastname;
-    private final String UserEmail;
-    private final Bitmap UserImage;
+    private final JSONObject object;
+    private String Firstname;
+    private String Lastname;
+    private String useremail;
+    private String Birthday;
+    private String UserImage;
+    private String gender;
 
-    User(String firstname, String lastname, String userEmail, Bitmap userImage) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        UserEmail = userEmail;
-        UserImage = userImage;
+    public User(JSONObject object) {
+
+        this.object = object;
+    }
+
+    public void SendtoIntrastingScreen(JSONObject object) {
+        try {
+            useremail = object.getString("email");
+            gender = object.getString("gender");
+            Firstname = object.getString("name");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }
+
