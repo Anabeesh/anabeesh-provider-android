@@ -71,6 +71,8 @@ dependencies {
     // Testing
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
+    //facebook
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
 
     //Other
     implementation deps.timber.lib
