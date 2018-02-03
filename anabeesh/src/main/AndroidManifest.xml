@@ -13,11 +13,11 @@
         <activity
             android:name=".ui.landingpage.LandingPageActivity"
             android:theme="@style/LandingPageTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
         </activity>
         <activity
             android:name=".ui.login.LoginActivity"
@@ -39,7 +39,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.landingpage.LandingPageActivity" />
         </activity>
-        <!--Facebook-->
+        <!-- Facebook -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -60,7 +60,21 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <!--facebook-->
+        <!-- facebook -->
+        <activity
+            android:name=".ui.interestes.InterestesActivity"
+            android:label="@string/intrastes"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ui.interestes.InterestesActivity" />
     </application>
 
 </manifest>

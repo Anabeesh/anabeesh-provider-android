@@ -52,4 +52,5 @@
     <color name="colorRegisterButtonDisabled">#FFABABAB</color>
     <color name="colorRegisterButtonText">#FFFFFF</color>
     <color name="colorRegisterButtonRipple">#FFFFFF</color>
+    <drawable name="ItemSelected">#d1c4e9</drawable>
 </resources>

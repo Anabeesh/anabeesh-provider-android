@@ -5,4 +5,6 @@ package com.cs18.anabeesh.RetrofitClint;
  */
 
 public interface UserServic {
+   /* @POST
+    Observable<UserInfo> SendUserInterstes(@POST("id") int selected_id);*/
 }

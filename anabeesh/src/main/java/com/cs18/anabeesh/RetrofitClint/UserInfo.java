@@ -5,5 +5,7 @@ package com.cs18.anabeesh.RetrofitClint;
  */
 
 public class UserInfo {
-    
+    UserInfo() {
+    }
+    //TODO MAKE Pojo class to post user interestes
 }
