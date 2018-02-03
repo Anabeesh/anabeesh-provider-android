@@ -36,7 +36,7 @@ public class InterestesActivity extends Activity {
         ButterKnife.bind(this);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         Nextbutton.setClickable(false);
-        presenter.SelecteInterests(this, imagesRecyclerView);
+        presenter.BulidRecyclerView(this, imagesRecyclerView);
     }
 
    /* @OnClick(R.id.intrastaing_btn_id)

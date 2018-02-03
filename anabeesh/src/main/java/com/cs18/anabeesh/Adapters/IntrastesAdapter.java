@@ -53,7 +53,7 @@ public class IntrastesAdapter extends RecyclerView.Adapter<IntrastesAdapter.MyVi
                 }
                 holder.view.setBackgroundColor(Color.CYAN);
                 itemClaickableCounter++;
-                presenter.getselecteditem(getItemId(position), itemClaickableCounter);
+                //  presenter.getselecteditem(getItemId(position), itemClaickableCounter);
                 Toast.makeText(mContect, "Selected " + itemClaickableCounter, Toast.LENGTH_SHORT).show();
             } else {
 

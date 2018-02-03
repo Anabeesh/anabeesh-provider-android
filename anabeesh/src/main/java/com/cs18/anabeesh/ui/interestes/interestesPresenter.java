@@ -31,7 +31,7 @@ public class interestesPresenter {
         this.interestesPageRebo = interestesPageRebo;
     }
 
-    void SelecteInterests(Context context, RecyclerView recyclerView) {
+    void BulidRecyclerView(Context context, RecyclerView recyclerView) {
 
         recyclerView.setLayoutManager(new GridLayoutManager(context, 4));
         //Full the  recyclerview With Data  " Images"
@@ -48,11 +48,11 @@ public class interestesPresenter {
         intrastesAdapter.notifyDataSetChanged();
     }
 
-    public void getselecteditem(long id, int Selected) {
+    /*public void getselecteditem(long id, int Selected) {
         if (Selected >= 3) {
             interestesPageRebo.MakeApicall();
         } else {
 
         }
-    }
+    }*/
 }
