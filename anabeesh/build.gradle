@@ -55,6 +55,7 @@ dependencies {
 
     // Dagger
     implementation deps.dagger.lib
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     kapt deps.dagger.compiler
 
     // Butter Knife
@@ -71,6 +72,8 @@ dependencies {
     // Testing
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
+    //facebook
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
 
     //Other
     implementation deps.timber.lib

@@ -1,5 +1,6 @@
 package com.cs18.anabeesh.di.activity;
 
+import com.cs18.anabeesh.ui.interestes.InterestesActivity;
 import com.cs18.anabeesh.ui.landingpage.LandingPageActivity;
 import com.cs18.anabeesh.ui.login.LoginActivity;
 import com.cs18.anabeesh.ui.register.RegisterActivity;
@@ -22,4 +23,6 @@ public interface ActivityComponent {
     void inject(LoginActivity loginActivity);
 
     void inject(RegisterActivity registerActivity);
+
+    void inject(InterestesActivity interestesActivity);
 }
