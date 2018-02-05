@@ -42,6 +42,10 @@ android {
 }
 
 dependencies {
+
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+
     //UI
     implementation deps.support.design
     implementation deps.support.cardview
@@ -76,6 +80,7 @@ dependencies {
     implementation deps.timber.lib
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
 
     configurations.all {
         resolutionStrategy {
