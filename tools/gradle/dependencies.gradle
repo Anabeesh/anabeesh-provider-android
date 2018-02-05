@@ -13,6 +13,8 @@ def versions = [
         butterknife: '8.6.0',
         glide      : '4.3.0',
         timber     : '4.5.1',
+        gson       : '2.8.2',
+        gson_conv  : '2.3.0'
 ]
 
 def support = [
@@ -32,6 +34,11 @@ def rx = [
 
 def retrofit = [
         lib: "com.squareup.retrofit2:retrofit:2.2.0",
+]
+
+def gson = [
+        lib       : "com.google.code.gson:gson:${versions.gson}",
+        converter : "com.squareup.retrofit2:converter-gson:${versions.gson_conv}",
 ]
 
 def dagger = [
@@ -69,5 +76,6 @@ ext.deps = [
         rx         : rx,
         retrofit   : retrofit,
         timber     : timber,
-        test       : test
+        test       : test ,
+        gson       : gson
 ]

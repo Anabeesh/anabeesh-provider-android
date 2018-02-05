@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.cs18.anabeesh.ui.login.LoginActivity">
-
     <TextView
         android:id="@+id/tv_email"
         style="@style/LoginTextViewLabelStyle"
@@ -53,6 +52,12 @@
         android:clickable="true"
         android:focusable="true"
         android:text="@string/forgot_password" />
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btn_login"
