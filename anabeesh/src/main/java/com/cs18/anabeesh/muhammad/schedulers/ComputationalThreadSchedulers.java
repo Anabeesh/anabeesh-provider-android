@@ -1,13 +1,14 @@
-package com.cs18.anabeesh.schedulers;
+package com.cs18.anabeesh.muhammad.schedulers;
 
 import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
 
 /**
- MainThread-specific schedulers
+ Heavy computation-specific Schedulers
  */
 
-public class MainThreadSchedulers implements ThreadSchedulers {
+public class ComputationalThreadSchedulers implements ThreadSchedulers {
 
     @Override
     public Scheduler observeOn() {
@@ -16,6 +17,6 @@ public class MainThreadSchedulers implements ThreadSchedulers {
 
     @Override
     public Scheduler subscribeOn() {
-        return AndroidSchedulers.mainThread();
+        return Schedulers.computation();
     }
 }

@@ -1,12 +1,12 @@
-package com.cs18.anabeesh.di.application;
+package com.cs18.anabeesh.muhammad.di.application;
 
-import com.cs18.anabeesh.schedulers.ComputationalThread;
-import com.cs18.anabeesh.schedulers.ComputationalThreadSchedulers;
-import com.cs18.anabeesh.schedulers.IOThread;
-import com.cs18.anabeesh.schedulers.IOThreadSchedulers;
-import com.cs18.anabeesh.schedulers.MainThread;
-import com.cs18.anabeesh.schedulers.MainThreadSchedulers;
-import com.cs18.anabeesh.schedulers.ThreadSchedulers;
+import com.cs18.anabeesh.muhammad.schedulers.ComputationalThread;
+import com.cs18.anabeesh.muhammad.schedulers.ComputationalThreadSchedulers;
+import com.cs18.anabeesh.muhammad.schedulers.IOThread;
+import com.cs18.anabeesh.muhammad.schedulers.IOThreadSchedulers;
+import com.cs18.anabeesh.muhammad.schedulers.MainThread;
+import com.cs18.anabeesh.muhammad.schedulers.MainThreadSchedulers;
+import com.cs18.anabeesh.muhammad.schedulers.ThreadSchedulers;
 
 import dagger.Module;
 import dagger.Provides;

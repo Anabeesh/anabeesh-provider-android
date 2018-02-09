@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.landingpage.LandingPageActivity"
+            android:name=".muhammad.ui.landingpage.LandingPageActivity"
             android:theme="@style/LandingPageTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,24 +20,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.login.LoginActivity"
+            android:name=".muhammad.ui.login.LoginActivity"
             android:label="@string/login"
-            android:parentActivityName=".ui.landingpage.LandingPageActivity"
+            android:parentActivityName=".muhammad.ui.landingpage.LandingPageActivity"
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.landingpage.LandingPageActivity" />
+                android:value=".muhammad.ui.landingpage.LandingPageActivity" />
         </activity>
         <activity
-            android:name=".ui.register.RegisterActivity"
+            android:name=".muhammad.ui.register.RegisterActivity"
             android:label="@string/create_account"
-            android:parentActivityName=".ui.landingpage.LandingPageActivity"
+            android:parentActivityName=".muhammad.ui.landingpage.LandingPageActivity"
             android:theme="@style/RegisterTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.landingpage.LandingPageActivity" />
+                android:value=".muhammad.ui.landingpage.LandingPageActivity" />
         </activity>
     </application>
 
