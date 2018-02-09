@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.di.application;
+package com.cs18.anabeesh.muhammad.di.application;
 
 import android.app.Application;
 import android.content.Context;

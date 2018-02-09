@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.ui.landingpage;
+package com.cs18.anabeesh.muhammad.ui.landingpage;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,10 +7,10 @@ import android.support.annotation.Nullable;
 
 import com.cs18.anabeesh.AnabeeshApplication;
 import com.cs18.anabeesh.R;
-import com.cs18.anabeesh.di.activity.ActivityModule;
-import com.cs18.anabeesh.di.activity.ActivityScope;
-import com.cs18.anabeesh.ui.login.LoginActivity;
-import com.cs18.anabeesh.ui.register.RegisterActivity;
+import com.cs18.anabeesh.muhammad.di.activity.ActivityModule;
+import com.cs18.anabeesh.muhammad.di.activity.ActivityScope;
+import com.cs18.anabeesh.muhammad.ui.login.LoginActivity;
+import com.cs18.anabeesh.muhammad.ui.register.RegisterActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;

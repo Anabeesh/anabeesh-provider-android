@@ -1,8 +1,8 @@
-package com.cs18.anabeesh.di.application;
+package com.cs18.anabeesh.muhammad.di.application;
 
 import com.cs18.anabeesh.AnabeeshApplication;
-import com.cs18.anabeesh.di.activity.ActivityComponent;
-import com.cs18.anabeesh.di.activity.ActivityModule;
+import com.cs18.anabeesh.muhammad.di.activity.ActivityComponent;
+import com.cs18.anabeesh.muhammad.di.activity.ActivityModule;
 
 import dagger.Component;
 

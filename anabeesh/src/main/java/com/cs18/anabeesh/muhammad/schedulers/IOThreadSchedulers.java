@@ -1,11 +1,11 @@
-package com.cs18.anabeesh.schedulers;
+package com.cs18.anabeesh.muhammad.schedulers;
 
 import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Input/Output-specific Schedulers
+ Input/Output-specific Schedulers
  */
 
 public class IOThreadSchedulers implements ThreadSchedulers {

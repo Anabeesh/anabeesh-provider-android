@@ -4,8 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.os.StrictMode;
 
-import com.cs18.anabeesh.di.application.AppComponent;
-import com.cs18.anabeesh.di.application.DaggerAppComponent;
+import com.cs18.anabeesh.muhammad.di.application.AppComponent;
+import com.cs18.anabeesh.muhammad.di.application.DaggerAppComponent;
 
 import timber.log.Timber;
 

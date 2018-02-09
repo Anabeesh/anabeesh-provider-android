@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.schedulers;
+package com.cs18.anabeesh.muhammad.schedulers;
 
 import javax.inject.Qualifier;
 

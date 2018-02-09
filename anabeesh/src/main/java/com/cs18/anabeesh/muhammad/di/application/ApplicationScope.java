@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.di.application;
+package com.cs18.anabeesh.muhammad.di.application;
 
 import javax.inject.Scope;
 

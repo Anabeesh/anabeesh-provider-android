@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.di.activity;
+package com.cs18.anabeesh.muhammad.di.activity;
 
 import android.app.Activity;
 import android.content.Context;

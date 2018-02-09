@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.di.application;
+package com.cs18.anabeesh.muhammad.di.activity;
 
 import javax.inject.Qualifier;
 
@@ -8,5 +8,5 @@ import javax.inject.Qualifier;
  */
 
 @Qualifier
-public @interface ForApplication {
+public @interface ForActivity {
 }
