@@ -22,10 +22,9 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "anabeesh/build.gradle" }}
       - run:
           name: Run Tests
-          command: ./gradlew lint test
-          command: ./gradlew pmd test
-          command: ./gradlew findBugs test
-          command: ./gradlew assembleDebug
+          command: ./gradlew clean
+          command: ./gradlew build
+          command: ./gradlew check
           command: ./gradlew test
       - store_artifacts:
           path: anabeesh/build/reports/
