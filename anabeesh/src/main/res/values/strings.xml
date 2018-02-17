@@ -27,8 +27,8 @@
     <string name="next">التالـي</string>
 
     <!--Home-->
-    <string name="ask_or_search_for_any_question">Ask or search for any question…</string>
+    <string name="ask_or_search_for_any_question">اسأل او ابحث عن اي سؤال…</string>
     <string name="good_morning">Good morning,</string>
-    <string name="profile">Profile</string>
-    <string name="notification">Notification</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="notification">الاشعارات</string>
 </resources>

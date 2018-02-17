@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.cs18.anabeesh.R;
 import com.cs18.anabeesh.muhammad.di.activity.ActivityScope;
@@ -13,7 +12,6 @@ import com.cs18.anabeesh.muhammad.di.activity.ForActivity;
 
 import javax.inject.Inject;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -42,7 +40,7 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         } else if (viewType == CATEGORY) {
             return new CategoryViewHolder(layoutInflater.inflate(R.layout.item_category, parent, false));
         } else {
-            return new SearchViewHolder(layoutInflater.inflate(R.layout.item_header, parent, false));
+            return new SearchViewHolder(layoutInflater.inflate(R.layout.item_search, parent, false));
         }
     }
 
@@ -74,17 +72,9 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     class SearchViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.tv_greeting)
-        TextView greetingTextView;
-
         SearchViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
-            bind();
-        }
-
-        void bind() {
-            greetingTextView.setText(context.getString(R.string.good_morning).concat(" Muhammad."));
         }
 
         @OnClick(R.id.tv_search)

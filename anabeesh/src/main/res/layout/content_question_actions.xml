@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/item_question">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/margin_micro"
+        android:background="@color/colorHomeDivider"
+        app:layout_constraintBottom_toTopOf="@id/tv_like"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_like"
+        style="@style/HomeQuestionActionsStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/paddingDrawableHome"
+        android:drawableStart="@drawable/ic_thumb_up"
+        android:text="90%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/divider2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divider" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginTop="@dimen/margin_micro"
+        android:background="@color/colorHomeDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_comment"
+        app:layout_constraintStart_toEndOf="@id/tv_like"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        style="@style/HomeQuestionActionsStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/paddingDrawableHome"
+        android:drawableStart="@drawable/ic_comment"
+        android:text="1K"
+        app:layout_constraintBottom_toBottomOf="@id/tv_like"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/divider2"
+        app:layout_constraintTop_toTopOf="@id/tv_like" />
+
+</android.support.constraint.ConstraintLayout>

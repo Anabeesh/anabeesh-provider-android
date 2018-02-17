@@ -7,9 +7,15 @@
     android:layout_marginStart="@dimen/margin"
     android:background="@drawable/shape_card_home"
     android:elevation="@dimen/elevationHomeCard"
-    android:orientation="vertical">
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/padding_micro"
+    android:paddingStart="@dimen/padding_micro"
+    android:paddingTop="@dimen/padding_micro">
+
+    <include layout="@layout/content_question_user_header" />
 
     <include layout="@layout/content_question_info" />
 
-    <include layout="@layout/content_question_user_header" />
+    <include layout="@layout/content_question_actions" />
 </LinearLayout>

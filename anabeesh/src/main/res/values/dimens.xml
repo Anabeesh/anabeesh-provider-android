@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!--Main-->
     <dimen name="margin">16dp</dimen>
     <dimen name="margin_micro">8dp</dimen>
@@ -10,7 +9,6 @@
     <dimen name="padding_nano">4dp</dimen>
     <dimen name="padding_micro">8dp</dimen>
     <dimen name="padding_extra">24dp</dimen>
-
 
     <!--Landing page-->
     <!--ImageView-->
@@ -23,19 +21,21 @@
     <dimen name="textSizeLandingPageText">14sp</dimen>
     <dimen name="textSizeLandingPageSubText">12sp</dimen>
     <!--Button-->
+    <dimen name="elevationLandingPageButton">2dp</dimen>
     <dimen name="marginTopLandingPageButton">16dp</dimen>
     <dimen name="marginBottomLandingPageButton">0dp</dimen>
     <dimen name="marginStartLandingPageButton">0dp</dimen>
     <dimen name="marginEndLandingPageButton">0dp</dimen>
-    <dimen name="paddingDrawableLandingPage">16dp</dimen>
-    <dimen name="paddingTopLandingPageButton">12dp</dimen>
-    <dimen name="paddingBottomLandingPageButton">12dp</dimen>
-    <dimen name="paddingStartLandingPageButton">80dp</dimen>
-    <dimen name="paddingEndLandingPageButton">80dp</dimen>
+    <dimen name="paddingDrawableLandingPage">10dp</dimen>
+    <dimen name="paddingTopLandingPageButton">10dp</dimen>
+    <dimen name="paddingBottomLandingPageButton">10dp</dimen>
+    <dimen name="paddingStartLandingPageButton">64dp</dimen>
+    <dimen name="paddingEndLandingPageButton">64dp</dimen>
     <dimen name="radiusButtonLandingPage">50dp</dimen>
 
     <!--Login-->
     <!--EditText-->
+    <dimen name="elevationLoginEditText">2dp</dimen>
     <dimen name="textSizeLoginEditText">14sp</dimen>
     <dimen name="marginLoginEditText">16dp</dimen>
     <dimen name="paddingLoginEditText">16dp</dimen>
@@ -51,14 +51,15 @@
     <dimen name="marginBottomLoginButton">0dp</dimen>
     <dimen name="marginStartLoginButton">0dp</dimen>
     <dimen name="marginEndLoginButton">0dp</dimen>
-    <dimen name="paddingTopLoginButton">12dp</dimen>
-    <dimen name="paddingBottomLoginButton">12dp</dimen>
+    <dimen name="paddingTopLoginButton">10dp</dimen>
+    <dimen name="paddingBottomLoginButton">10dp</dimen>
     <dimen name="paddingStartLoginButton">80dp</dimen>
     <dimen name="paddingEndLoginButton">80dp</dimen>
     <dimen name="radiusButtonLogin">50dp</dimen>
 
     <!--Registration-->
     <!--EditText-->
+    <dimen name="elevationRegistrationEditText">2dp</dimen>
     <dimen name="textSizeRegisterEditText">14sp</dimen>
     <dimen name="marginRegisterEditText">16dp</dimen>
     <dimen name="paddingRegisterEditText">16dp</dimen>
@@ -75,8 +76,8 @@
     <dimen name="marginBottomRegisterButton">0dp</dimen>
     <dimen name="marginStartRegisterButton">0dp</dimen>
     <dimen name="marginEndRegisterButton">0dp</dimen>
-    <dimen name="paddingTopRegisterButton">12dp</dimen>
-    <dimen name="paddingBottomRegisterButton">12dp</dimen>
+    <dimen name="paddingTopRegisterButton">10dp</dimen>
+    <dimen name="paddingBottomRegisterButton">10dp</dimen>
     <dimen name="paddingStartRegisterButton">80dp</dimen>
     <dimen name="paddingEndRegisterButton">80dp</dimen>
     <dimen name="radiusButtonRegister">50dp</dimen>
@@ -84,7 +85,7 @@
     <!--Home-->
     <dimen name="elevationHomeCard">2dp</dimen>
     <!--EditText-->
-    <dimen name="textSizeHomeEditText">12sp</dimen>
+    <dimen name="textSizeHomeEditText">14sp</dimen>
     <dimen name="marginHomeEditText">16dp</dimen>
     <dimen name="paddingHomeEditText">16dp</dimen>
     <dimen name="radiusHomeEditText">4dp</dimen>
@@ -92,10 +93,10 @@
     <dimen name="paddingDrawableHome">8dp</dimen>
     <dimen name="paddingHomeTextView">16dp</dimen>
     <dimen name="marginHomeTextView">16dp</dimen>
-    <dimen name="textSizeHomeTitle">14sp</dimen>
-    <dimen name="textSizeHomeText">12sp</dimen>
-    <dimen name="textSizeHomeSubText">10sp</dimen>
+    <dimen name="textSizeHomeTitle">16sp</dimen>
+    <dimen name="textSizeHomeText">14sp</dimen>
+    <dimen name="textSizeHomeSubText">12sp</dimen>
     <dimen name="radiusQuestionTag">8dp</dimen>
     <!--ImageView-->
-    <dimen name="imageSizeHomeQuestion">80dp</dimen>
+    <dimen name="imageSizeHomeQuestion">88dp</dimen>
 </resources>
