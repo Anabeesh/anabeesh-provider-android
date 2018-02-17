@@ -12,7 +12,10 @@
         style="@style/LoginTextViewLabelStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/marginLoginTextView"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_extra"
         android:labelFor="@id/et_email"
         android:text="@string/email" />
 
@@ -31,7 +34,10 @@
         style="@style/LoginTextViewLabelStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/marginLoginTextView"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_extra"
         android:labelFor="@id/et_password"
         android:text="@string/password" />
 

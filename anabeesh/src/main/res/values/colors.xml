@@ -4,6 +4,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorLayoutBackground">#f8f8f8</color>
 
     <!--Landing page-->
     <color name="colorLandingPageLayoutBackground">#e5e5e5</color>

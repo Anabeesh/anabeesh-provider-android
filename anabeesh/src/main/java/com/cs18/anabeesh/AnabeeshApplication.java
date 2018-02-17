@@ -6,6 +6,7 @@ import android.os.StrictMode;
 
 import com.cs18.anabeesh.muhammad.di.application.AppComponent;
 import com.cs18.anabeesh.muhammad.di.application.DaggerAppComponent;
+import com.cs18.anabeesh.muhammad.util.FontUtil;
 
 import timber.log.Timber;
 
@@ -32,6 +33,7 @@ public class AnabeeshApplication extends Application {
         appComponent.inject(this);
         setStrictModeForDebugEnabled(true);
         setTimberDebugTreeEnabled(true);
+        FontUtil.overRideDefaultMonoSpaceFont(this);
     }
 
     /*

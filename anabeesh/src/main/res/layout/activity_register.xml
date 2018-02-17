@@ -11,7 +11,10 @@
         style="@style/RegisterTextViewLabelStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/marginRegisterTextView"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_extra"
         android:labelFor="@id/et_email"
         android:text="@string/what_is_your_email" />
 
@@ -29,7 +32,10 @@
         style="@style/RegisterTextViewSubTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/marginRegisterTextView"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_micro"
         android:text="@string/confirm_email" />
 
     <TextView
@@ -37,7 +43,10 @@
         style="@style/RegisterTextViewLabelStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/marginRegisterTextView"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
         android:labelFor="@id/et_password"
         android:text="@string/pick_password" />
 
@@ -56,7 +65,10 @@
         style="@style/RegisterTextViewSubTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/marginRegisterTextView"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_micro"
         android:text="@string/use_eight_characters"
         tools:drawableEnd="@drawable/ic_done_register" />
 

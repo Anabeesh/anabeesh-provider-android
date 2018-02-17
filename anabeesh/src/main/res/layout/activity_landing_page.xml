@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context=".muhammad.ui.landingpage.LandingPageActivity">
@@ -15,14 +15,17 @@
         android:layout_marginBottom="@dimen/marginBottomLandingPageImageView"
         android:layout_marginTop="@dimen/marginTopLandingPageImageView"
         android:contentDescription="@string/anabeesh_logo_content_description"
+        android:elevation="@dimen/elevationLandingPageButton"
         android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toTopOf="@id/btn_facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/btn_facebook"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="@dimen/marginBottomLandingPageButton"
@@ -32,8 +35,10 @@
         android:background="@drawable/selector_button_facebook"
         android:drawableStart="@drawable/ic_facebook_logo"
         android:text="@string/continue_with_facebook"
-        app:layout_constraintBottom_toTopOf="@id/tv_already_user"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/btn_google_plus"
+        app:layout_constraintEnd_toEndOf="@id/btn_google_plus"
+        app:layout_constraintStart_toStartOf="@id/btn_google_plus"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
 
     <Button
         android:id="@+id/btn_google_plus"
@@ -47,6 +52,9 @@
         android:background="@drawable/selector_button_google_plus"
         android:drawableStart="@drawable/ic_google_plus"
         android:text="@string/continue_with_google_plus"
+        app:layout_constraintBottom_toTopOf="@id/tv_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_facebook" />
 
     <TextView
@@ -54,22 +62,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/marginLandingPageTextView"
         android:padding="@dimen/marginLandingPageTextView"
         android:text="@string/or"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btn_sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_google_plus" />
 
     <Button
         android:id="@+id/btn_sign_up"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginBottomLandingPageImageView"
         android:background="@drawable/selector_button_sign_up"
         android:drawableStart="@drawable/ic_email"
         android:text="@string/create_new_account"
+        app:layout_constraintBottom_toTopOf="@id/tv_already_user"
+        app:layout_constraintEnd_toEndOf="@id/btn_google_plus"
+        app:layout_constraintStart_toStartOf="@id/btn_google_plus"
         app:layout_constraintTop_toBottomOf="@id/tv_or" />
 
     <TextView
@@ -81,16 +93,20 @@
         android:text="@string/already_a_user"
         app:layout_constraintBottom_toTopOf="@id/btn_sign_in"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_up" />
 
     <Button
         android:id="@+id/btn_sign_in"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="@dimen/marginTopLandingPageButton"
         android:background="@drawable/selector_button_sign_in"
         android:text="@string/sign_in"
         android:textColor="@color/colorLandingPageTextViewBody"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_google_plus"
+        app:layout_constraintStart_toStartOf="@id/btn_google_plus"
+        app:layout_constraintTop_toBottomOf="@id/tv_already_user" />
 </android.support.constraint.ConstraintLayout>

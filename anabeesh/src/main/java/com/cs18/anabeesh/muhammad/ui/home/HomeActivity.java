@@ -1,14 +1,14 @@
 package com.cs18.anabeesh.muhammad.ui.home;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.Toolbar;
 
 import com.cs18.anabeesh.AnabeeshApplication;
 import com.cs18.anabeesh.R;
@@ -25,7 +25,7 @@ import butterknife.ButterKnife;
  */
 
 @ActivityScope
-public class HomeActivity extends AppCompatActivity implements HomeScreen {
+public class HomeActivity extends Activity implements HomeScreen {
 
     @BindView(R.id.refresh_layout_home)
     SwipeRefreshLayout homeLayout;
@@ -60,7 +60,7 @@ public class HomeActivity extends AppCompatActivity implements HomeScreen {
 
     @Override
     public void setupToolbar() {
-        setSupportActionBar(toolbar);
+        setActionBar(toolbar);
     }
 
     @Override

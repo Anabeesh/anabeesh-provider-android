@@ -6,18 +6,6 @@
     android:layout_height="wrap_content"
     tools:showIn="@layout/item_question">
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="0dp"
-        android:layout_height="0.5dp"
-        android:layout_marginBottom="@dimen/margin_micro"
-        android:layout_marginTop="@dimen/margin_micro"
-        android:background="@color/colorHomeDivider"
-        app:layout_constraintBottom_toTopOf="@id/iv_user"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/iv_user"
         android:layout_width="48dp"
@@ -26,18 +14,18 @@
         android:paddingStart="@dimen/padding_micro"
         android:src="@drawable/ic_user"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tv_name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/tv_name"
         style="@style/HomeQuestionUserNameStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Muhammad Youssef"
+        android:text="محمد يوسف"
         app:layout_constraintBottom_toTopOf="@id/tv_date"
-        app:layout_constraintStart_toEndOf="@id/iv_user"
+        app:layout_constraintEnd_toStartOf="@id/iv_user"
         app:layout_constraintTop_toTopOf="@id/iv_user"
         app:layout_constraintVertical_chainStyle="packed" />
 
@@ -46,37 +34,8 @@
         style="@style/HomeQuestionDateStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="23 mins ago"
+        android:text="منذ 23 دقيقة"
         app:layout_constraintBottom_toBottomOf="@id/iv_user"
         app:layout_constraintStart_toStartOf="@id/tv_name"
         app:layout_constraintTop_toBottomOf="@id/tv_name" />
-
-    <TextView
-        android:id="@+id/tv_like"
-        style="@style/HomeQuestionDateStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawablePadding="@dimen/paddingDrawableHome"
-        android:drawableStart="@drawable/ic_thumb_up"
-        android:text="90%"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tv_comment"
-        app:layout_constraintHorizontal_bias="2"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toEndOf="@id/tv_name"
-        app:layout_constraintTop_toTopOf="@id/divider" />
-
-    <TextView
-        android:id="@+id/tv_comment"
-        style="@style/HomeQuestionDateStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawablePadding="@dimen/paddingDrawableHome"
-        android:drawableStart="@drawable/ic_comment"
-        android:text="1K"
-        app:layout_constraintBottom_toBottomOf="@id/tv_like"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_like"
-        app:layout_constraintTop_toTopOf="@id/tv_like" />
-
 </android.support.constraint.ConstraintLayout>

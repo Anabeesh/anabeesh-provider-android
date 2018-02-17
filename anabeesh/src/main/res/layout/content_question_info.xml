@@ -11,10 +11,10 @@
         style="@style/HomeQuestionTitleStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="How to make pepperoni pizza?"
+        android:text="أن أحكم بهيئة الأوروبي هذا, وانهاء انتباه ان غير؟"
         app:layout_constraintBottom_toTopOf="@id/tv_description"
-        app:layout_constraintEnd_toStartOf="@id/iv_preview"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_preview"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
@@ -23,10 +23,10 @@
         style="@style/HomeQuestionTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea"
+        android:text="أطراف إنطلاق هذه إذ. وحتّى العالمية حدى عل, انه اسبوعين باستحداث لم, بها وصغار التحالف المؤلّفة ٣٠. شدّت ترتيب سليمان، عدد بل, من بال بشكل إحكام وبالرغم. وفي تم الأجل الستار. أي دنو وكسبت الشرقية شموليةً, جُل جنوب تجهيز الخاصّة لم, معاملة استطاعوا من لان. أن أحكم بهيئة الأوروبي هذا, وانهاء انتباه ان غير."
         app:layout_constraintBottom_toTopOf="@id/tv_tag1"
-        app:layout_constraintEnd_toEndOf="@id/tv_header"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_header"
         app:layout_constraintTop_toBottomOf="@id/tv_header" />
 
     <ImageView
@@ -36,8 +36,8 @@
         android:layout_margin="@dimen/margin_micro"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_pizza"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tv_header"
+        app:layout_constraintEnd_toStartOf="@id/tv_header"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -49,10 +49,10 @@
         android:layout_marginEnd="@dimen/margin_nano"
         android:layout_marginStart="@dimen/margin_micro"
         android:layout_marginTop="@dimen/margin_micro"
-        android:text="Food"
+        android:text="أكل"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tv_tag2"
-        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintHorizontal_bias="2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_description" />
@@ -66,7 +66,7 @@
         android:layout_marginEnd="@dimen/margin_nano"
         android:layout_marginStart="@dimen/margin_nano"
         android:layout_marginTop="@dimen/margin_micro"
-        android:text="Italian"
+        android:text="ايطالي"
         app:layout_constraintBottom_toBottomOf="@id/tv_tag1"
         app:layout_constraintEnd_toStartOf="@id/tv_tag3"
         app:layout_constraintStart_toEndOf="@id/tv_tag1"
@@ -81,7 +81,7 @@
         android:layout_marginEnd="@dimen/margin_micro"
         android:layout_marginStart="@dimen/margin_nano"
         android:layout_marginTop="@dimen/margin_micro"
-        android:text="Pizza"
+        android:text="بيتزا"
         app:layout_constraintBottom_toBottomOf="@id/tv_tag2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_tag2"
