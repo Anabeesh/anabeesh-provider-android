@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--TODO add arabic messages-->
+    <string name="empty"></string>
+    <string name="not_valid_name"></string>
+    <string name="not_valid_email"></string>
+    <string name="not_valid_password"></string>
+    <string name="not_valid_phone_number"></string>
+</resources>

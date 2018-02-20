@@ -6,7 +6,7 @@ import android.os.StrictMode;
 
 import com.cs18.anabeesh.muhammad.di.application.AppComponent;
 import com.cs18.anabeesh.muhammad.di.application.DaggerAppComponent;
-import com.cs18.anabeesh.muhammad.util.FontUtil;
+import com.rxmuhammadyoussef.core.util.FontUtil;
 
 import timber.log.Timber;
 
@@ -30,20 +30,21 @@ public class AnabeeshApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        FontUtil.overrideDefaultMonoSpaceFont(getAssets(), "NeoSansArabic.ttf");
         appComponent.inject(this);
         setStrictModeForDebugEnabled(true);
-        setTimberDebugTreeEnabled(true);
-        FontUtil.overRideDefaultMonoSpaceFont(this);
+        setTimberDebugTreeEnabled();
     }
 
     /*
     * When enabled we should start logging using Timber class.
     * learn more at https://medium.com/@caueferreira/timber-enhancing-your-logging-experience-330e8af97341
     */
-    private void setTimberDebugTreeEnabled(boolean enabled) {
-        if (enabled && BuildConfig.DEBUG) {
+    private void setTimberDebugTreeEnabled() {
+        if (BuildConfig.DEBUG) {
             Timber.plant(new Timber.DebugTree());
         }
+        //TODO plant different tree for release (if needed)
     }
 
     /*

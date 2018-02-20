@@ -1,17 +1,14 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
+apply plugin: 'com.android.library'
 apply from: "$project.rootDir/tools/gradle/script/git-version.gradle"
 apply from: "$project.rootDir/tools/gradle/script/quality.gradle"
 apply from: "$project.rootDir/tools/gradle/script/java-code-coverage.gradle"
+
 
 android {
     compileSdkVersion deps.build.compileSdkVersion
     buildToolsVersion deps.build.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.cs18.anabeesh"
         minSdkVersion deps.build.minSdkVersion
         targetSdkVersion deps.build.targetSdkVersion
         versionCode deps.build.versionCode
@@ -42,13 +39,16 @@ android {
 }
 
 dependencies {
-    implementation project(":core")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    //UI
+    //Android
     implementation deps.support.design
-    implementation deps.support.recyclerview
-    implementation deps.support.constraintLayout
-    implementation deps.circleImageView.lib
+
+    //Social SDKs
+    implementation deps.social.facebook
+    implementation deps.social.firebasetuth
+    implementation deps.social.googleauthservice
+    implementation deps.social.google
 
     // RxJava
     implementation deps.rx.java
@@ -56,40 +56,13 @@ dependencies {
     implementation deps.rx.android
     implementation deps.rx.binding
 
-    // Dagger
-    implementation deps.dagger.lib
-    kapt deps.dagger.compiler
-
-    // Butter Knife
-    implementation deps.butterknife.lib
-    kapt deps.butterknife.compiler
-
-    // Glide
-    implementation deps.glide.lib
-    kapt deps.glide.compiler
-
-    // Retrofit
-    implementation deps.retrofit.lib
-    implementation deps.retrofit.gsonconverter
+    //Log
+    implementation deps.timber.lib
 
     // Testing
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
-
-    //Other
-    implementation deps.timber.lib
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-
-    configurations.all {
-        resolutionStrategy {
-            force deps.support.annotations
-        }
-        resolutionStrategy.eachDependency { details ->
-            if (details.requested.group == 'com.android.support'
-                    && !details.requested.name.contains('multidex')) {
-                details.useVersion "27.0.2"
-            }
-        }
-    }
+    androidTestImplementation deps.test.espresso
 }
+//TODO add google-services-json and uncomment the following
+//apply plugin: 'com.google.gms.google-services'
