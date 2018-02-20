@@ -17,25 +17,24 @@ class PasswordPresenter {
 
     private final TextUtil textUtil;
     private final CompositeDisposable disposable;
-    private final ValidityListener validityListener;
 
-    PasswordPresenter(Context context, ValidityListener validityListener) {
-        this.validityListener = validityListener;
+    PasswordPresenter(Context context) {
         textUtil = new TextUtil(context);
         disposable = new CompositeDisposable();
     }
 
-    void onAfterTextChanged(InitialValueObservable<TextViewAfterTextChangeEvent> emailAfterTextChangeObservable) {
+    void onAfterTextChanged(InitialValueObservable<TextViewAfterTextChangeEvent> emailAfterTextChangeObservable, ValidityListener validityListener) {
         disposable.add(
                 emailAfterTextChangeObservable
-                        .flatMap(this::observeIfValidEmail)
+                        .flatMap(this::observeIfValidPassword)
                         .subscribeOn(Schedulers.computation())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(validityListener::onAfterTextChange, Timber::e));
     }
 
-    private Observable<TextUtil.Result> observeIfValidEmail(TextViewAfterTextChangeEvent textViewAfterTextChangeEvent) {
+    private Observable<TextUtil.Result> observeIfValidPassword(TextViewAfterTextChangeEvent textViewAfterTextChangeEvent) {
         return Observable.just(textViewAfterTextChangeEvent)
+                .filter(et -> et.view().isFocused())
                 .map(TextViewAfterTextChangeEvent::editable)
                 .map(CharSequence::toString)
                 .map(String::trim)
