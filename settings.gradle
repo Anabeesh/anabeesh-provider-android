@@ -1,1 +1,1 @@
-include ':anabeesh'
+include ':anabeesh', ':core'

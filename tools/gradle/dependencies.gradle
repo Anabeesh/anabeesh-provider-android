@@ -13,6 +13,7 @@ def versions = [
         butterknife: '8.6.0',
         glide      : '4.3.0',
         timber     : '4.5.1',
+        retrofit   : '2.2.0',
 ]
 
 def support = [
@@ -31,7 +32,8 @@ def rx = [
 ]
 
 def retrofit = [
-        lib: "com.squareup.retrofit2:retrofit:2.2.0",
+        lib          : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+        gsonconverter: "com.squareup.retrofit2:converter-gson:${versions.retrofit}"
 ]
 
 def dagger = [
@@ -51,8 +53,9 @@ def glide = [
 ]
 
 def test = [
-        junit : "junit:junit:4.12",
-        runner: "com.android.support.test:runner:0.5",
+        junit   : "junit:junit:4.12",
+        runner  : "com.android.support.test:runner:0.5",
+        espresso: "com.android.support.test.espresso:espresso-core:3.0.1",
 ]
 
 def timber = [
