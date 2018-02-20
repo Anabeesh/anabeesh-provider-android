@@ -2,7 +2,6 @@ package com.rxmuhammadyoussef.core.util;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -44,7 +43,6 @@ public class UiUtil {
     private Toast createToast(View view, String message) {
         Toast toast = new Toast(context);
         toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP, 0, 0);
         ((TextView) view.findViewById(R.id.tv_message)).setText(message);
         toast.setView(view);
         return toast;

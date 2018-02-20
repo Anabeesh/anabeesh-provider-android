@@ -1,9 +1,9 @@
 package com.cs18.anabeesh.muhammad.di.activity;
 
+import com.cs18.anabeesh.beshary.ui.landingpage.LandingPageActivity;
+import com.cs18.anabeesh.beshary.ui.login.LoginActivity;
+import com.cs18.anabeesh.beshary.ui.register.RegisterActivity;
 import com.cs18.anabeesh.muhammad.ui.home.HomeActivity;
-import com.cs18.anabeesh.muhammad.ui.landingpage.LandingPageActivity;
-import com.cs18.anabeesh.muhammad.ui.login.LoginActivity;
-import com.cs18.anabeesh.muhammad.ui.register.RegisterActivity;
 
 import dagger.Subcomponent;
 

@@ -137,11 +137,10 @@ public class TextUtil {
      */
     public Result checkIfValidEmail(String email) {
         Preconditions.checkNonNull(email);
-
         Result result = new Result();
         String expression = "^[\\w.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
         Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
-        if (pattern.matcher(email).matches()) {
+        if (!pattern.matcher(email).matches()) {
             result.valid = false;
             //TODO add message
             result.message = "";
@@ -165,7 +164,7 @@ public class TextUtil {
         Result result = new Result();
         String expression = "^(?=.*[0-9])(?=.*[A-Z]).{6,}$";
         Pattern pattern = Pattern.compile(expression);
-        if (pattern.matcher(password).matches()) {
+        if (!pattern.matcher(password).matches()) {
             result.valid = false;
             //TODO add message
             result.message = "";
@@ -189,7 +188,7 @@ public class TextUtil {
         Result result = new Result();
         String expression = "^\\+(?:[0-9]?){6,14}[0-9]$";
         Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
-        if (pattern.matcher(number).matches()) {
+        if (!pattern.matcher(number).matches()) {
             result.valid = false;
             //TODO add message
             result.message = "";

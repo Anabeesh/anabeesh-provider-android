@@ -11,12 +11,9 @@
         style="@style/RegisterTextViewLabelStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_micro"
-        android:layout_marginEnd="@dimen/margin"
-        android:layout_marginStart="@dimen/margin"
-        android:layout_marginTop="@dimen/margin_extra"
+        android:layout_margin="@dimen/marginRegisterTextView"
         android:labelFor="@id/et_email"
-        android:text="@string/what_is_your_email" />
+        android:text="@string/first_name" />
 
     <EditText
         android:id="@+id/et_email"
@@ -24,31 +21,16 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/marginRegisterEditText"
         android:layout_marginStart="@dimen/marginRegisterEditText"
-        android:inputType="textEmailAddress"
-        tools:text="Muhammadyoussef.27@gmail.com" />
-
-    <TextView
-        android:id="@+id/tv_email_description"
-        style="@style/RegisterTextViewSubTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginEnd="@dimen/margin"
-        android:layout_marginStart="@dimen/margin"
-        android:layout_marginTop="@dimen/margin_micro"
-        android:text="@string/confirm_email" />
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/tv_password"
         style="@style/RegisterTextViewLabelStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_micro"
-        android:layout_marginEnd="@dimen/margin"
-        android:layout_marginStart="@dimen/margin"
-        android:layout_marginTop="@dimen/margin"
+        android:layout_margin="@dimen/marginRegisterTextView"
         android:labelFor="@id/et_password"
-        android:text="@string/pick_password" />
+        android:text="@string/last_name" />
 
     <EditText
         android:id="@+id/et_password"
@@ -57,20 +39,7 @@
         android:layout_marginEnd="@dimen/marginRegisterEditText"
         android:layout_marginStart="@dimen/marginRegisterEditText"
         android:inputType="text"
-        tools:ignore="TextFields"
-        tools:text="strongPassword" />
-
-    <TextView
-        android:id="@+id/tv_password_description"
-        style="@style/RegisterTextViewSubTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginEnd="@dimen/margin"
-        android:layout_marginStart="@dimen/margin"
-        android:layout_marginTop="@dimen/margin_micro"
-        android:text="@string/use_eight_characters"
-        tools:drawableEnd="@drawable/ic_done_register" />
+        tools:ignore="TextFields" />
 
     <Button
         android:id="@+id/btn_next"

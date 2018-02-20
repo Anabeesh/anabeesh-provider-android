@@ -46,6 +46,7 @@ dependencies {
 
     //UI
     implementation deps.support.design
+    implementation deps.support.cardview
     implementation deps.support.recyclerview
     implementation deps.support.constraintLayout
     implementation deps.circleImageView.lib
