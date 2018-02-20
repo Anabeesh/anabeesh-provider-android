@@ -2,6 +2,7 @@
 <manifest package="com.cs18.anabeesh"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name=".AnabeeshApplication"
         android:allowBackup="true"
@@ -11,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".muhammad.ui.landingpage.LandingPageActivity"
+            android:name=".beshary.ui.landingpage.LandingPageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/LandingPageTheme">
             <intent-filter>
@@ -21,26 +22,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".muhammad.ui.login.LoginActivity"
+            android:name=".beshary.ui.login.LoginActivity"
             android:label="@string/login"
-            android:parentActivityName=".muhammad.ui.landingpage.LandingPageActivity"
+            android:parentActivityName=".beshary.ui.landingpage.LandingPageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/LoginTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".muhammad.ui.landingpage.LandingPageActivity" />
+                android:value=".beshary.ui.landingpage.LandingPageActivity" />
         </activity>
         <activity
-            android:name=".muhammad.ui.register.RegisterActivity"
+            android:name=".beshary.ui.register.RegisterActivity"
             android:label="@string/create_account"
-            android:parentActivityName=".muhammad.ui.landingpage.LandingPageActivity"
+            android:parentActivityName=".beshary.ui.landingpage.LandingPageActivity"
             android:screenOrientation="portrait"
             android:theme="@style/RegisterTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".muhammad.ui.landingpage.LandingPageActivity" />
+                android:value=".beshary.ui.landingpage.LandingPageActivity" />
         </activity>
         <activity
             android:name=".muhammad.ui.home.HomeActivity"
