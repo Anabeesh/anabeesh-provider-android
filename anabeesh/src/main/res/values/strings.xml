@@ -18,6 +18,8 @@
     <string name="login">تسجيل الدخول</string>
 
     <!--Registration-->
+    <string name="first_name">الإسم الأول</string>
+    <string name="last_name">إسم العائلة</string>
     <string name="create_account">إنشاء حساب</string>
     <string name="register">تسجيل</string>
     <string name="what_is_your_email">ما هو بريدك الالكتروني؟</string>
@@ -31,4 +33,12 @@
     <string name="good_morning">Good morning,</string>
     <string name="profile">الملف الشخصي</string>
     <string name="notification">الاشعارات</string>
+
+    <!--Login-->
+    <string name="loading">جاري التحميل..</string>
+    <string name="incorrect_inputs">البيانات غير صحيحة</string>
+    <string name="incorrect_email">البريد الالكتروني غير صحيح</string>
+    <string name="incorrect_password">كلمة المرور غير صحيحة</string>
+    <string name="done">تم بنجاح</string>
+    <string name="network_error">خطأ بالشبكة</string>
 </resources>

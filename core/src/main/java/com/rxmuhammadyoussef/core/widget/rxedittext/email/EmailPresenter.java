@@ -17,15 +17,13 @@ class EmailPresenter {
 
     private final TextUtil textUtil;
     private final CompositeDisposable disposable;
-    private final ValidityListener validityListener;
 
-    EmailPresenter(Context context, ValidityListener validityListener) {
-        this.validityListener = validityListener;
+    EmailPresenter(Context context) {
         textUtil = new TextUtil(context);
         disposable = new CompositeDisposable();
     }
 
-    void onAfterTextChanged(InitialValueObservable<TextViewAfterTextChangeEvent> emailAfterTextChangeObservable) {
+    void onAfterTextChanged(InitialValueObservable<TextViewAfterTextChangeEvent> emailAfterTextChangeObservable, ValidityListener validityListener) {
         disposable.add(
                 emailAfterTextChangeObservable
                         .flatMap(this::observeIfValidEmail)
@@ -36,6 +34,7 @@ class EmailPresenter {
 
     private Observable<TextUtil.Result> observeIfValidEmail(TextViewAfterTextChangeEvent textViewAfterTextChangeEvent) {
         return Observable.just(textViewAfterTextChangeEvent)
+                .filter(et -> et.view().isFocused())
                 .map(TextViewAfterTextChangeEvent::editable)
                 .map(CharSequence::toString)
                 .map(String::trim)

@@ -1,4 +1,4 @@
-package com.cs18.anabeesh.muhammad.ui.landingpage;
+package com.cs18.anabeesh.beshary.ui.landingpage;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,10 +7,13 @@ import android.support.annotation.Nullable;
 
 import com.cs18.anabeesh.AnabeeshApplication;
 import com.cs18.anabeesh.R;
+import com.cs18.anabeesh.beshary.store.AuthRepo;
+import com.cs18.anabeesh.beshary.ui.login.LoginActivity;
+import com.cs18.anabeesh.beshary.ui.register.RegisterActivity;
 import com.cs18.anabeesh.muhammad.di.activity.ActivityModule;
 import com.cs18.anabeesh.muhammad.di.activity.ActivityScope;
-import com.cs18.anabeesh.muhammad.ui.login.LoginActivity;
-import com.cs18.anabeesh.muhammad.ui.register.RegisterActivity;
+import com.cs18.anabeesh.muhammad.ui.home.HomeActivity;
+import com.rxmuhammadyoussef.core.util.PreferencesUtil;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -25,6 +28,10 @@ public class LandingPageActivity extends Activity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (new AuthRepo(new PreferencesUtil(this)).getCurrentUser() != null) {
+            startActivity(new Intent(this, HomeActivity.class));
+            finish();
+        }
         setContentView(R.layout.activity_landing_page);
         AnabeeshApplication.getComponent(this)
                 .plus(new ActivityModule(this))

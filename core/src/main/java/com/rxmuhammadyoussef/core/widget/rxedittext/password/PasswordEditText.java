@@ -12,7 +12,6 @@ import com.rxmuhammadyoussef.core.widget.rxedittext.ValidityListener;
 public class PasswordEditText extends AppCompatEditText {
 
     private PasswordPresenter presenter;
-    private ValidityListener validityListener;
 
     public PasswordEditText(Context context) {
         super(context);
@@ -20,8 +19,7 @@ public class PasswordEditText extends AppCompatEditText {
     }
 
     private void init(Context context) {
-        validityListener = result -> {};
-        presenter = new PasswordPresenter(context, validityListener);
+        presenter = new PasswordPresenter(context);
         setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS | InputType.TYPE_TEXT_VARIATION_PASSWORD);
     }
 
@@ -36,13 +34,9 @@ public class PasswordEditText extends AppCompatEditText {
     }
 
     public void setValidityListener(ValidityListener validityListener) {
-        this.validityListener = Preconditions.requireNonNull(validityListener, "validityListener required non null");
-    }
-
-    @Override
-    protected void onTextChanged(CharSequence text, int start, int lengthBefore, int lengthAfter) {
-        super.onTextChanged(text, start, lengthBefore, lengthAfter);
-        presenter.onAfterTextChanged(RxTextView.afterTextChangeEvents(this));
+        presenter.onAfterTextChanged(
+                RxTextView.afterTextChangeEvents(this),
+                Preconditions.requireNonNull(validityListener, "validityListener required non null"));
     }
 
     @Override

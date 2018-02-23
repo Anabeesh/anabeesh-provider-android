@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".muhammad.ui.login.LoginActivity">
+    tools:context=".beshary.ui.login.LoginActivity">
 
     <TextView
         android:id="@+id/tv_email"
@@ -19,15 +19,25 @@
         android:labelFor="@id/et_email"
         android:text="@string/email" />
 
-    <EditText
+    <com.rxmuhammadyoussef.core.widget.rxedittext.email.EmailEditText
         android:id="@+id/et_email"
+        style="@style/LoginEditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/marginLoginEditText"
         android:layout_marginEnd="@dimen/marginLoginEditText"
         android:layout_marginStart="@dimen/marginLoginEditText"
-        android:inputType="textEmailAddress"
         tools:text="Muhammadyoussef.27@gmail.com" />
+
+    <TextView
+        android:id="@+id/tv_email_description"
+        style="@style/RegisterTextViewSubTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_micro" />
 
     <TextView
         android:id="@+id/tv_password"
@@ -37,18 +47,28 @@
         android:layout_marginBottom="@dimen/margin_micro"
         android:layout_marginEnd="@dimen/margin"
         android:layout_marginStart="@dimen/margin"
-        android:layout_marginTop="@dimen/margin_extra"
+        android:layout_marginTop="@dimen/margin_micro"
         android:labelFor="@id/et_password"
         android:text="@string/password" />
 
-    <EditText
+    <com.rxmuhammadyoussef.core.widget.rxedittext.password.PasswordEditText
         android:id="@+id/et_password"
+        style="@style/LoginEditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/marginLoginEditText"
         android:layout_marginStart="@dimen/marginLoginEditText"
-        android:inputType="textPassword"
         tools:text="12345678" />
+
+    <TextView
+        android:id="@+id/tv_password_description"
+        style="@style/RegisterTextViewSubTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_micro" />
 
     <TextView
         android:id="@+id/tv_forgot_password"
