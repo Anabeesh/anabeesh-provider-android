@@ -6,29 +6,25 @@ import com.google.gson.annotations.SerializedName;
  TODO: Add class header
  */
 
-public class SubIntrasting {
+public class MainInterests {
+
     @SerializedName("Id")
-    public String id;
+    private String id;
     @SerializedName("Name")
-    public String name;
-    @SerializedName("MainCategoryId")
-    public String mainCateforyId;
+    private String name;
+    private String imageUrl;
     private boolean isSelected = false;
 
-    public SubIntrasting() {
-
-    }
-
-    String getSubIntrastingId() {
+    public String getId() {
         return id;
     }
 
-    String getSubIntrastingName() {
+    public String getName() {
         return name;
     }
 
-    String getMainCateforyId() {
-        return mainCateforyId;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public boolean isSelected() {
@@ -37,5 +33,9 @@ public class SubIntrasting {
 
     public void setSelected(boolean selected) {
         isSelected = selected;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 }

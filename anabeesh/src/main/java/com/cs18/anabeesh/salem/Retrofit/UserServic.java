@@ -12,5 +12,5 @@ import retrofit2.http.GET;
 public interface UserServic {
 
     @GET("/api/Categories")
-    Call<InteresetsApiResponse> SendMainUserInterstes();
+    Call<InteresetsApiResponse> getUserInterests();
 }

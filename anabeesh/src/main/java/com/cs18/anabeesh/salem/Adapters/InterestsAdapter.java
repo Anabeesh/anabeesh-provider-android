@@ -1,6 +1,5 @@
 package com.cs18.anabeesh.salem.Adapters;
 
-import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,29 +7,26 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.cs18.anabeesh.GlideApp;
 import com.cs18.anabeesh.R;
-import com.cs18.anabeesh.salem.GlideApp;
-import com.cs18.anabeesh.salem.model.MainInteresting;
+import com.cs18.anabeesh.salem.model.InteresetsApiResponse;
+import com.cs18.anabeesh.salem.model.MainInterests;
+import com.cs18.anabeesh.salem.model.SubInterests;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
-
-/**
- TODO: Add class header
- */
 
 public class InterestsAdapter extends RecyclerView.Adapter<InterestsAdapter.MyViewHolder> {
 
-    private final List<MainInteresting> currentInterestesList;
-    private final int itemClaickableCounter = 0;
-    private final boolean positionSelected = false;
+    private final List<SubInterests> SubList = new ArrayList<>();
+    private InteresetsApiResponse apiResponse = InteresetsApiResponse.createDefault();
+    private List<MainInterests> currentList = new ArrayList<>();
+    private boolean positionSelected = false;
 
     public InterestsAdapter() {
-        currentInterestesList = new ArrayList<>();
     }
 
     @Override
@@ -39,54 +35,68 @@ public class InterestsAdapter extends RecyclerView.Adapter<InterestsAdapter.MyVi
         return new MyViewHolder(mV);
     }
 
-    @Override//
+    @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        holder.bind(currentInterestesList.get(position));
+        holder.bind(currentList.get(position));
     }
 
     @Override
-
     public int getItemCount() {
-        return currentInterestesList.size();
+        return currentList.size();
     }
 
-    public void update(List<MainInteresting> newInterestsList) {//if list Empty
-        currentInterestesList.clear();
-        currentInterestesList.addAll(newInterestsList);
+    public void update(InteresetsApiResponse apiResponse) {
+        this.apiResponse = apiResponse;
+        if (!positionSelected) {
+            currentList = apiResponse.getMainInterests();
+        }
         notifyDataSetChanged();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.intraestes_Images_id)
+        @BindView(R.id.interests_Images_id)
         ImageView IntrastesImages;
-        @BindView(R.id.CatagroyName_id)
+        @BindView(R.id.CategoryName_id)
         TextView CatarogisTextView;
-        private MainInteresting mainInteresting;
+        @BindView(R.id.marker_IV_id)
+        ImageView MarkCatagroy;
+        private MainInterests mainInterests;
+        private SubInterests subInterests;
 
+        //TODO IF worked with all resposnse Remove On click Listener and  check Model Package For Edit Best of lack A5ok salem
+
+        /**
+         MarkCatagroy: to make  ( 3lamt el sa7 ) on Image
+         positionSelected : to know if  this  item was  selected or  not
+         **/
         MyViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
 
-        void bind(MainInteresting mainInteresting) {
-            this.mainInteresting = mainInteresting;
+        public void bind(MainInterests mainInterests) {
+            mainInterests = mainInterests;
             GlideApp.with(itemView)
-                    .load(mainInteresting.getImageUrl())
-                    .centerCrop()
-                    .placeholder(R.mipmap.ic_launcher)
+                    .load(mainInterests.getImageUrl())
+                    .placeholder(R.mipmap.ic_launcher_round)
                     .into(IntrastesImages);
-            CatarogisTextView.setText(mainInteresting.getName());
-            IntrastesImages.setBackgroundColor(mainInteresting.isSelected() ? Color.CYAN : Color.WHITE);
-        }
-
-        @OnClick(R.id.intraestes_Images_id)
-        void onImageClick() {
-            IntrastesImages.setSelected(!mainInteresting.isSelected());
-            if (mainInteresting.isSelected()) {
-                //TODO highlight and open sub categories
-            } else {
-                IntrastesImages.setBackgroundColor(Color.WHITE);
-            }
+            CatarogisTextView.setText(mainInterests.getName());
+            MarkCatagroy.setImageResource(R.drawable.ic_done_register);
+            MarkCatagroy.setVisibility(View.INVISIBLE);
+            MainInterests finalMainInterests = mainInterests;
+            IntrastesImages.setOnClickListener((View v) -> {
+                if (!positionSelected) {
+                    MarkCatagroy.setVisibility(View.VISIBLE);
+                    positionSelected = true;
+                    currentList.add(finalMainInterests);
+                    notifyDataSetChanged();
+                } else {
+                    MarkCatagroy.setVisibility(View.INVISIBLE);
+                    positionSelected = false;
+                    currentList.remove(getAdapterPosition());
+                    notifyDataSetChanged();
+                }
+            });
         }
     }
 }

@@ -53,7 +53,7 @@
     <color name="colorRegisterButtonDisabled">#FFABABAB</color>
     <color name="colorRegisterButtonText">#FFFFFF</color>
     <color name="colorRegisterButtonRipple">#FFFFFF</color>
-<<<<<<< HEAD
+
 
     <!--Home-->
     <color name="colorHomeLayoutBackground">#f8f8f8</color>
@@ -68,9 +68,6 @@
     <color name="colorHomeEditTextText">#FF525252</color>
     <color name="colorHomeEditTextIcon">#FF525252</color>
     <color name="colorHomeEditTextHint">#FFABABAB</color>
-=======
-    <color name="ItemSelected">#d1c4e9</color>
-
     <color name="colorInterTextBackground">#b1000000</color>
->>>>>>> f9a4717... S
+
 </resources>

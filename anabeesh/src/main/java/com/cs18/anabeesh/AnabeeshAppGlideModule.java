@@ -1,8 +1,8 @@
-package com.cs18.anabeesh.salem;
+package com.cs18.anabeesh;
 
 import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.module.AppGlideModule;
 
 @GlideModule
-public class AnabeeshGlideModule extends AppGlideModule {
+public final class AnabeeshAppGlideModule extends AppGlideModule {
 }

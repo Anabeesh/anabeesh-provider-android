@@ -3,20 +3,29 @@ package com.cs18.anabeesh.salem.model;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class InteresetsApiResponse {
 
     @SerializedName("MainCategories")
-    private ArrayList<MainInteresting> mainInterestings;
-
+    private final List<MainInterests> mainInterests;
     @SerializedName("SubCategories")
-    private ArrayList<SubIntrasting> subIntrastings;
+    private final List<SubInterests> subInterests;
 
-    public ArrayList<MainInteresting> getMainInterestings() {
-        return mainInterestings;
+    public InteresetsApiResponse(ArrayList<MainInterests> mainInterests, ArrayList<SubInterests> subInterests) {
+        this.mainInterests = mainInterests;
+        this.subInterests = subInterests;
     }
 
-    public ArrayList<SubIntrasting> getSubIntrastings() {
-        return subIntrastings;
+    public static InteresetsApiResponse createDefault() {
+        return new InteresetsApiResponse(new ArrayList<>(), new ArrayList<>());
+    }
+
+    public List<MainInterests> getMainInterests() {
+        return mainInterests;
+    }
+
+    public List<SubInterests> getSubInterests() {
+        return subInterests;
     }
 }

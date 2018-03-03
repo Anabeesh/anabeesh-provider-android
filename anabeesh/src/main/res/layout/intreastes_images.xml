@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout android:id="@+id/interests_Image_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
 
     <ImageView
-        android:id="@+id/intraestes_Images_id"
-        android:layout_width="100dp"
+        android:id="@+id/interests_Images_id"
+        android:layout_width="110dp"
         android:layout_height="100dp"
-        android:scaleType="centerCrop"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,21 +20,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/CatagroyName_id"
+        android:id="@+id/CategoryName_id"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorInterTextBackground"
+        android:layout_height="20dp"
+        android:background="#eceff1"
         android:ellipsize="end"
         android:gravity="center"
         android:maxLines="1"
         android:paddingBottom="4dp"
         android:paddingEnd="8dp"
         android:paddingStart="8dp"
-        android:paddingTop="4dp"
+        android:paddingTop="2dp"
         android:text="name"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/textSizeLoginText"
-        app:layout_constraintBottom_toBottomOf="@id/intraestes_Images_id"
-        app:layout_constraintEnd_toEndOf="@id/intraestes_Images_id"
-        app:layout_constraintStart_toStartOf="@id/intraestes_Images_id" />
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeHomeSubText"
+        app:layout_constraintBottom_toBottomOf="@id/interests_Images_id"
+        app:layout_constraintEnd_toEndOf="@id/interests_Images_id"
+        app:layout_constraintStart_toStartOf="@id/interests_Images_id" />
+
+    <ImageView
+        android:id="@+id/marker_IV_id"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_done_register"
+        app:layout_constraintEnd_toEndOf="@+id/interests_Images_id"
+        app:layout_constraintTop_toTopOf="@+id/interests_Images_id"
+        tools:ignore="MissingConstraints" />
+
+
 </android.support.constraint.ConstraintLayout>

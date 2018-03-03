@@ -68,6 +68,7 @@ dependencies {
     // Glide
     implementation deps.glide.lib
     kapt deps.glide.compiler
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
 
     // Retrofit
     implementation deps.retrofit.lib
@@ -77,6 +78,9 @@ dependencies {
     // Testing
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
+    
+    //Circle Image
+    compile 'de.hdodenhof:circleimageview:2.2.0'
 
     //Other
     implementation deps.timber.lib
