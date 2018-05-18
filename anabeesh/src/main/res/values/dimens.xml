@@ -9,6 +9,7 @@
     <dimen name="padding_nano">4dp</dimen>
     <dimen name="padding_micro">8dp</dimen>
     <dimen name="padding_extra">24dp</dimen>
+    <dimen name="padding_ultra">32dp</dimen>
 
     <!--Landing page-->
     <!--ImageView-->
@@ -99,4 +100,20 @@
     <dimen name="radiusQuestionTag">8dp</dimen>
     <!--ImageView-->
     <dimen name="imageSizeHomeQuestion">88dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">12dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--Category-->
+    <dimen name="elevationCategoryCard">2dp</dimen>
+    <!--Text-->
+    <dimen name="textSizeCategoryTitle">16sp</dimen>
+    <dimen name="textSizeCategoryText">14sp</dimen>
+    <dimen name="textSizeCategorySubText">12sp</dimen>
+    <!--Radius-->
+    <dimen name="radiusButton">2dp</dimen>
 </resources>

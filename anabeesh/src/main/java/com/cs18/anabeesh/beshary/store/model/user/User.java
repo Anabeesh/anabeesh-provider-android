@@ -9,6 +9,19 @@ import com.google.gson.annotations.SerializedName;
 public class User {
     @SerializedName("UserId")
     public String userId;
+
+    public void setUserFirstName(String userFirstName) {
+        this.userFirstName = userFirstName;
+    }
+
+    public void setUserLastName(String userLastName) {
+        this.userLastName = userLastName;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
     @SerializedName("FirstName")
     public String userFirstName;
     @SerializedName("LastName")
@@ -20,15 +33,15 @@ public class User {
         return userId;
     }
 
-    String getUserFirstName() {
+    public String getUserFirstName() {
         return userFirstName;
     }
 
-    String getUserLastName() {
+    public String getUserLastName() {
         return userLastName;
     }
 
-    String getUserEmail() {
+    public String getUserEmail() {
         return userEmail;
     }
 }

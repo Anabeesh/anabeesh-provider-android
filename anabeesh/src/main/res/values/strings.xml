@@ -41,4 +41,39 @@
     <string name="incorrect_password">كلمة المرور غير صحيحة</string>
     <string name="done">تم بنجاح</string>
     <string name="network_error">خطأ بالشبكة</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--Navigation Drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_home">الرئيسية</string>
+    <string name="user_bookmark">المفضله</string>
+    <string name="user_interest">الإهتمامات</string>
+    <string name="user_settings">الإعدادات</string>
+    <string name="user_drafts">مسوده</string>
+    <string name="user_profile">حسابي</string>
+    <string name="exit">الخروج</string>
+
+    <!--Categories-->
+    <string name="user_following">متابع</string>
+    <string name="user_not_following">تابع</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--Home Page-->
+    <string name="home_page">الرئيسيه</string>
+
+    <!--Logout-->
+    <string name="logout_message">هل حقا تريد الخروج ؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+    <!--Profile-->
+    <string name="save_changes">حفظ التغييرات</string>
+    <string name="notify_of_changes">بالضغط علي نعم لن يتم حفظ التغييرات</string>
+    <string name="notify">تنبيه</string>
+    <string name="ok">حسنا</string>
+    <string name="not_valid_fields">يوجد بعض المحتويات غير صحيحه</string>
+    <string name="not_valid_user">المستخدم غير موجود</string>
+
+
 </resources>

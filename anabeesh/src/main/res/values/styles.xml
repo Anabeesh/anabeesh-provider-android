@@ -238,4 +238,41 @@
         <item name="android:gravity">start|center_vertical</item>
         <item name="android:lineSpacingExtra">@dimen/padding_nano</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Following Button -->
+    <style name="ButtonStyle">
+        <item name="android:textSize">@dimen/textSizeCategoryText</item>
+        <item name="android:textColor">@drawable/selector_button_text</item>
+        <item name="android:paddingTop">@dimen/padding_nano</item>
+        <item name="android:paddingBottom">@dimen/padding_nano</item>
+        <item name="android:paddingStart">@dimen/padding_extra</item>
+        <item name="android:paddingEnd">@dimen/padding_extra</item>
+        <item name="android:background">@drawable/selector_button_background</item>
+    </style>
+
+    <!--Save Change Button-->
+
+    <style name="SaveChangesButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">@dimen/textSizeLoginText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorLoginButtonText</item>
+        <item name="android:paddingTop">@dimen/paddingTopLoginButton</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomLoginButton</item>
+        <item name="android:paddingStart">@dimen/paddingStartLoginButton</item>
+        <item name="android:paddingEnd">@dimen/paddingEndLoginButton</item>
+        <item name="android:background">@drawable/selector_button_background_login</item>
+        <item name="android:elevation">@dimen/elevationLoginEditText</item>
+    </style>
+
+    <!--Category-->
+    <style name="CategoryTextViewTitleStyle" parent="android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorCategoryTextViewTitleDark</item>
+        <item name="android:textSize">@dimen/textSizeCategoryText</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
 </resources>

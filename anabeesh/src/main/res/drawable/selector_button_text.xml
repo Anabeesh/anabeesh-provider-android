@@ -1,0 +1,5 @@
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:color="@color/colorCategoryButtonTextInActive" android:state_activated="false" />
+        <item android:color="@color/colorCategoryButtonText" />
+    </selector>

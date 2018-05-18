@@ -7,7 +7,7 @@ import com.rxmuhammadyoussef.core.R;
 
 import java.util.regex.Pattern;
 
-public class TextUtil {
+public class    TextUtil {
 
     private final Context context;
 

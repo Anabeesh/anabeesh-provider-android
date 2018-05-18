@@ -26,4 +26,9 @@ class LocalStore {
         String userJson = preferencesUtil.getString(KEY_USER);
         return gson.fromJson(userJson, User.class);
     }
+
+    void deleteCurrentUser() {
+        preferencesUtil.delete(KEY_USER);
+    }
+
 }
