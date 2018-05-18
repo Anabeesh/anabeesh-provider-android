@@ -8,6 +8,7 @@
     <color name="colorError">#f54f43</color>
     <color name="colorSuccess">#57b45b</color>
     <color name="colorWarning">#feeb46</color>
+    <color name="colorTextPrimaryDark">#212121</color>
 
     <!--Landing page-->
     <color name="colorLandingPageLayoutBackground">#e5e5e5</color>
@@ -56,6 +57,13 @@
     <color name="colorRegisterButtonDisabled">#FFABABAB</color>
     <color name="colorRegisterButtonText">#FFFFFF</color>
     <color name="colorRegisterButtonRipple">#FFFFFF</color>
+    <!--Category Button-->
+    <color name="colorCategoryButtonInActive">#bbbbbb</color>
+    <color name="colorCategoryButton">@color/colorAccent</color>
+    <color name="colorCategoryButtonText">@color/colorAccent</color>
+    <color name="colorCategoryButtonTextInActive">#bbbbbb</color>
+    <!--TextView-->
+    <color name="colorCategoryTextViewTitleDark">@color/colorTextPrimaryDark</color>
 
     <!--Home-->
     <color name="colorHomeLayoutBackground">#f8f8f8</color>
@@ -70,4 +78,11 @@
     <color name="colorHomeEditTextText">#FF525252</color>
     <color name="colorHomeEditTextIcon">#FF525252</color>
     <color name="colorHomeEditTextHint">#FFABABAB</color>
+
+    <!--Navigation Drawer-->
+    <color name="colorNavigationDrawerBackground">#FF707070</color>
+    <!--TextView-->
+    <color name="colorNavigationDrawerUserTitleTextView">#000000</color>
+    <color name="colorNavigationDrawerUserProfileTextView">#000000</color>
+
 </resources>

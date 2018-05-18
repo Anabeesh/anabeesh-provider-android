@@ -7,11 +7,9 @@ public interface LoginScreen {
     void initializeComponents();
 
     void setupEmailEditText();
-
     void setupPasswordEditText();
 
     void showLoadingAnimation();
-
     void hideLoadingAnimation();
 
     void showSuccessMessage(String message);

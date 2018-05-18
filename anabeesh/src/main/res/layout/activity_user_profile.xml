@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".beshary.ui.home.profile.UserProfile">
+
+    <TextView
+        android:id="@+id/tv_email"
+        style="@style/LoginTextViewLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_extra"
+        android:labelFor="@id/et_email"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/LoginEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginLoginEditText"
+        android:layout_marginEnd="@dimen/marginLoginEditText"
+        android:layout_marginStart="@dimen/marginLoginEditText"
+        android:inputType="textEmailAddress"
+        tools:text="omarbeshary@gmail.com" />
+
+    <TextView
+        android:id="@+id/tv_email_description"
+        style="@style/RegisterTextViewSubTextStyle"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_nano" />
+
+    <TextView
+        android:id="@+id/tv_first_name"
+        style="@style/LoginTextViewLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_nano"
+        android:labelFor="@id/et_first_name"
+        android:text="@string/first_name" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        style="@style/LoginEditTextStyle"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginLoginEditText"
+        android:layout_marginStart="@dimen/marginLoginEditText"
+        android:inputType="textPersonName"
+        tools:text="عمر" />
+
+
+    <TextView
+        android:id="@+id/tv_first_name_description"
+        style="@style/RegisterTextViewSubTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_nano" />
+
+
+    <TextView
+        android:id="@+id/tv_last_name"
+        style="@style/LoginTextViewLabelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_micro"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_nano"
+        android:labelFor="@id/et_last_name"
+        android:text="@string/last_name" />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        style="@style/LoginEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginLoginEditText"
+        android:layout_marginStart="@dimen/marginLoginEditText"
+        android:inputType="textPersonName"
+        tools:text="بشاري"
+        />
+
+    <TextView
+        android:id="@+id/tv_last_name_description"
+        style="@style/RegisterTextViewSubTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_nano" />
+
+    <Button
+        android:id="@+id/btn_save_changes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/marginBottomLoginButton"
+        android:layout_marginEnd="@dimen/marginEndLoginButton"
+        android:layout_marginStart="@dimen/marginStartLoginButton"
+        android:layout_marginTop="@dimen/marginTopLoginButton"
+        android:text="@string/save_changes"
+        style="@style/SaveChangesButtonStyle"
+        android:enabled="false"/>
+</LinearLayout>

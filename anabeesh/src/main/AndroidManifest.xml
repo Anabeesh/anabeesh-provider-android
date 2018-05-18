@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".AnabeeshApplication"
         android:allowBackup="true"
@@ -33,21 +34,10 @@
                 android:value=".beshary.ui.landingpage.LandingPageActivity" />
         </activity>
         <activity
-            android:name=".beshary.ui.register.RegisterActivity"
-            android:label="@string/create_account"
-            android:parentActivityName=".beshary.ui.landingpage.LandingPageActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/RegisterTheme"
-            android:windowSoftInputMode="stateHidden|adjustPan">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".beshary.ui.landingpage.LandingPageActivity" />
-        </activity>
-        <activity
-            android:name=".muhammad.ui.home.HomeActivity"
-            android:label=""
-            android:screenOrientation="portrait"
-            android:theme="@style/HomeTheme"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
+            android:name=".beshary.ui.home.HomeActivity"
+            android:label="@string/home_page"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".beshary.ui.home.profile.UserProfile"></activity>
     </application>
+
 </manifest>

@@ -56,9 +56,11 @@ dependencies {
     implementation deps.rx.relay
     implementation deps.rx.android
     implementation deps.rx.binding
+    implementation deps.rx.adapter
 
     // Dagger
     implementation deps.dagger.lib
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     kapt deps.dagger.compiler
 
     // Butter Knife
@@ -73,6 +75,9 @@ dependencies {
     implementation deps.retrofit.lib
     implementation deps.retrofit.gsonconverter
 
+    // Circular Image View
+    implementation deps.circularimageview.lib
+
     // Testing
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
@@ -81,6 +86,7 @@ dependencies {
     implementation deps.timber.lib
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
 
     configurations.all {
         resolutionStrategy {

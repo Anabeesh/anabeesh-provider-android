@@ -15,25 +15,24 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import timber.log.Timber;
 
-/**
- TODO: Add class header
- */
-
 class CloudStore {
     private static final int SUCCESS = 200;
     private static final int FAILURE = 400;
 
     public void login(String email, String password, AuthApiCallback authListener) {
-        APIsUtil.getAPIService()
+            APIsUtil.getAPIService()
                 .login(email, password)
                 .enqueue(new Callback<User>() {
                     @Override
                     public void onResponse(Call<User> call, Response<User> response) {
-                        if (response.code() == SUCCESS) {
-                            authListener.onSuccess(response.body());
-                        } else {
-                            authListener.onFail(new ApiError(getErrorMessage(response.errorBody())));
-                        }
+                            switch (response.code()) {
+                                case SUCCESS:
+                                    authListener.onSuccess(response.body());
+                                    break;
+                                case FAILURE:
+                                    authListener.onFail(new ApiError(getErrorMessage(response.errorBody())));
+                                    break;
+                            }
                     }
 
                     @Override

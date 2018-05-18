@@ -31,4 +31,12 @@ public class AuthRepo {
     public User getCurrentUser() {
         return localStore.getCurrentUser();
     }
+
+    public void  deleteCurrentUser () {
+        localStore.deleteCurrentUser();
+    }
+
+    public void UpdateCurrentUser (User user) {
+        localStore.saveUser(user);
+    }
 }

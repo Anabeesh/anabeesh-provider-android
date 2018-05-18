@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 import com.cs18.anabeesh.AnabeeshApplication;
 import com.cs18.anabeesh.R;
+import com.cs18.anabeesh.beshary.ui.home.HomeActivity;
 import com.cs18.anabeesh.muhammad.di.activity.ActivityModule;
-import com.cs18.anabeesh.muhammad.ui.home.HomeActivity;
+
 import com.rxmuhammadyoussef.core.util.PreferencesUtil;
 import com.rxmuhammadyoussef.core.util.ResourcesUtil;
 import com.rxmuhammadyoussef.core.util.TextUtil;
@@ -52,6 +53,7 @@ public class LoginActivity extends Activity implements LoginScreen {
                 .plus(new ActivityModule(this))
                 .inject(this);
         ButterKnife.bind(this);
+
         presenter = new LoginPresenter(this, new PreferencesUtil(this), new ResourcesUtil(this));
         presenter.onCreate();
     }
@@ -92,7 +94,7 @@ public class LoginActivity extends Activity implements LoginScreen {
 
     @Override
     public void setupPasswordEditText() {
-        passwordEditText.setValidityListener(result -> {
+        passwordEditText.setValidityListener((TextUtil.Result result) -> {
             if (!TextUtils.isEmpty(passwordEditText.getText().toString())) {
                 passwordDescriptionTextView.setText("");
                 mIsValidPass = true;
