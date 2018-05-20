@@ -27,6 +27,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rv_post_id"
         app:layout_constraintTop_toBottomOf="@+id/rv_article_id">
 
         <TextView
@@ -60,9 +61,11 @@
         android:layout_width="match_parent"
         android:layout_height="367dp"
         android:padding="8dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/extra_layout_id"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:listitem="@layout/card_view_post" />
 
     <android.support.design.widget.FloatingActionButton

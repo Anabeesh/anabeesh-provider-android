@@ -43,21 +43,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_article_name_detail" />
+    <ScrollView
+        android:id="@+id/sv_article_detail"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_expert_name_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_article_detail">
 
     <TextView
         android:id="@+id/tv_article_detail"
-        android:layout_width="0dp"
-        android:layout_height="388dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
         android:autoLink="all"
         android:text="Article Detail"
         android:textColor="#616161"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_article_detail" />
+        android:textSize="14sp"/>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/iv_expert_img"
@@ -67,6 +74,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginStart="8dp"
         android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toBottomOf="@+id/sv_article_detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -81,6 +89,7 @@
         android:textColor="#000"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/sv_article_detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iv_expert_img"
         tools:layout_editor_absoluteX="305dp" />
