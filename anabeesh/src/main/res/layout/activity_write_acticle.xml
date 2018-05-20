@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:layoutDirection="rtl"
+    tools:context="com.cs18.anabeesh.salem.ui.writeArticle.WriteActicleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_write_articles"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <EditText
+        android:id="@+id/et_article_tittle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/article_tittle"
+        android:textColor="#92000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_write_articles" />
+
+    <EditText
+        android:id="@+id/et_article_body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autoLink="all"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:hint="@string/article_body"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_article_tittle" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_send_to"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="center"
+        android:src="@drawable/sendic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_article_body" />
+
+
+</android.support.constraint.ConstraintLayout>

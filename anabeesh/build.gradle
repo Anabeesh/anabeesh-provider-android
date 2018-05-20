@@ -17,6 +17,7 @@ android {
         versionCode deps.build.versionCode
         versionName deps.build.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -39,6 +40,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
 }
 
 dependencies {
@@ -57,9 +62,12 @@ dependencies {
     implementation deps.rx.android
     implementation deps.rx.binding
     implementation deps.rx.adapter
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
 
     // Dagger
     implementation deps.dagger.lib
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     kapt deps.dagger.compiler
 
@@ -70,9 +78,12 @@ dependencies {
     // Glide
     implementation deps.glide.lib
     kapt deps.glide.compiler
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
 
     // Retrofit
     implementation deps.retrofit.lib
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation deps.retrofit.gsonconverter
 
     // Circular Image View
@@ -81,6 +92,9 @@ dependencies {
     // Testing
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
+
+    //Circle Image
+    compile 'de.hdodenhof:circleimageview:2.2.0'
 
     //Other
     implementation deps.timber.lib

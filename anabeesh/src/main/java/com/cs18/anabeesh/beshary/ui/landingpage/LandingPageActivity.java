@@ -42,7 +42,7 @@ public class LandingPageActivity extends Activity {
 
     @OnClick(R.id.btn_sign_up)
     void signUpByEmail() {
-        
+
     }
 
     @OnClick(R.id.btn_sign_in)

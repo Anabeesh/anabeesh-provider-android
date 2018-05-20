@@ -8,11 +8,8 @@ import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.cs18.anabeesh.AnabeeshApplication;
 import com.cs18.anabeesh.R;
 import com.cs18.anabeesh.beshary.ui.home.HomeActivity;
-import com.cs18.anabeesh.muhammad.di.activity.ActivityModule;
-
 import com.rxmuhammadyoussef.core.util.PreferencesUtil;
 import com.rxmuhammadyoussef.core.util.ResourcesUtil;
 import com.rxmuhammadyoussef.core.util.TextUtil;
@@ -49,9 +46,6 @@ public class LoginActivity extends Activity implements LoginScreen {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        AnabeeshApplication.getComponent(this)
-                .plus(new ActivityModule(this))
-                .inject(this);
         ButterKnife.bind(this);
 
         presenter = new LoginPresenter(this, new PreferencesUtil(this), new ResourcesUtil(this));
@@ -80,9 +74,9 @@ public class LoginActivity extends Activity implements LoginScreen {
             if (result.isValid()) {
                 emailDescriptionTextView.setText("");
                 mIsValidEmail = true;
-                if(mIsValidPass)
+                if (mIsValidPass) {
                     loginButton.setEnabled(true);
-
+                }
             } else {
                 mIsValidEmail = false;
                 loginButton.setEnabled(false);
@@ -98,8 +92,9 @@ public class LoginActivity extends Activity implements LoginScreen {
             if (!TextUtils.isEmpty(passwordEditText.getText().toString())) {
                 passwordDescriptionTextView.setText("");
                 mIsValidPass = true;
-                if(mIsValidEmail)
+                if (mIsValidEmail) {
                     loginButton.setEnabled(true);
+                }
             } else {
                 mIsValidPass = false;
                 loginButton.setEnabled(false);
