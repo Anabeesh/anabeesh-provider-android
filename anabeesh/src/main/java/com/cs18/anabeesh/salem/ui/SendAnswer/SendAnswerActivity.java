@@ -38,13 +38,14 @@ public class SendAnswerActivity extends AppCompatActivity implements SendAnswerV
     Toolbar sendAnswerToolbar;
     private SendAnswerPressnter sendAnswerPressnter;
     private AllAnswersAdapter answersAdapter;
-    private  String postId=getIntent().getStringExtra("postId");
+    private  String postId ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_answer);
         ButterKnife.bind(this);
+        postId = getIntent().getStringExtra("postId");
         sendAnswerPressnter = new SendAnswerPressnter(this, new AuthRepo(new PreferencesUtil(this)));
         InitializeViews();
         sendAnswerPressnter.CreateUI();

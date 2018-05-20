@@ -1,8 +1,6 @@
 package com.cs18.anabeesh.beshary;
 
 import android.text.TextUtils;
-
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
@@ -17,6 +15,9 @@ public class TextUtil {
     public static final String USER_ID = "key_user_id";
     public static final int SUCCESS = 200;
     public static final int FAILURE = 400;
+    public static final String PAGE_SIZE = "10";
+    public static final String PAGE = "1";
+
 
     public static boolean isValidEmail(String str) {
         String expression = "^[\\w.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";

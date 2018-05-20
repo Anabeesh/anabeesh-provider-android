@@ -17,8 +17,8 @@ import com.cs18.anabeesh.R;
 import com.cs18.anabeesh.beshary.store.AuthRepo;
 import com.cs18.anabeesh.salem.Adapters.ArticleAdapter;
 import com.cs18.anabeesh.salem.Adapters.PostAdapter;
-import com.cs18.anabeesh.salem.model.GetArticales;
-import com.cs18.anabeesh.salem.model.GetPosts;
+import com.cs18.anabeesh.salem.model.Articles;
+import com.cs18.anabeesh.salem.model.Posts;
 import com.cs18.anabeesh.salem.ui.AllArticle.AllArticlesActivity;
 import com.cs18.anabeesh.salem.ui.writeArticle.WriteActicleActivity;
 import com.rxmuhammadyoussef.core.util.PreferencesUtil;
@@ -37,7 +37,8 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     @BindView(R.id.rv_post_id)
     RecyclerView postRecyclerView;
     @BindView(R.id.fab_write_post_id)
-    FloatingActionButton writrPost;
+    FloatingActionButton writePost;
+
     private ExpertPresenter expertPresenter;
     private ArticleAdapter articleAdapter;
     private PostAdapter postAdapter;
@@ -46,13 +47,13 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         expertPresenter = new ExpertPresenter(new AuthRepo(new PreferencesUtil(getContext())), this);
-        expertPresenter.Create();
+        expertPresenter.loadHomePage();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        expertPresenter.Create();
+        expertPresenter.loadHomePage();
     }
 
     @Override
@@ -82,7 +83,7 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     }
 
     @Override
-    public void setUpArticleRecyclerView(List<GetArticales> listOfArticles) {
+    public void setUpArticleRecyclerView(List<Articles> listOfArticles) {
         articleAdapter = new ArticleAdapter(getContext(), listOfArticles);
         articleRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         articleRecyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -90,15 +91,15 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     }
 
     @Override
-    public void setUpPostRecyclerView(List<GetPosts> listOfPosts) {
+    public void setUpPostRecyclerView(List<Posts> listOfPosts) {
         postAdapter = new PostAdapter(getContext(), listOfPosts);
         postRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         postRecyclerView.setAdapter(postAdapter);
     }
 
     @Override
-    public void UpdateArticlesForExpertUi(List<GetArticales> getArticalesList) {
-        articleAdapter.Update(getArticalesList);
+    public void UpdateArticlesForExpertUi(List<Articles> articles) {
+        articleAdapter.Update(articles);
     }
 
     @Override
@@ -108,7 +109,7 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     }
 
     @Override
-    public void UpdatePostsForExpertUi(List<GetPosts> getPosts) {
-        postAdapter.Update(getPosts);
+    public void UpdatePostsForExpertUi(List<Posts> posts) {
+        postAdapter.Update(posts);
     }
 }

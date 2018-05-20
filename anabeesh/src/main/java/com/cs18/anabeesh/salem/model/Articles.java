@@ -4,35 +4,28 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-/**
- TODO: Add class header
- */
+public class Articles implements Serializable {
 
-public class GetArticales implements Serializable {
     @SerializedName("Body")
     public String body;
     @SerializedName("CategoryId")
-    public Integer categoryId;
+    public int categoryId;
     @SerializedName("Heading")
     public String heading;
     @SerializedName("Id")
-    public Integer id;
+    public int id;
     @SerializedName("UserId")
     public String userId;
     @SerializedName("UserName")
     public String UserName;
     @SerializedName("ImageUrl")
-    public int ImageUrl;
+    public String ImageUrl;
 
-    public GetArticales(String body, String heading, String userName, int imageUrl) {
+    public Articles(String body, String heading, String userName, String imageUrl) {
         this.body = body;
         this.heading = heading;
         UserName = userName;
         ImageUrl = imageUrl;
-    }
-
-    GetArticales() {
-
     }
 
     public String getBody() {
@@ -59,7 +52,7 @@ public class GetArticales implements Serializable {
         return UserName;
     }
 
-    public int getImageUrl() {
+    public String getImageUrl() {
         return ImageUrl;
     }
 }

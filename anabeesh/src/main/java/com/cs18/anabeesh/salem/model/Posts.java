@@ -1,12 +1,7 @@
 package com.cs18.anabeesh.salem.model;
-
 import com.google.gson.annotations.SerializedName;
 
-/**
- TODO: Add class header
- */
-
-public class GetPosts {
+public class Posts {
     @SerializedName("id")
     public String id;
     @SerializedName("Headline")
@@ -20,13 +15,9 @@ public class GetPosts {
     @SerializedName("SubCategoryId")
     public String SubCategoryId;
 
-    public GetPosts(String headline, String description) {
+    public Posts(String headline, String description) {
         Headline = headline;
         Description = description;
-    }
-
-    GetPosts() {
-
     }
 
     public String getHeadline() {
@@ -53,4 +44,3 @@ public class GetPosts {
         return id;
     }
 }
-
