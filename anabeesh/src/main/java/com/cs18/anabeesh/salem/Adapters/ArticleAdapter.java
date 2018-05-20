@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.cs18.anabeesh.R;
-import com.cs18.anabeesh.salem.model.GetArticales;
+import com.cs18.anabeesh.salem.model.Articles;
 import com.cs18.anabeesh.salem.ui.ArticleDetailsActivity;
 
 import java.util.List;
@@ -25,9 +25,9 @@ import butterknife.ButterKnife;
 
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.MyViewHolder> {
     private final Context mContext;
-    private List<GetArticales> articlesList;
+    private List<Articles> articlesList;
 
-    public ArticleAdapter(Context context, List<GetArticales> articlesList) {
+    public ArticleAdapter(Context context, List<Articles> articlesList) {
         mContext = context;
         this.articlesList = articlesList;
     }
@@ -54,7 +54,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.MyViewHo
         return articlesList.size();
     }
 
-    public void Update(List<GetArticales> mArticlesList) {
+    public void Update(List<Articles> mArticlesList) {
         articlesList = mArticlesList;
         notifyDataSetChanged();
     }

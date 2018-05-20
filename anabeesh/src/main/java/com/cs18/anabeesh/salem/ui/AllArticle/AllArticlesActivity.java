@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.cs18.anabeesh.R;
 import com.cs18.anabeesh.beshary.store.AuthRepo;
 import com.cs18.anabeesh.salem.Adapters.ArticleAdapter;
-import com.cs18.anabeesh.salem.model.GetArticales;
+import com.cs18.anabeesh.salem.model.Articles;
 import com.rxmuhammadyoussef.core.util.PreferencesUtil;
 
 import java.util.List;
@@ -25,15 +25,15 @@ public class AllArticlesActivity extends AppCompatActivity implements AllArticle
     @BindView(R.id.tb_all_articles)
     Toolbar allArticlesToolbar;
     private ArticleAdapter articleAdapter;
-    private AllArticlesPressenter allArticlesPressenter;
+    private AllArticlesPresenter allArticlesPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_articles);
         ButterKnife.bind(this);
-        allArticlesPressenter = new AllArticlesPressenter(this, new AuthRepo(new PreferencesUtil(this)));
-        allArticlesPressenter.createUI();
+        allArticlesPresenter = new AllArticlesPresenter(this, new AuthRepo(new PreferencesUtil(this)));
+        allArticlesPresenter.createUI();
     }
 
     @Override
@@ -46,7 +46,7 @@ public class AllArticlesActivity extends AppCompatActivity implements AllArticle
     }
 
     @Override
-    public void setupRecyclerview(List<GetArticales> listOfArticles) {
+    public void setupRecyclerView(List<Articles> listOfArticles) {
         articleAdapter = new ArticleAdapter(this, listOfArticles);
         allArticlesRecyclerview.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         allArticlesRecyclerview.setItemAnimator(new DefaultItemAnimator());

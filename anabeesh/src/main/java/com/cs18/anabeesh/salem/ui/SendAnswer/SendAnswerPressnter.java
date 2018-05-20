@@ -7,8 +7,7 @@ import android.widget.EditText;
 
 import com.cs18.anabeesh.R;
 import com.cs18.anabeesh.beshary.store.AuthRepo;
-import com.cs18.anabeesh.salem.Retrofit.RetrofitClint;
-import com.cs18.anabeesh.salem.Retrofit.UserService;
+import com.cs18.anabeesh.beshary.store.api.APIsUtil;
 import com.cs18.anabeesh.salem.model.AllAnswers;
 import com.cs18.anabeesh.salem.model.PostAnswers;
 
@@ -41,8 +40,7 @@ public class SendAnswerPressnter {
     }
 
     void fetchAllAnswers() {
-        RetrofitClint.getInstance()
-                .create(UserService.class)
+        APIsUtil.getAPIService()
                 .getAllAnswers(Q_Id)
                 .enqueue(new Callback<List<AllAnswers>>() {
                     @Override
@@ -84,9 +82,7 @@ public class SendAnswerPressnter {
     }
 
     void SendAnswer(String userId, String questionId, String answerBody) {
-        RetrofitClint
-                .getInstance()
-                .create(UserService.class)
+        APIsUtil.getAPIService()
                 .PostUserAnswer(new PostAnswers(userId, Integer.valueOf(questionId), answerBody))
                 .enqueue(new Callback<ResponseBody>() {
                     @Override

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cs18.anabeesh.R;
-import com.cs18.anabeesh.salem.model.GetPosts;
+import com.cs18.anabeesh.salem.model.Posts;
 import com.cs18.anabeesh.salem.ui.SendAnswer.SendAnswerActivity;
 
 import java.util.List;
@@ -24,9 +24,9 @@ import butterknife.ButterKnife;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> {
     private final Context context;
-    private List<GetPosts> postsList;
+    private List<Posts> postsList;
 
-    public PostAdapter(Context mContext, List<GetPosts> postsList) {
+    public PostAdapter(Context mContext, List<Posts> postsList) {
         context = mContext;
         this.postsList = postsList;
     }
@@ -50,7 +50,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
         return postsList.size();
     }
 
-    public void Update(List<GetPosts> mPostsList) {
+    public void Update(List<Posts> mPostsList) {
         postsList = mPostsList;
         notifyDataSetChanged();
     }

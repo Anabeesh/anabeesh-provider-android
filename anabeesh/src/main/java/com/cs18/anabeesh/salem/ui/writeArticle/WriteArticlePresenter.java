@@ -3,8 +3,7 @@ package com.cs18.anabeesh.salem.ui.writeArticle;
 import android.text.TextUtils;
 import android.widget.EditText;
 
-import com.cs18.anabeesh.salem.Retrofit.RetrofitClint;
-import com.cs18.anabeesh.salem.Retrofit.UserService;
+import com.cs18.anabeesh.beshary.store.api.APIsUtil;
 import com.cs18.anabeesh.salem.model.Article;
 import com.cs18.anabeesh.salem.model.PostArticles;
 
@@ -38,8 +37,7 @@ public class WriteArticlePresenter {
 
         int CatagroyId = 1;
         String UserId = "97a92376-0c81-4d94-98c5-f14099bffe65";
-        RetrofitClint.getInstance()
-                .create(UserService.class)
+        APIsUtil.getAPIService()
                 .PostArticle(new PostArticles(new Article(HeadLing, Body), CatagroyId, UserId))
                 .enqueue(new Callback<ResponseBody>() {
                     @Override
