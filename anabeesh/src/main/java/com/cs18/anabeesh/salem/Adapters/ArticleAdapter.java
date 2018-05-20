@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.cs18.anabeesh.R;
+import com.cs18.anabeesh.salem.Others.GlideApp;
 import com.cs18.anabeesh.salem.model.Articles;
 import com.cs18.anabeesh.salem.ui.ArticleDetailsActivity;
 
@@ -44,8 +44,9 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.MyViewHo
         holder.articleDesc.setText(articlesList.get(position).getBody());
         holder.articleName.setText(articlesList.get(position).getHeading());
         holder.expertName.setText(articlesList.get(position).getUserName());
-        Glide.with(mContext)
+        GlideApp.with(mContext)
                 .load(articlesList.get(position).getImageUrl())
+                .placeholder(R.drawable.greenland)
                 .into(holder.articleImage);
     }
 
@@ -74,7 +75,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.MyViewHo
             ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(v -> {
                 Intent ArticalDetails = new Intent(mContext, ArticleDetailsActivity.class);
-                ArticalDetails.putExtra("Article_img", String.valueOf(articleImage));
+                ArticalDetails.putExtra("Article_img", String.valueOf(R.drawable.greenland));
                 ArticalDetails.putExtra("Expert_Name", expertName.getText().toString());
                 ArticalDetails.putExtra("Article_Desc", articleDesc.getText().toString());
                 ArticalDetails.putExtra("Article_name", articleName.getText().toString());

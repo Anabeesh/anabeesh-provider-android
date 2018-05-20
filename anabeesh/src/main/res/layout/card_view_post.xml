@@ -27,27 +27,30 @@
 
             <TextView
                 android:id="@+id/tv_post_id"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
                 android:text="@string/post_tittle"
                 android:textColor="#200000"
-                android:textSize="@dimen/textSizeHomeTitle"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                />
 
             <TextView
                 android:id="@+id/tv_post_desc_id"
-                android:layout_width="359dp"
+                android:layout_width="352dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:autoLink="all"
+                android:ellipsize="end"
                 android:gravity="center"
-                android:maxLines="2"
-                android:padding="2dp"
+                android:maxLines="3"
                 android:text="@string/post_description"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -56,13 +59,14 @@
 
             <ImageView
                 android:id="@+id/iv_poster_img"
-                android:layout_width="wrap_content"
+                android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_margin="8dp"
                 android:layout_marginBottom="16dp"
-                android:src="@mipmap/ic_launcher_round"
+                android:layout_marginStart="8dp"
+                android:src="@mipmap/ic_launcher"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
                 android:id="@+id/tv_poster_name"
@@ -76,7 +80,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/iv_poster_img" />
+                app:layout_constraintRight_toLeftOf="@+id/iv_poster_img" />
 
 
         </android.support.constraint.ConstraintLayout>

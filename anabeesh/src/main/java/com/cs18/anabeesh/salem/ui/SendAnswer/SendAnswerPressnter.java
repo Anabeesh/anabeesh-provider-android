@@ -82,8 +82,9 @@ public class SendAnswerPressnter {
     }
 
     void SendAnswer(String userId, String questionId, String answerBody) {
+        int Q_id2=Integer.valueOf(questionId);
         APIsUtil.getAPIService()
-                .PostUserAnswer(new PostAnswers(userId, Integer.valueOf(questionId), answerBody))
+                .PostUserAnswer(new PostAnswers(userId, Q_id2, answerBody))
                 .enqueue(new Callback<ResponseBody>() {
                     @Override
                     public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
