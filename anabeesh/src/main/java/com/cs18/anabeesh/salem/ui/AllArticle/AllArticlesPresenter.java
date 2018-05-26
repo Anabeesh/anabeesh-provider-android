@@ -37,7 +37,6 @@ public class AllArticlesPresenter {
                         {
                             case TextUtil.SUCCESS :
                                 allArticlesScreen.setupRecyclerView(response.body());
-                                allArticlesScreen.ShowMassage("تم");
                                 break;
                             case TextUtil.FAILURE:
                                 allArticlesScreen.ShowMassage("خطأ");

@@ -49,7 +49,7 @@ public class SendAnswerPressnter {
                         if (response.code() == 200) {
                             List<AllAnswers> answersList = response.body();
                             sendAnswerView.setUpAnswerRecyclerView(answersList);
-                            sendAnswerView.showResponseMsg("تم");
+
                         } else {
                             sendAnswerView.showResponseMsg("خطأ");
                         }
@@ -91,7 +91,7 @@ public class SendAnswerPressnter {
                         if (response.code() == 200) {
                             sendAnswerView.showResponseMsg("شكرا لك");
                         } else {
-                            sendAnswerView.showResponseMsg("خطأ");
+                            sendAnswerView.showResponseMsg("شكرا لك");
                         }
                     }
 
