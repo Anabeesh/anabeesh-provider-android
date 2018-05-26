@@ -12,6 +12,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_article_id"
         android:layout_width="match_parent"
+        android:layoutDirection="rtl"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
         android:padding="5dp"
@@ -37,11 +38,19 @@
             android:layout_margin="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:text="@string/viewmore"
+            android:text="الاكثر شيوعا"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/viewmore"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/iv_more"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
 
         <ImageView
             android:id="@+id/iv_more"
@@ -57,6 +66,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <android.support.v7.widget.RecyclerView
+        android:layoutDirection="rtl"
         android:id="@+id/rv_post_id"
         android:layout_width="match_parent"
         android:layout_height="367dp"

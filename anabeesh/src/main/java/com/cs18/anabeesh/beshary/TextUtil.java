@@ -16,7 +16,7 @@ public class TextUtil {
     public static final int SUCCESS = 200;
     public static final int FAILURE = 400;
     public static final String PAGE_SIZE = "10";
-    public static final String PAGE = "1";
+    public static final String PAGE = "0";
 
 
     public static boolean isValidEmail(String str) {

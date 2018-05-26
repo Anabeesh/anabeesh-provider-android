@@ -32,12 +32,13 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
-                android:gravity="center_horizontal"
+                android:gravity="right"
                 android:singleLine="true"
+                android:padding="5dp"
                 android:text="@string/post_tittle"
                 android:textColor="#200000"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintHorizontal_bias="0"
                 />
@@ -53,8 +54,7 @@
                 android:maxLines="3"
                 android:text="@string/post_description"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_post_id" />
 
             <ImageView
@@ -66,7 +66,7 @@
                 android:layout_marginStart="8dp"
                 android:src="@mipmap/ic_launcher"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintRight_toRightOf="parent" />
 
             <TextView
                 android:id="@+id/tv_poster_name"

@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.cs18.anabeesh.R;
+import com.rxmuhammadyoussef.core.util.PreferencesUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -26,11 +27,12 @@ public class WriteActicleActivity extends AppCompatActivity implements WriteArti
     private ProgressDialog Loadingdialog;
     private WriteArticlePresenter writeArticlePresenter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write_acticle);
-        writeArticlePresenter = new WriteArticlePresenter(this);
+        writeArticlePresenter = new WriteArticlePresenter(this,new PreferencesUtil(this));
         ButterKnife.bind(this);
         writeArticlePresenter.CreateUI();
     }
@@ -64,7 +66,7 @@ public class WriteActicleActivity extends AppCompatActivity implements WriteArti
             writeArticlePresenter.SendTo(ArticleTittle.getText().toString(), ArticleBody.getText().toString());
         } else {
 
-            Toast.makeText(this, " Please type in Empty field ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, " لا يمكن الارسال ", Toast.LENGTH_SHORT).show();
         }
     }
 }

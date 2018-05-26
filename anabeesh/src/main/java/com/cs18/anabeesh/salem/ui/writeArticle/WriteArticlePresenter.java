@@ -3,9 +3,11 @@ package com.cs18.anabeesh.salem.ui.writeArticle;
 import android.text.TextUtils;
 import android.widget.EditText;
 
+import com.cs18.anabeesh.beshary.store.AuthRepo;
 import com.cs18.anabeesh.beshary.store.api.APIsUtil;
 import com.cs18.anabeesh.salem.model.Article;
 import com.cs18.anabeesh.salem.model.PostArticles;
+import com.rxmuhammadyoussef.core.util.PreferencesUtil;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -23,9 +25,11 @@ public class WriteArticlePresenter {
     private final String DefultUserId = "jsdvnjnnv";
     private final WriteArticleScreen writeArticleScreen;
     private PostArticles articles;
+    private   final AuthRepo authRepo;
 
-    public WriteArticlePresenter(WriteArticleScreen writeArticleScreen) {
+    public WriteArticlePresenter(WriteArticleScreen writeArticleScreen,PreferencesUtil preferencesUtil) {
         this.writeArticleScreen = writeArticleScreen;
+        authRepo = new AuthRepo(preferencesUtil);
     }
 
     //TODO GET UserID and  CategoryId from login screen;
@@ -36,7 +40,7 @@ public class WriteArticlePresenter {
     public void SendTo(String HeadLing, String Body) {
 
         int CatagroyId = 1;
-        String UserId = "97a92376-0c81-4d94-98c5-f14099bffe65";
+        String UserId = authRepo.getCurrentUser().getUserId();
         APIsUtil.getAPIService()
                 .PostArticle(new PostArticles(new Article(HeadLing, Body), CatagroyId, UserId))
                 .enqueue(new Callback<ResponseBody>() {

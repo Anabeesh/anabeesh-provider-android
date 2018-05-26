@@ -19,4 +19,6 @@ public interface ExpertScreen {
     void ShowError(Throwable throwable);
 
     void UpdatePostsForExpertUi(List<Posts> posts);
+
+
 }

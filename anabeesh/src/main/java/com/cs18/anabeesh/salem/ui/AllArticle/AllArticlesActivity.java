@@ -2,7 +2,6 @@ package com.cs18.anabeesh.salem.ui.AllArticle;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -49,7 +48,7 @@ public class AllArticlesActivity extends AppCompatActivity implements AllArticle
     public void setupRecyclerView(List<Articles> listOfArticles) {
         articleAdapter = new ArticleAdapter(this, listOfArticles);
         allArticlesRecyclerview.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        allArticlesRecyclerview.setItemAnimator(new DefaultItemAnimator());
+        allArticlesRecyclerview.setHasFixedSize(true);
         allArticlesRecyclerview.setAdapter(articleAdapter);
     }
 

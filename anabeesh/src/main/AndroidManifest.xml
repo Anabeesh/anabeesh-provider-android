@@ -38,24 +38,21 @@
             android:name=".beshary.ui.home.HomeActivity"
             android:label="@string/home_page"
             android:theme="@style/AppTheme"></activity>
-        <activity android:name=".beshary.ui.home.profile.UserProfile"></activity>
-        <activity android:name=".salem.ui.writeArticle.WriteActicleActivity" />
+        <activity android:name=".beshary.ui.home.profile.UserProfile" android:screenOrientation="portrait"></activity>
+        <activity android:name=".salem.ui.writeArticle.WriteActicleActivity" android:screenOrientation="portrait"  />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".salem.ui.writeArticle.WriteActicleActivity" />
 
-        <activity android:name=".salem.ui.ArticleDetailsActivity" />
-        <activity android:name=".salem.ui.expertHome.Test">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".salem.ui.ArticleDetailsActivity"
+            android:screenOrientation="portrait"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".salem.ui.SendAnswer.SendAnswerActivity" />
+        <activity android:name=".salem.ui.SendAnswer.SendAnswerActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".salem.ui.AllArticle.AllArticlesActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/HomeTheme">
 
         </activity>

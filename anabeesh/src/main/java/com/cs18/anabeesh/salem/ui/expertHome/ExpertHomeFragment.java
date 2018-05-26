@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -38,7 +37,6 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     RecyclerView postRecyclerView;
     @BindView(R.id.fab_write_post_id)
     FloatingActionButton writePost;
-
     private ExpertPresenter expertPresenter;
     private ArticleAdapter articleAdapter;
     private PostAdapter postAdapter;
@@ -86,7 +84,7 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     public void setUpArticleRecyclerView(List<Articles> listOfArticles) {
         articleAdapter = new ArticleAdapter(getContext(), listOfArticles);
         articleRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        articleRecyclerView.setItemAnimator(new DefaultItemAnimator());
+       articleRecyclerView.setHasFixedSize(true);
         articleRecyclerView.setAdapter(articleAdapter);
     }
 
@@ -112,4 +110,6 @@ public class ExpertHomeFragment extends Fragment implements ExpertScreen {
     public void UpdatePostsForExpertUi(List<Posts> posts) {
         postAdapter.Update(posts);
     }
+
+
 }

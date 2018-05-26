@@ -38,8 +38,8 @@
                 android:paddingTop="20dp"
                 android:maxLines="3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_post_id" />
 
             <ImageView
@@ -51,7 +51,7 @@
                 android:src="@mipmap/ic_launcher"
                 app:layout_constraintTop_toBottomOf="@+id/tv_comment_desc_id"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintRight_toRightOf="parent" />
 
             <TextView
                 android:id="@+id/tv_commenter_name"

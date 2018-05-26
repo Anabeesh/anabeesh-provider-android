@@ -24,13 +24,11 @@ public class ExpertPresenter {
 
     public void loadHomePage() {
         final String userId = authRepo.getCurrentUser().getUserId();
-        fetchArticles
-                (userId);
-        fetchPosts
-                (userId);
+        fetchArticles(userId);
+        fetchPosts(userId);
     }
 
-    private void fetchPosts(String userId) {
+     void fetchPosts(String userId) {
         APIsUtil.getAPIService()
                 .getPosts(userId)
                 .enqueue(new Callback<List<Posts>>() {
@@ -51,7 +49,7 @@ public class ExpertPresenter {
                 });
     }
 
-    private void fetchArticles(String userId) {
+    public void fetchArticles(String userId) {
         APIsUtil.getAPIService()
                 .getArticles(userId,TextUtil.PAGE,TextUtil.PAGE_SIZE)
                 .enqueue(new Callback<List<Articles>>() {
@@ -67,7 +65,8 @@ public class ExpertPresenter {
                     }
                     @Override
                     public void onFailure(Call<List<Articles>> call, Throwable t) {
-                        // TODO : internet connection  time out.
+
+
                     }
                 });
     }
